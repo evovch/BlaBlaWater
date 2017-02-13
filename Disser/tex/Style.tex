@@ -12,8 +12,19 @@
 \usepackage{footnote}
 \usepackage{url}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
 \newcommand{\blueurl}[1]{{\footnotesize \color{blue} \url{#1}}}
 \newcommand{\classname}[1]{{\emph{#1}}}
+
+\newcommand{\macroname}[1]{<<#1>>}
 
 \addto\captionsrussian{
 	\renewcommand{\contentsname}{Содержание}
