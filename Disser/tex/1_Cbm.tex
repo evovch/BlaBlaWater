@@ -6,18 +6,21 @@
 
 \subsection{Вершинный микродетектор MVD}\label{sec:secMVD}
 
+
+
 \subsection{Кремниевая трекинговая система STS}\label{sec:secSTS}
 
-From CBM STS TDR:
-
-The STS is operated in a thermal enclosure that keeps the sensors at a temperature of about \SI{-5}{\degreeCelsius}. The heat dissipated in the read-out electronics is removed by a $CO_{2}$ cooling system. The mechanical structure of the detector system including the service and signal connections is designed such that single detector ladders can be exchanged without disconnecting and removing more than one detector station.
-
 Задача кремниевой трековой системы --- измерение траекторий и импульсов заряженных частиц, вылетающих из точки взаимодействия пучка тяжёлых ионов с мишенью. Для выполнения физической программы CBM --- наблюдения редких \textbf{явлений} --- необходима частота взаимодействий до 10~МГц, при том что в одном взаимодействии будет рождаться до 1000 заряженных частиц. Реконструкция треков должна выполняться с эффективностью порядка 95\% и разрешением по импульсу порядка $\Delta p / p = 1\%$. Для удовлетворения перечисленных требований STS должна состоять из 8~слоёв кремниевых микростриповых сенсоров, расположенных внутри поля от дипольного магнита на растоянии от 30~см до 100~см от точки взаимодействия вниз по пучку с шагом 10~см.
+
 Сенсоры будут монтироваться на легкую механическую опору в виде карбоновых ферм. Считывание будет осуществляться по многоканальным микро-кабелям самотриггирующейся электроникой, расположенной по краям станций вместе с линиями охлаждения и другими инфраструктурными подсистемами. Микро-кабели будут выполнены из sandwiched polyimide-Aluminum layers толщиной несколько десятков мкм.
 %The microstrip sensors will be double-sided with a stereo angle of \SI{7.5}{\degree}
-Микростриповые сенсоры будут двухсторонними \todo, шаг между стрипами $58 \mu$м, длина стрипов от 20~до~60~мм, а толщина кремния $300 \mu$м. По текущим оценкам максимальная неионизирующая доза в CBM для сенсоров, расположенных ближе всего к пучку, не будет превышать $10^{14}$ $n_{eq}$ см$^{-2}$. 
+Микростриповые сенсоры будут двухсторонними \todo, шаг между стрипами $58 \mu$м, длина стрипов от 20~до~60~мм, а толщина кремния $300 \mu$м. По текущим оценкам максимальная неионизирующая доза в CBM для сенсоров, расположенных ближе всего к пучку, не будет превышать $10^{14}$ $n_{eq}$ см$^{-2}$. STS будет работать в термостатическом корпусе, обеспечивающем постоянную температуру около \SI{-5}{\degreeCelsius}. Тепло, рассеиваемое считывающей электроникой, отводится с помощью $CO_{2}$ системы охлаждения. Механические опоры детектора и соединения спроектированы так, чтобы была возможность заменить отдельный модуль системы не отсоединяя остальные.
+
+\todo картинка
 
 \subsection{Детектор черенковских колец RICH}\label{sec:secRICH}
+
+
 
 \subsection{Мюонная система MUCH}\label{sec:secMUCH}
 
@@ -32,6 +35,117 @@ The MuCh system will be built in stages which are adapted to the beam energies a
 \subsection{Детектор переходного излучения TRD}\label{sec:secTRD}
 
 \subsection{Время-пролётный детектор TOF}\label{sec:secTOF}
+
+From CBM TOF TDR:
+
+The detector system’s prime task is to measure the arrival time of charged particles to allow for their identification after having matched the TOF - hit with the corresponding STS track obtained from the CBM silicon tracking system (STS). The system is designed to cope with all the reactions anticipated in the physics program of CBM. This ranges from heavy-ion reactions of different system size from C+C to Au+Au over a large incident energy range from 2A GeV to 45A GeV (35A GeV for the heaviest collision system) to proton - nucleus reactions up to a projectile energy of 90 GeV.
+
+Основная задача время-пролётного детектора --- измерять момент времени прихода заряженных частиц, чтобы провести идентификацию после сопоставления хита TOF с соответствующим треком кремниевой трековой системы STS. Детекторная система TOF спроектирована так, чтобы справляться с реакциями, ожидаемыми физической программой CBM. Это подразумевает широкий диапазон взаимодействий от тяжёлых ионов от C+C до Au+Au с энергией от 2A ГэВ до 45A ГэВ до протон-ядерных столкновений с энергией до 90 ГэВ.
+
+The general layout considerations following from the CBM concept are discussed in chapter 2.
+
+Since CBM is operated in fixed target mode the flux of charged particles is strongly varying with the polar angle. In order to fit to the forward acceptance of the CBM experimental setup that is based on an instrumented dipole magnet with particle identification detectors placed downstream of the target, a modular TOF wall is proposed whose elements, called modules in the following, are adapted to the granularity and rate requirements. To allow for sufficient separation power especially for the identification of charged kaons, distances of up to 10 m and a system time resolution of 80 ps are necessary leading to an overall size of the TOF - wall of approx. 12$\times$9 m2 . To achieve the overall time resolution this area needs to get instrumented with timing detectors with an intrinsic timing resolution better than 60 ps and an efficiency better than 95\%.
+
+Так как CBM представляет собой эксперимент с фиксированной мишенью, поток заряженных частиц сильн зависит от направления.
+
+Чтобы иметь достаточную степень разделения, особенно для идентификации заряженных каонов, нужно расстояние до 10 м и временное разрешение 80 пс, что приводит к размеру TOF около 12$\times$9 м$^2$. Чтобы достичь необходимого такого временного разрешения детектор должен быть оборудован электроникой с гарантированным временным разрешением лучше 60 пс и эффективностью лучше 95\%.
+
+We propose to build the CBM - TOF wall on the basis of state-of-the-art Multigap Resistive Plate Chambers (MRPC). The basic element of this robust detector concept is a stack of resistive plates made out of glass or ceramics that are separated by thin gas gaps. At sufficiently high electric field strength avalanches are created in a very uniform manner and can be read out via capacitive coupling. As is demonstrated in chapters 7 this 10 - years old detector technology is well advanced by now, largely due to the effort of the CBM - TOF group, and offers the flexibility to cope with the high demands posed by the CBM physics goals. Most notably, the proposed concept that requires a detector technology with a sustained rate capability in the order of 25 kHz/cm 2 became possible only by the development of a low - resistivity glass (see section 7.1.1) that is available for CBM - TOF by now through the CBM - TOF group at Tsinghua University, Beijing, China at reasonable costs.
+
+Предлагается построить CBM TOF на основе современных MRPC. Базовый элемент этого robust детектора --- пачка резистивных пластин из стекла или керамики, которые разделены тонким зазором с газом. При достаточно высоком электрическом поле создаются очень равномерные ливни, которые можно считывать с помощью capacitive coupling.
+
+The proposed structure of the CBM - TOF wall is based on detector layouts that have already been
+realized and tested in in-beam experiments and demonstrated MRPC counter timing resolutions below
+60 ps with efficiencies above 95\% at rates relevant for CBM (see chapter 7 for details). The basic element
+of the proposed wall are MRPC strip counters where a single avalanche is generating two signals at
+the two ends of a readout-electrode. The length of the readout - strip can be easily adjusted to the
+required granularity. The leading design goal of the proposed strip structures is operation stability and
+signal integrity. This is achieved by differential signal processing and the matching of the readout strip
+impedance to the input impedance of the newly developed preamplifier discriminator chip (PADI). Thus
+the number of spurious hits due to reflections is minimized and an optimal response of the detectors is
+guaranteed with minimal dead time. This aspect is considered to be especially important for the high
+rate running conditions of CBM where even independent events will be overlapping in time space and
+any additional spurious hit will deteriorate the system performance.
+
+In order to minimize the number of components, the CBM - TOF wall is designed to be composed of
+only 4 different types of MRPC counters, arranged into 6 different types of modules. The proposed CBM
+-TOF system is described in detail in chapter 3.
+The modules and counters are realized in 2 different technologies:
+1. The modules placed at small polar angles close to the beampipe (M1 - M3) are housing counters
+(MRPC1,MRPC2) that employ a double stack HV - design. The counters are equipped with low
+resistivity glass and have electrodes of 32$\times$10 cm 2 and 32$\times$20 cm 2 dimensions, 10 gas gaps and a
+strip pitch of 4.7 mm. The front-end electronics is mounted outside of the gas volume. A total of
+36.608 electronics channels is needed to readout this part of the TOF wall.
+The proposed design emphasize the full coverage of the solid angle and is rather conservative in
+terms of data integrity since each hit is registered by 2 readout channels and allows to determine
+the hit position with an accuracy of a few mm in each direction.
+More detailed measurements of the response under fully loaded conditions and time based simula-
+tions of the system response will show whether this strip solution could be replaced by a cheaper
+pad - type MRPC solution that is described in detail in the appendix E and requires only 27.792
+electronic readout channels.
+A decision will be taken at latest in Dec. 2015 after careful analysis of test beam data that will
+be taken at GSI in October 2014 and at CERN SPS in April 2015. With currently available HI -
+beam, conditions close to the operating conditions of CBM will be realized.
+2. For the remaining part of the wall (modules M4 - M6) two different sizes of a MRPC strip counter
+with active area of 32$\times$27 cm 2 and 32$\times$53 cm 2 , and a strip pitch of 1 cm are proposed. These
+counters are equipped with low - resistivity glass or thin float glass electrodes according to the rate
+requirements and use a single HV stack with 8 gas gaps. In order to optimize the signal integrity
+the preamplifier is connected as directly as possible to the readout electrode and put into the gas
+volume of the modules. As largest benefit this arrangement offers the possibility to operate the
+detectors at lower discriminator thresholds and the lower pulse height results in turn also in a higher
+rate capability. The design of independent module units including the analog electronics also offers
+the necessary robustness to operate a system of 218 modules and 70.000 readout channels.
+The disadvantage of the proposed single stack architecture is the need of two high voltages ($\pm$11 kV)
+causing substantial costs. An alternate design with a double stack configuration of the high voltage
+is available and can be operated at about 5.6 kV. However, this counter configuration needs more
+glass electrodes (12 instead of 9) and the cost benefit from the HV has to be compared to the
+additional cost caused by additional electrodes especially when these are made from low resistivity
+glass. Counters of this type that are described in appendix F.2.4 will be evaluated in comparison to
+the proposed ones also in the upcoming HI - test beam campaigns addressing the system features of
+the designs. A decision will be taken at latest in Dec. 2015 after careful analysis of the test beam
+data.
+The high performance electronics for the whole CBM - TOF wall is independent of the choice of a specific
+module or counter type and is based on the PADI and the GET4 - ASIC chips developed by the CBM -
+TOF group (see sections 3.3.3 and 3.3.5). The combination of both chips in conjunction with a custom -
+designed clock distribution system (section 3.3.8) offers the possibility to build a large scale system with
+an electronics contribution to the timing resolution of about 30 ps. This system was tested using a readout
+controller that implements the full CBMnet - protocol and allows for online inspection and control of the
+GET4 - data. The details of the readout-chain are described in section 3.3.
+However, since up to now no long - term stably working GET4 - system could be demonstrated, an al-
+ternative backup solution is also included in this report. It is built on FPGA based TDCs that became
+available recently (see appendix G.2) and provides timing resolution on the level of 10 ps. A free - stream-
+ing readout chain is not yet available, but is planned to be realized in the near future. As a consequence
+the number of necessary readout controllers would be substantially reduced leading eventually to a more
+simple and cost effective system. More R'n'D is required in the direction of an FPGA - based digitizer /
+readout system, specifically considering the radiation environment (see chapter 2.5).
+Since FPGA - based digitizers are offering a better resolution and more flexibility and would allow e.g.
+for an improvement of the double hit recognition the decision about the production of the GET4 - system
+will be taken only after a) the stability of the GET4 readout chain is proven, b) no competitive FPGA
+based solution is available until start of mass production (Dec.2015). Therefore R'n'D work on FPGA -
+based TDCs is continuing as part of the project.
+The proposal of a high performance TOF wall would be incomplete without the discussion of the time
+- zero (T 0 ) - reference that is needed for any velocity measurement. Details can be found in chapter 4
+demonstrating that for all of the anticipated running scenarios solutions are available. For most of the
+heavy-ion reaction running at the initial SIS100 accelerator the software based T 0 - extraction is sufficient
+(see section 4.2). This method can be calibrated by making use of the diamond based start detector
+system developed for the HADES experiment (section 4.4) that is operational up to interaction rates of
+100 kHz.
+As has been shown by Monte-Carlo simulations using the SHIELD event generator the quality of the T 0
+- reference determination can be improved by installing the so called Beam Fragmentation T 0 Counter
+(BFTC) as the innermost part of the TOF wall (see section 4.3). It should cover the region from about
+20 to 60 cm from the beam pipe (overlapping with the PSD acceptance). Using a very simple algorithm
+without tracking information a T 0 - signal with a precision of better than 50 ps can be achieved. A detector
+concept, anticipated to be able to operate in this harsh environment with fluxes being as high as 100
+kHz/cm 2 , built from very radiation-hard materials and possessing minimum gas aging characteristics, is
+suggested to be based on the ceramic electrodes (see section F.1). Single cell pads with the size of 2$\times$2
+cm 2 seem to fulfill the double hit, maximum rate and cross-talks requirements. Further R'n'D is necessary
+in order to prove the validity of the concept.
+The very large dynamical range in terms of incident beam energies that has to be covered by the CBM
+experiment reflects itself by the movable wall concept where the whole TOF - system is mounted on rails
+and can be placed at various distances. The rail system is sketched in section 5.1. It allows e.g. to
+balance the decay losses for kaons against the purity of an anticipated online kaon multiplicity selection.
+It also enables the servicing of the components independently from the other subsystems of CBM during
+shutdown periods.
 
 \subsection{Электромагнитный калориметр ECAL}\label{sec:secECAL}
 
