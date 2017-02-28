@@ -20,14 +20,27 @@
 \renewcommand\Authand{, и }
 \renewcommand\Authands{, и }
 
+\renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{9}{10.8}\itshape}
+
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks,
+%    citecolor=black,
+%    filecolor=black,
+%    linkcolor=black,
+%    urlcolor=black
+%}
+
 \addto\captionsrussian{
 	\renewcommand{\figurename}{Рис.}
 }
 
-%\usepackage{geometry}
-% \geometry{
-% a4paper,
-% total={170mm,257mm},
-% left=20mm,
-% top=20mm,
-% }
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=30mm,
+	right=15mm,
+	top=20mm,
+	bottom=20mm
+}
