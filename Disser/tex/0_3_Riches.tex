@@ -1,2 +1,83 @@
 \section{Обзор существующих детекторов черенковских колец}\label{sec:secRiches}
 
+%По-видимому второй рич так и остался в планах...
+\subsection{COMPASS RICH-1}\label{sec:CompassRich1}
+
+%\subsection{COMPASS}\label{sec:Compass}
+
+% Википедия
+% https://en.wikipedia.org/wiki/COMPASS_experiment
+
+Экспериментальная установка NA58, также известная как COMPASS (``Common Muon and Proton Apparatus for Structure and Spectroscopy'') представляет собой систему из двух спектрометров длиной 60~метров за неподвижной мишенью на отводе пучка M2 ускорителя SPS в CERN. Эксперимент был предложен в 1996 году, в период с 1999 по 2001 года выполнялись работы по установке и в 2001 был выполнен первый (commissioning) запуск. Набор данных разбит на два этапа: COMPASS I (2002--2011) и COMPASS II (2012--2018). 
+
+% http://link.springer.com/article/10.1140/epjst/e2008-00800-2
+
+%\subsubsection{COMPASS RICH-1}\label{sec:CompassRich1}
+
+% Самое свежее (2014) - http://compassweb.ts.infn.it/rich1/paper/tessarotto_instr14.pdf
+
+% Ссылки
+% NIM A 02 (2003) 112–116
+% doi:10.1016/S0168-9002(02)02165-4
+% E. Albrecht et al.
+% https://wwwcompass.cern.ch/compass/detector/rich/publications/NIMA502-112.pdf
+
+% http://wwwcompass.cern.ch/compass/proposal/pdf/proposal.pdf
+
+% https://pub.uni-bielefeld.de/download/2301233/2301236
+% 8.2.2 The Mirror Wall
+
+Детектор Черенковских колец \mbox{RICH-1} был спроектирован в 1996~г. и функционирует с 2002~г. \mbox{RICH-1} подвергается постоянной оптиимизации, а в 2006~было выполнено обновление. Ожидается второе обновление детектора в 2016~г. \todo оно было?
+
+Основная задача детектора Черенковских колец --- разделение $\pi$, $p$ и $K$ в диапазоне импульсов от 3~до~55~ГэВ/с в условиях высокой интенсивности (что бы это значило\todo в статье 2014 г. написано, что beam rate 40 МГц, и частота триггеров 20 кГц) в полном аксептансе спектрометра, составляющем $\pm$250~мрад по горизонтали и $\pm$180~мрад по вертикали. Для минимизации отрицательного влияния на эффективность стоящих ниже по пучку электромагнитного и адронного калориметров детектор \mbox{RICH-1} должен иметь минимум количества материала в аксептансе. Также в процессе проектирования COMPASS \mbox{RICH-1} необходимо было развивать технологии для реализации возможности регистрировать и справляться с высоким для того времени потоком данных.
+\todo \textbf{По большому счёту, задачи те же, что и у CBM}
+
+Габариты корпуса детектора COMPASS \mbox{RICH-1}, выполненного из алюминия, составляют 6.6$\times$5.3$\times$3.3~м$^3$. Внутри расположен газовый радиатор $C_{4}F_{10}$ длиной 3~м и объёмом около 83~м$^3$. Пороги по импульсу для Черенковского света: для $\pi$ --- 2.5~ГэВ/с, для $K$ --- 8.9~ГэВ/с и 17~ГэВ/с для $p$. В центре детектора проходит цилиндрический ионопровод диаметром 100~мм, наполненный гелием.
+% The original beam pipe, made of 150 mm thick stainless steel, has been replaced in 2012 by a lighter pipe, made of 4 layers of metalized BoPET (25mm BoPET + 0.2mm Al): the contribution to the total material budget by the new pipe for beam particles is 0.08\% X0 (plus 0.06\% due to helium).
+Газовая система закрытого типа поддерживает радиатор под избыточным давление $100\pm10$~Па.
+
+Система фокусировки состоит из двух сферических зеркал радиусом 6.6~м, составленных из 116~сегментов шести- и пятиугольной формы, общей площадью более 21~м$^2$. Для фокусировки на фоточувствительные камеры, расположенные за пределами геометрического аксептанса, центры сфер зеркал смещены по вертикали от пучка на 1.6~м, а образовавшийся в результате этого зазор между двумя зеркалами приводит к потере 4\% площади отражающей поверхности. Зеркала были произведены компанией IMMA, Ltd., Kinskeho 703, Turnov, Czech Republic.
+Коллаборацией COMPASS был разработан метод контроля индивидуальных отклонений сегментов зеркал ``на лету'' (онлайн), называемый CLAM (``a continuous line alignment and monitoring method'').
+
+\todo \textbf{картинка - схема, оч похоже на CBM}
+
+Исходя из необходимости иметь суммарную площадь фоточувствительных камер 5.3~м$^2$, изначально для реализации были выбраны многопроволочные пропорциональные камеры (MWPC) с сегментированным фотокатодом из CsI. \mbox{RICH-1} оборудован восемью идентичными камерами, каждая площадью 576$\times$1152~мм$^2$. Фотокатоды выполнены из двух двухсторонних печатных плат размером 576$\times$576~мм$^2$. Окна из silica-quartz состоят из двух одинаковых quartz-plates размером 600$\times$600$\times$5~мм$^3$. Сегментированный фотокатод обеспечивает размер пикселя 8$\times$8~мм$^2$ и в общей сложности 82944 канала.
+
+% Ещё подробности тут: http://localhost/Lib/Long_term_experience_and_performance_of_COMPASS_RI.pdf
+
+В 2006~г. с целью повышения эффективности детектора было выполнено комплексное обновление центральной области фоточувствительной камеры, составляющей 25\% от всей площади. MWPC были заменены на МА~ФЭУ с индивидуальными линзами и соответствующей считывающей электроникой. В общей сложности было установлено 4 панели по 144~МА~ФЭУ Hamamatsu R7600-03-M16, имеющими 16~каналов и входное стекло, прозрачное в ультрафиолетовой области, и специальный делитель напряжения.
+
+% For the physics runs starting in 2016 COMPASS RICH-1 will be equipped with new MPGD-based photon detectors, which have been developed by a dedicated R&D program.
+
+Сигнал с МА~ФЭУ считывается платами передней электроники, основанными на ASIC ``CMAD'', реализующем 8-канальный предусилитель-дискриминатор, разработанный на основе ``MAD4'' специально для COMPASS \mbox{RICH-1}. CMAD позволяет работать на частоте до 5~МГц на канал.
+
+%The signals from the MAPMTs are read by a fast digital electronics system [36, 37] based on the 8 channels CMAD [38] preamplifier-discriminator, developed for COMPASS RICH-1 as an upgraded version in CMOS technology of the MAD4 [39] front-end chip. The CMAD has a small noise level (1 fC), the possibility to set individual channel thresholds, a good time resolution and high rate capability: it provides full efficiency up to an input rate of 5 MHz per channel. The design of the front-end boards and the optimization of the thresholds setting allows to completely suppress the MAPMTs cross talk signals while keeping the single photoelectron detection efficiency at a 95\% level.
+
+\todo \textbf{перефразировать}
+Хорошее временное разрешение МА~ФЭУ не портится за счёт использования цифровых карт DREISAM, в которых реализован ВЦП F1, имеющий временное разрешение 110~пс и может работать с чатотой до 10~МГц на канал и частоте триггера до 100~кГц.
+
+%The good MAPMT time resolution is fully exploited with the help of digital cards, called DREISAM, housing the dead-time free F1 TDC [40] , which has a time resolution of 110 ps and can stably operate up to 10 MHz per channel input rate and 100 kHz trigger rate.
+
+Считывающая электроника COMPASS \mbox{RICH-1} монтируется на детектор, образуя очень компактную установку, которая экранирована от внешнего электромагнитного поля медными пластинами, выполняющими также и роль радиаторов, охлаждаемых водой циркуирующей по медным трубкам.
+
+%All the electronics components of the RICH-1 readout system are directly mounted on the detector and form a very compact setup. Each PCB is coupled to a copper plate providing both efficient electromagnetic shielding and good cooling power: thermalized water circulates in underpressure condition in thin copper pipes brazed onto the copper plates [36]. The stability and uniformity of the water cooling system has been achieved after several improvements of the distribution system and of the operation and maintenance protocols.
+
+Оцифрованные данные с плат передней электроники передаются по оптике платам считывания CATCH, которые группируют данные и передают дальше также по оптике через S-LINK в систему сбора данных эксперимента.
+
+%Data from the front-end cards are transferred via optical links to a set of CATCH readout-driver modules which concentrate the data and send them via S-LINK transmitter and optical fibre to the COMPASS DAQ system.
+
+%Expected occupancy level is $\approx$5\% at a maximum trigger rate of $10^5 s^{-1}$, resulting in a maximum data flow of 2.5 GB/s. COMPASS-Gassiplex chips are used as front-end-chips. These are modified versions of the chips developed for RD26, now equipped with preamplifier, shaper and an analog-multiplexer. The intrinsic dead time is 400 nsec per event, with a peaking time of 1 usec. The value for noise is as low as 1100 electrons equivalent at a gas amplification of $\approx$6.5 mV / (fC).
+
+%The core piece of the readout system is the total amount of 192 front-end-cards, the 60 cm long BORA boards [67], hosting the front-end chips and a first trigger level. There are 24 BORA-boards per photon chamber handling 432 analog channels. Each single BORA-board is equipped with front-end-chips, ADCs (analog digital converter), FIFOs (first in first out buffer), FPGAs (field programmable gate array) of the type VIRTEX XCV100 [68] for logic sequencers, threshold-subtraction and zero-suppression, 32-bit DSPs [69] for event packaging, on-board controls and optical links. The event processing time is 10usec. The control system for those BORA-boards is a parallel network of DSPs (digital signal processing), operated via a dedicated PC-PCI-interface: the DOLINA-boards with 8 on-board DSPs each. To avoid grounding interference between the PC and the detector all BORA-boards are optoisolated from DOLINA with the help of specific optoisolating boards. Figure 8.11 sketches the architecture of the readout system. The photon detectors reach an absolute gain of 10 4 at nominal voltage of 2000 V with photon detection efficiencies of about 75\% as presented in Figure 8.12.
+
+\textbf{Заключение такое, что в целом конструкция этого RICH очень схожа с конструкцией CBM RICH.}
+
+%\subsubsection{COMPASS RICH-2}\label{sec:CompassRich2}
+
+\subsection{LHCb}\label{sec:LHCb}
+
+\subsubsection{LHCb RICH-1}\label{sec:LhcbRich1}
+
+\subsubsection{LHCb RICH-2}\label{sec:LhcbRich2}
+
+\subsection{HERA-b RICH}\label{sec:HerabRich}

@@ -18,22 +18,22 @@
 
 \maketitle
 
-During common CBM beam tests at CERN-PS in Nov 2014 a CBM RICH prototype including a camera of 16 MAPMTs has been successfully tested. Details about the readout and DAQ system can be found in \cite{RICH2016, PEPANL}. There are two types of events in the data gathered during the beamtime. In both cases almost simultaneous hits are registered by multiple pixels of the photosensitive camera. The first type --- flash of the laser with $\approx$40~ps duration --- one order of magnitude lower than the transition time spread in the MA~PMT. The second type of events is formed by simultaneous hits from the Cherenkov photons of one charged particle. The time spread of photons' arrival can be as high as 100~ps for Cherenkov rings and 70~ps for a laser flash due to the geometry of the setup. Analysis of such events allows characterization of time precision of the full readout system.
+During common CBM beam test at CERN-PS in Nov 2014 a CBM RICH prototype including a camera of 16 MAPMTs has been successfully tested. Details about the readout and DAQ system can be found in \cite{RICH2016, PEPANL}. There are two types of events in the data gathered during the beamtime. In both cases almost simultaneous hits are registered by multiple pixels of the photosensitive camera. The first type is a flash of a laser with $\approx$40~ps duration, which is one order of magnitude lower than the transition time spread in the MA~PMT. The second type of events is formed by the hits from the Cherenkov photons of one charged particle. The time spread of arriving photons can be as high as 100~ps for Cherenkov rings and 70~ps for a laser flash due to the geometry of the setup. Analysis of such events allows characterization of the time precision of the full readout system.
 
-It is impossible to measure the exact time of the photon arrival in the absolute time scale so the distribution of relative times for simultaneous hits is analysed. Timestamps in each channel fluctuate independently following similar probability distribution functions so the measured width of the distribution is $\sqrt 2$ larger than the actual time precision. For a pair of channels the FWHM of the distribution is 750~ps which corresponds to time precision of 530~ps. This value is almost twice higher than the transition time spread of the MA~PMT. There are two main reasons for that: instability of inter-channel delay corrections over time and absence of walk correction. In order to implement the walk correction procedure one needs to have stable ToT measurements which are not available in the beamtime data.
+It is impossible to measure the exact time of the photon arrival in the absolute time scale so the distribution of relative times for simultaneous hits is analysed. Timestamps in each channel fluctuate independently following similar probability distribution functions. Thus the measured width of the distribution is $\sqrt 2$ larger than the actual time precision. For a pair of channels, the FWHM of the distribution is 750~ps which corresponds to the time precision of 530~ps. This value is almost two times higher than the transition time spread of the MA~PMT. There are two main reasons for that: instability of inter-channel delay corrections over time and absence of walk correction. In order to implement the walk correction procedure one needs to have stable ToT measurements which are not available in the beamtime data.
 
 In order to characterize the time precision of the readout system in general, the simultaneous signals have been analysed in four subsets of channels: (1)~one pair of channels, (2)~16~channels read out by one PADIWA FEB, (3)~64~channels of one MA~PMT, (4)~256~channels of 4~MA~PMTs. In each case, after fine time calibration and inter-channel delay correction, a number of distributions have been built using hits corresponding to one event.
 
-Results for laser flashes are shown in the fig.~\ref{fig:TimeResEvolutionLaser}. Table~\ref{tabl:EvolutionParams} shows the evolution of the RMS and FWHM with increasing the number of analysed channels. Note that for events with laser flashes the RMS almost does not change while the FWHM increases and the shape of the distribution gets closer to Gaussian. This can be interpreted as smearring of the features of individual channels by averaging. For hits from one Cherenkov ring (see fig.~\ref{fig:TimeResEvolutionRings}) the FWHM and RMS increase with increasing the number of analysed channels, but FWHM again goes up much faster than RMS.
+Results for laser flashes are shown in the fig.~\ref{fig:TimeResEvolutionLaser}. Table~\ref{tabl:EvolutionParams} shows the evolution of the RMS and FWHM with increasing the number of analysed channels. Note that for events with laser flashes the RMS almost does not change while the FWHM increases and the shape of the distribution gets closer to a Gaussian. This can be interpreted as smearing of the features of individual channels by averaging. For hits from one Cherenkov ring (see fig.~\ref{fig:TimeResEvolutionRings}) the FWHM and RMS increase with increasing number of analysed channels, but FWHM again goes up much faster than RMS.
 
 \begin{table}[tbh]
 \caption{FWHM and RMS of the distributions for different analysed areas.}
 \label{tabl:EvolutionParams}
 \begin{tabular}{ | p{0.22\linewidth} | p{0.13\linewidth} | p{0.12\linewidth} | p{0.12\linewidth} | p{0.12\linewidth} | }
 	\hline
-	\scriptsize{Analysed area} & \scriptsize{Pair ofchannels} & \scriptsize{PADIWA FEB} & \scriptsize{One MA~PMT} & \scriptsize{Four MA~PMTs} \\
+	\scriptsize{Analysed area} & \scriptsize{Pair of channels} & \scriptsize{PADIWA FEB} & \scriptsize{One MA~PMT} & \scriptsize{Four MA~PMTs} \\
 	\hline
-	\scriptsize{Num.of channels} & 2 & 16 & 64 & 256 \\
+	\scriptsize{Num. of channels} & 2 & 16 & 64 & 256 \\
 	\hline
 	\scriptsize{FWHM, laser, ns} & 1.1 & 1.2 & 1.5 & 1.7 \\
 	\hline
@@ -47,13 +47,13 @@ Results for laser flashes are shown in the fig.~\ref{fig:TimeResEvolutionLaser}.
 \end{table}
 
 \begin{figure}[tbh]
-\includegraphics[width=0.9\linewidth]{../PTE/pictures/24_TimePrecision_evolution_laser_feb2017.eps}
+\includegraphics[width=0.8\linewidth]{../PTE/pictures/24_TimePrecision_evolution_laser_feb2017.eps}
 \caption{Distributions for 4 different sets of channels for events with laser flashes.}
 \label{fig:TimeResEvolutionLaser}
 \end{figure}
 
 \begin{figure}[tbh]
-\includegraphics[width=0.9\linewidth]{../PTE/pictures/25_TimePrecision_evolution_rings_feb2017.eps}
+\includegraphics[width=0.8\linewidth]{../PTE/pictures/25_TimePrecision_evolution_rings_feb2017.eps}
 \caption{Distributions for 4 different sets of channels for events with Cherenkov rings.}
 \label{fig:TimeResEvolutionRings}
 \end{figure}
