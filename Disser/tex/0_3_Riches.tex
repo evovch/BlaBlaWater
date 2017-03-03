@@ -76,37 +76,112 @@
 
 \subsection{LHCb}\label{sec:LHCb}
 
-\subsubsection{LHCb RICH-1}\label{sec:LhcbRich1}
+% http://localhost/Lib/10.1.1.668.3561.pdf - An Overview of the Status of the LHCb RICH Detectors - 2008
 
-\subsubsection{LHCb RICH-2}\label{sec:LhcbRich2}
+\todo \textbf{ПРОСТО ЦЕЛИКОМ ПЕРЕВЕСТИ СЕКЦИЮ 2.1 ОТСЮДА:}
+%http://localhost/Lib/art_10.1140_epjc_s10052-013-2431-9.pdf
+Performance of the LHCb RICH detector at the LHC - 2013
+
+
+
+
+LHCb is one of the four major experiments at the LHC, and is dedicated to the study of CP violation and the rare decay of heavy flavours. It is a forward spectrometer designed to accept forward-going b- and c-hadrons produced in proton-proton collisions. The layout of the spectrometer is shown in \figref{fig:LHCb}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{pictures/LHCb.png}
+\caption{Схема установки LHCb.}
+\label{fig:LHCb}
+\end{figure}
+
+PID from 2 to 100~\GeVoverC
+Два рича полностью охватывают необходимый угловой аксептанс 15–300 mrad with respect to the beam axis.
+
+
+RICH1 covers the low and intermediate momentum region 2–40~\GeVoverC over the full spectrometer angular acceptance of 25–300 mrad. The acceptance is limited at low angle by the size of the beampipe upstream of the magnet. RICH2 covers the high-momentum region 15–100~\GeVoverC, over the angular range 15–120 mrad.
+
+RICH1 is placed as close as possible to the interaction region. To minimize the material budget there is no separate entrance window, and the RICH1 gas enclosure is sealed directly to the exit window of the VELO vacuum tank. The downstream exit window is constructed from a low-mass carbon-fibre/foam sandwich.
+
+RICH2 is placed downstream of the magnet, since the high momentum tracks it measures are less affected by the magnetic field. In this way it can be placed after the downstream tracking system in order to reduce material for the measurement of the charged tracks. The entrance and exit windows are again a foam sandwich construction and skinned with carbon-fibre and aluminium, respectively.
+
+Both RICH detectors have a similar optical system, with
+a tilted spherical focusing primary mirror, and a secondary
+flat mirror to limit the length of the detectors along the beam
+direction. Each optical system is divided into two halves on
+either  side  of  the  beam  pipe,  with  RICH 1  being  divided
+vertically and RICH 2 horizontally. The vertical division of
+RICH 1 was necessitated by the requirements of magnetic
+shielding for the photon detectors, due to their close prox-
+imity to the magnet. The spherical mirrors of RICH 1 (4 seg-
+ments) are constructed in four quadrants, with carbon-fibre
+structure, while those of RICH 2 (56 segments), and all flat
+mirrors  (16  and  40  segments  in  RICH 1  and  RICH 2  re-
+spectively), are tiled from smaller mirror elements, employ-
+ing a thin glass substrate.
+
+
+Fluorocarbon gases at room temperature and pressure are
+used as Cherenkov radiators; C4F10 in RICH 1 and CF4 in
+RICH 2 were chosen for their low dispersion. The refractive
+index is respectively 1.0014 and 1.0005 at 0 C, 101.325 kPa
+and 400 nm. About 5\% CO2 has been added to the CF4 in
+order to quench scintillation in this gas.
+
+The momentum threshold for kaons to produce Cherenkov
+light in C4F10 is 9.3 GeV/c. Particles below this momentum
+would only be identified as kaons rather than pions in veto
+mode, i.e. by the lack of Cherenkov light associated to the
+particle. To maintain positive identification at low momen-
+tum and in order to separate kaons from protons, a second
+radiator is included in RICH 1: a 50 mm thick wall made of
+16 tiles of silica aerogel [10] at the entrance to RICH 1. The
+refractive index is n=1.03 and the light scattering length is
+around 50 mm at 400 nm in pure N2. The aerogel is placed
+in the C4F10 gas volume and a thin glass filter is used on the
+downstream face to limit the chromatic dispersion.
+
+...
 
 \subsection{HERA-b RICH}\label{sec:HerabRich}
 
 % http://localhost/Lib/rich-instr99-nim453.pdf
-% 0303012.pdf
+% 0303012.pdf - The HERA-B Ring Imaging Cerenkov Counter
+
+Эксперимент HERA-b \todo \textbf{пару слов}. Схема экспериментальной установки представлена на \figref{fig:HERAbSetup}.
+
+HERA-B, a fixed target experiment (see Fig. 1) at the HERA storage ring at DESY, was designed [1] to measure rare processes in the decays of B mesons. The B mesons are produced in collisions of 920 GeV/c protons with a fixed target, which consists of 8 wires which can be individually inserted into the halo of the proton beam in order not to disturb experiments measuring ep collisions. One of the essential components of the spectrometer is the Ring Imaging Cherenkov counter (RICH) [1,2,3,4]. The main purpose of the RICH counter is the identification of charged hadrons, in particular kaons from decays of B mesons. Identifying charged kaons essentially means separating them from pions in the momentum range between 3 GeV/c and about 50 GeV/c at an interaction rate of up to 40 MHz.
 
 \begin{figure}[H]
+\centering
 \includegraphics[width=1.0\textwidth]{pictures/HERA_b_setup.png}
 \caption{Схема установки HERA-b.}
 \label{fig:HERAbSetup}
 \end{figure}
 
+Схема детектора RICH эксперимента HERA-b показана на \figref{fig:HERAbRICH}. Он имеет газовый радиатор $C_{4}F_{10}$ объёмом 108~м$^3$ и массой 1100~кг. Длина радиатора 2.8~м, коэффициент преломления n=1.00137, порог импульса для рождения Черенковских фотонов для пионов и каонов составляет 2.7~\GeVoverC и 9.6~\GeVoverC соответственно. Для частиц с $\beta=1$ Черенковский угол равен 51.5~мрад (52.4~мрад), а разница между пионами и каонами составляет 0.9~мрад при 50~\GeVoverC. Радиатор поддерживается при избыточном давлении 2.5~мбар.
+
+Корпус детектора изготовлен из нержавеющей стали, кроме передней и задней стенок из алюминия толщиной 1~мм. После фокусировки фотоны выходят из корпуса через стенку толщиной 2~мм из оргстекла прозрачного в ультрафиолетовой области. Передняя стенка HERA-b RICH расположена на расстоянии 8.5~м от мишени.
+
+Система фокусировки состоит из двух пар зеркал, расположенных симметрично относительно горизонтальной плоскости, проходящей через ось пучка. Первое зеркало сферическое, второе --- плоское. Сферические зеркала (см. \figref{fig:HERAbRICHmirrors}) составлены из 80 полных или обрезанных шестиугольных сегментов, имеют радиус 11.4~м и толщину 7~мм. Они покрывают прямоугольную область 6$\times$4~м, общая площадь 24~м$^2$. Каждый сегмент крепится к раме трёмя моторизированными актуаторами с удалённым управлением. Для фокусировки за пределы геометрического аксептанса сферические зеркала наклонены на 9$^\circ$ от пучка. Каждое из двух плоских зеркал состоит из 18 сегментов.
+
+HERA-b RICH имеет две фоточувствительные камеры, расположенные соответственно над и под пучком. Одна фоточувствительная камера (см. \figref{fig:HERAbRICHcamera}) составлена из 7 супермодулей 1.1$\times$0.4~м$^2$. Поверхность камеры аппроксимирует эллиптический цилиндр. Один супермодуль состоит из $16 \times 6$ модулей, каждый экранирован от магнитного поля тонкими пластинами из soft iron. В общей сложности было установлено 1488 МА~ФЭУ R5900-00-M16 и 752 МА~ФЭУ R5900-03-M4 фирмы Hamamatsu т.е 26816 каналов. Габариты одного такого МА~ФЭУ составляют 28$\times$28~мм$^2$, а чувствительная площадь 18$\times$18~мм$^2$. Перед каждым МА~ФЭУ стоят две линзы для того, чтобы привести в соответствие площадь, занимаемую МА~ФЭУ, и чувствительную. Использование линз приводит к тому что размер пикселя становется равным $9 \times 9$~мм$^2$ у 16-пиксельного R5900-00-M16 и $18 \times 18$~мм$^2$ e 4-пиксельного R5900-03-M4.
+МА~ФЭУ монтируются на платы-адаптеры $70 \times 70$~мм$^2$, на которых осуществляется распределение высокого напряжения и аттенюация сигнала с МА~ФЭУ. Платы передней электроники построены на основе чипа ASD8 --- предусилителя, формирователя и дискриминатора. Сигналы с передней электроники передаются по 16-канальному кабелю типа витая пара длиной 7.5~м к драйверам передней электроники (front end dirver, FED). 1~FED имеет 4~дочерние платы, к каждой подключено 16~кабелей, и одну материнскую. 1~FED обрабатывает 1024 канала, всего используется 28 таких наборов. Материнская плата выполняет роль интерфейса к DAQ системе всегй установки HERA-b и имеет буфер, в котором может храниться до 128 событий в ожидании сигнала от триггера первого уровня.
+
+%33 хита на частицу с $\beta=1$.
+
 \begin{figure}[H]
-\begin{minipage}[b]{0.3\textwidth}
-\includegraphics[width=1.0\textwidth]{pictures/HERAb_RICH.png}
+\begin{minipage}[b]{0.45\textwidth}
+\includegraphics[width=0.9\textwidth]{pictures/HERAb_RICH.png}
+\caption{Схема детектора HERA-b RICH.}
+\label{fig:HERAbRICH}
 \end{minipage}
 \hspace{0.01\textwidth}
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.545\textwidth}
 \includegraphics[width=1.0\textwidth]{pictures/HERAb_RICH_mirrors.png}
+\caption{Схема компоновки сферических зеркал HERA-b RICH.}
+\label{fig:HERAbRICHmirrors}
+\includegraphics[width=1.0\textwidth]{pictures/HERAb_camera.png}
+\caption{Схема заполненности одной фоточувствительной камеры HERA-b RICH. Одна ячейка соответствует модулю из 8~МА~ФЭУ.}
+\label{fig:HERAbRICHcamera}
 \end{minipage}
-\caption{Схема детектора (слева) и схема компоновки сферических зеркал (справа) HERA-b RICH.}
-\label{fig:HERAbRICH}
 \end{figure}
-
-Радиатор --- $C_{4}F_{10}$ объёмом 108~м$^3$ и массой 1100~кг. Длина радиатора 2.8~м, коэффициент преломления n=1.00137. Порог импульса для рождения Черенковских фотонов для пионов и каонов составляет 2.7~\GeVoverC и 9.6~\GeVoverC соответственно. Для частиц с $\beta=1$ Черенковский угол равен 51.5~мрад (52.4~мрад), а разница между пионами и каонами составляет 0.9~мрад при 50~\GeVoverC.
-
-Корпус детектора изготовлен из нержавеющей стали, кроме передней стенки из алюминия толщиной 1~мм и задней стенки из оргстекла прозрачного в ультрафиолетовой области. Передняя стенка HERA-b RICH расположена на расстоянии 8.5~м от мишени.
-
-Система фокусировки состоит из двух пар зеркал, расположенных симметрично относительно горизонтальной плоскости, проходящей через ось пучка. Первое зеркало сферическое, второе --- плоское. Сферические зеркала составлены из 80 полных или обрезанных шестиугольных сегментов, имеют радиус 11.4~м и толщину 7~мм. Каждый сегмент крепится к раме трёмя моторизированными актуаторами с удалённым управлением. Для фокусировки за пределы геометрического аксептанса сферические зеркала наклонены на 9$^\circ$. Плоские зеркала состоят из 18 сегментов.
-
-\todo \textbf{Доделать!}
