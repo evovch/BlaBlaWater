@@ -90,7 +90,7 @@ CBM; RICH; readout; DAQ; WLS; time precision.
 
 \section{Introduction}
 
-The CBM experiment at the future FAIR facility (Darmstadt, Germany) will investigate strongly interacting matter at high net-baryon densities but moderate temperatures in heavy-ion collisions. The CBM RICH detector is required for identifying electrons in a momentum range up to 8~GeV/c \cite{CBMRICH1, CBMRICH2, CBMRICHPROJECT}. It is a classical RICH detector with gaseous radiator, spherical mirrors and segmented photosensitive camera made of approx. 1000~Hamamatsu H12700 multi-anode photomultiplier tubes (MAPMT). The MAPMTs will be read out by self-triggered FPGA-based front end boards (FEB) detecting only time information.
+The CBM experiment~\cite{CBM} at the future FAIR facility (Darmstadt, Germany)~\cite{FAIR} will investigate strongly interacting matter at high net-baryon densities but moderate temperatures in heavy-ion collisions. The CBM RICH detector is required for identifying electrons in a momentum range up to 8~GeV/c \cite{CBMRICH1, CBMRICH2, CBMRICHPROJECT}. It is a classical RICH detector with gaseous radiator, spherical mirrors and segmented photosensitive camera made of approx. 1000~Hamamatsu H12700 multi-anode photomultiplier tubes (MAPMT). The MAPMTs will be read out by self-triggered FPGA-based front end boards (FEB) detecting only time information.
 
 During common CBM beam tests at CERN-PS in Nov 2014 a CBM RICH prototype including a camera of 16~MAPMTs partially covered with p-terphenyl as wavelength shifter (WLS, \cite{WLS}) has been successfully tested. The MAPMTs were read out by 64~PADIWA FEBs and digitized by 64~TDCs located at 16~TRB~v3 boards \cite{TRB}. Further readout has been performed via two parallel chains: using FLES \cite{FLES} Interface Board (FLIB) and standard Ethernet via router to Network Interface Card (NIC). Figure~\ref{fig:BeamSetup} shows the scheme of the CBM RICH prototype during the beam tests.
 
@@ -109,7 +109,9 @@ The software for the CBM RICH data processing is implemented in the CbmRoot fram
 
 \section{Fine time calibration}
 
-The detection of the timestamp in an FPGA-based TDC, used by CBM RICH, is done in two stages. The coarse time is registered using a circular counter which is controlled by the clock with a 5~ns period. The most significant 28~bits are called 'epoch' and the remaining 11~bits are called 'coarse time'. For more precise timestamp measurement an additional 10-bit register is used for a fine time value. The register is filled from the fine time counter implemented using Tapped Delay Line (TDL) on 512~elements. A calibration of the fine time is required to achieve best time precision. Using a small subset of the recorded data, for each channel a discrete calibration function $ f_{calib}(Fine) $ is built to translate the fine time counter value into the fine time in ns. The full time $ T $ in ns is then computed using the following formula:
+The detection of the timestamp in an FPGA-based TDC, used by CBM RICH, is done in two stages. The coarse time is registered using a circular counter which is controlled by the clock with a 5~ns period. The most significant 28~bits are called 'epoch' and the remaining 11~bits are called 'coarse time'. For more precise timestamp measurement an additional 10-bit register \textbf{(2$^{10}$=1024 possible values)} is used for a fine time value. The register is filled from the fine time counter implemented using Tapped Delay Line (TDL) on 512~elements.
+\textbf{'Coarse' and 'fine' time are transmitted into DAQ in a single message for each detected edge while the 'epoch' message is only sent once for a group of edges detected in this epoch.}
+A calibration of the fine time is required to achieve best time precision \textbf{(see~\cite{FINECALIB})}. Using a small subset of the recorded data, for each channel a discrete calibration function $ f_{calib}(Fine) $ is built to translate the fine time counter value into the fine time in ns. The full time $ T $ in ns is then computed using the following formula:
 
 {\centering
 $ T = Epoch \cdot 2048 \cdot 5ns + Coarse \cdot 5ns - f_{calib}(Fine) $ \\
@@ -135,9 +137,17 @@ The non-linearity of the fine time dependence on the fine time counter value is 
 
 \section{Full readout chain time precision}
 
-The data obtained during the CERN beam tests of the CBM RICH prototype have been used to determine the time resolution of the readout chain. A laser Alphalas Picopower LD405 coupled with the pulser Alphalas PLDD-250 \cite{LASER} was used as a source for fast ($<40ps$) light flashes. The analysis technique is based on the fact that signals in different channels within one event coming from one laser flash are simultaneous. Figure~\ref{fig:TimePrec} shows the time difference distributions of leading edge measurements for four different cases: comparing two channels (blue), comparing all 16~channels read out by one PADIWA FEB (red), comparing 64~channels from one MAPMT (green), and comparing the top-right quarter of the camera consisting of 4~MAPMTs (black). The distributions have been scaled to make the visual comparison easier. The FWHM and RMS values are listed in table~\ref{tabl:TimePrecTable}.
+The data obtained during the CERN beam tests of the CBM RICH prototype have been used to determine the time precision of the readout chain. A laser Alphalas Picopower LD405 coupled with the pulser Alphalas PLDD-250 \cite{LASER} was used as a source for fast ($<40ps$) light flashes. The analysis technique is based on the fact that signals in different channels in one event coming from one laser flash are simultaneous \textbf{within the precision of the time measuring device. The time resolution (bin size) of the used TDC is below 10~ps (see~\cite{TDC}) and the measured time precision of the TDC is 21~ps (see~\cite{PEPAN}).}
+\textbf{Consider all $N$ hits of one reconstructed event. Each hit has a timestamp $t$ and the channel ID $c$. For hits with $c$ in some set $A_k$, $k \in [1,4]$ we build the time difference distribution as}
 
-Increasing the number of channels under analysis the FWHM is increasing but the RMS stays almost the same. One can also observe that the shape of the distribution is approaching a Gaussian distribution. It means that peculiarities of individual channels are washed out by averaging. The reported FWHM values can be considered as $ \sqrt 2 $ times bigger than classically defined time precision because both terms of the time difference are fluctuating independently following similar distributions. Thus our estimation for the time precision is about 1.2~ns for the biggest analyzed subset of channels. This number exceeds the MAPMT transition time jitter and is dominated by the walk of the leading edge of the logical signal due to fluctuations of the single photoelectron amplitude. The walk corrections can be introduced if ToT is correctly measured. Unfortunately this was not possible in the current setup, see \cite{PEPAN} for details.
+{\centering
+$t_i-t_j$, $i \in [1,N]$, $j \in [1,N]$, $i \neq j$. \\
+}
+
+\textbf{In order to characterize the time precision of the readout system in general and evaluate the contribution of its components, the studied area of the camera can be limited by filtering the hits from a specific subset of channels. Of particular interest are the following: ($A_1$)~one pair of channels, ($A_2$)~16~channels read out by one PADIWA FEB, ($A_3$)~64~channels of one MAPMT, ($A_4$)~256~channels of 4~MAPMTs. Figure~\ref{fig:TimePrec} shows the time difference distributions for these sets of channels. The distributions have been scaled to make the visual comparison easier. The FWHM and RMS values are listed in table~\ref{tabl:TimePrecTable}.
+}
+
+Increasing the number of channels under analysis the FWHM is increasing but the RMS stays almost the same. One can also observe that the shape of the distribution is approaching a Gaussian distribution. It means that peculiarities of individual channels are washed out by averaging. The reported FWHM values can be considered as $ \sqrt 2 $ times bigger than classically defined time precision because both terms of the time difference are fluctuating independently following similar distributions. Thus our estimation for the time precision is about 1.2~ns for the biggest analyzed subset of channels. This number exceeds the MAPMT transition time jitter \textbf{(0.28~ns)} and is dominated by the walk of the leading edge of the logical signal due to fluctuations of the single photoelectron amplitude. The walk corrections can be introduced if ToT is correctly measured. Unfortunately this was not possible in the current setup, see \cite{PEPAN} for details.
 
 \begin{figure}[h]
 	\centering
@@ -185,7 +195,7 @@ Within a coincidence window of 20~ns 95\% of all hits can be collected when appl
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.48\textwidth]{figures/Two_curves_1Nov.eps}
-	\caption{Time difference distribution of all hits within one Cherenkov ring without (blue) and with (red) WLS layer application.}
+	\caption{Time difference distribution of all hits within one Cherenkov ring without (blue, \textbf{lower}) and with (red, \textbf{higher}) WLS layer application.}
 	\label{fig:WLS}
 \end{figure}
 
@@ -213,6 +223,12 @@ This work was supported by the Hessian LOEWE initiative through the Helmholtz In
 \section*{References}
 
 \begin{thebibliography}{99}
+
+\bibitem{CBM}
+CBM
+
+\bibitem{FAIR}
+FAIR
 
 \bibitem{CBMRICH1}
 C.~Hoehne, et. al.,
@@ -266,6 +282,9 @@ S Lebedev et al 2010 J. Phys.: Conf. Ser. 219 032015
 %Ring Recognition and Electron Identication in the RICH detector of the CBM Experiment at FAIR,
 %2010 J. Phys.: Conf. Ser. Vol. 219 032015,
 %10.1088/1742-6596/219/3/032015
+
+\bibitem{FINECALIB}
+Fine time calibration
 
 \bibitem{LASER}
 Laser and pulser official site,
