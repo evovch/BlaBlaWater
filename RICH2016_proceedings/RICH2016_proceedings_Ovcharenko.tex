@@ -139,12 +139,13 @@ The non-linearity of the fine time dependence on the fine time counter value is 
 
 \section{Full readout chain time precision}
 
-The data obtained during the CERN beam tests of the CBM RICH prototype have been used to determine the time precision of the readout chain. A laser Alphalas Picopower LD405 coupled with the pulser Alphalas PLDD-250 \cite{LASER} was used as a source for fast ($<40ps$) light flashes. The analysis technique is based on the fact that signals in different channels in one event coming from one laser flash are simultaneous \textbf{within the precision of the time measuring device.}
+The data obtained during the CERN beam tests of the CBM RICH prototype have been used to determine the time precision of the readout chain. A laser Alphalas Picopower LD405 coupled with the pulser Alphalas PLDD-250 \cite{LASER} was used as a source for fast ($<40ps$) light flashes. The analysis technique is based on the fact that signals in different channels in one event coming from one laser flash are simultaneous \textbf{within the precision of the time measuring device. Fine time and inter-channel delay corrections were applied to the data.}
 
 
 Figure~\ref{fig:TimePrec} shows the leading edge time difference distributions within one event for four different cases:
 \textbf{between two typical channels (blue), for all possible pairs combined from 16 channels read out by one PADIWA FEB (red), for all possible pairs combined from 64 channel of one MAPMT (green), and  for all possible pairs combined from the top-right quarter of the camera consisting of 4MAPMTs (black).}
 %comparing two channels (blue), comparing all 16~channels read out by one PADIWA FEB (red), comparing 64~channels from one MAPMT (green), and comparing the top-right quarter of the camera consisting of 4~MAPMTs (black). The distributions have been scaled to make the visual comparison easier. The FWHM and RMS values are listed in table~\ref{tabl:TimePrecTable}.
+\textbf{One can notice less than 100~ps displacements of maxima from zero. Such displacements indicate non-ideal additivity of the inter-channel delay corrections.}
 
 %\textbf{Consider all $N$ hits of one reconstructed event. Each hit has a timestamp $t$ and the channel ID $c$. For hits with $c$ in some set $A_k$, $k \in [1,4]$ we build the time difference distribution as}
 %
