@@ -65,7 +65,7 @@
 \cortext[cor1]{Corresponding author}
 
 \begin{abstract}
-A real size prototype of the CBM RICH detector was tested in beam at CERN in November 2014 with new readout electronics. A detailed analysis of the timing characteristics of the readout chain  will be presented in this article. Results of the time precision measurements for several subsets of all channels and the stability of the fine time calibration will be discussed. The obtained sub-nanosecond time precision allows also to investigate the effect on timing when using additional wavelength-shifting films on top of the MAPMT windows.
+A real size prototype of the CBM RICH detector was tested in beam at CERN in November 2014 with new readout electronics. A detailed analysis of the timing characteristics of the readout chain will be presented in this article. Results of the time precision measurements for several subsets of all channels and the stability of the fine time calibration will be discussed. The obtained sub-nanosecond time precision allows also to investigate the effect on timing when using additional wavelength-shifting films on top of the MAPMT windows.
 \end{abstract}
 
 \begin{keyword}
@@ -103,12 +103,12 @@ A calibration of the fine time is required to achieve best time precision of 21~
 $ T = Epoch \cdot 2048 \cdot 5ns + Coarse \cdot 5ns - f_{calib}(Fine) $ \\
 }
 
-Exact range of possible fine time counter values and non-linearity of the calibration function depend on the technological fluctuations of the FPGA elements. As an example, the difference between the calibration function and its piecewice linear fit is presented in figure~\ref{fig:CalibTableMinusLinear}. The non-linearity does not exceed 60~ps. Figure~\ref{fig:CalibStability} illustrates the stability of this calibration in time. Deflection of calibration functions obtained at three different 2-minute long subsets of data from one, obtained at the complete 15-minute long data set, are shown. Similar stability is observed for longer periods. Typical fluctuations are around 10~ps.
+Exact range of possible fine time counter values and non-linearity of the calibration function depend on the technological fluctuations of the FPGA elements. As an example, the difference between the calibration function and its linear fit is presented in figure~\ref{fig:CalibTableMinusLinear}. The non-linearity does not exceed 60~ps. Figure~\ref{fig:CalibStability} illustrates the stability of this calibration in time. Deflection of calibration functions obtained at three different 2-minute long subsets of data from one, obtained at the complete 15-minute long data set, are shown. Similar stability is observed for longer periods. Typical fluctuations are around 10~ps.
 
 \begin{figure}[tbh]
 	\centering
 	\includegraphics[width=0.48\textwidth]{figures/CalTableMinusFit_0010_01_feb2017.eps}
-	\caption{Difference between the measured $ f_{calib} $ and its piecewice linear fit.}
+	\caption{Difference between the measured $ f_{calib} $ and its linear fit.}
 	\label{fig:CalibTableMinusLinear}
 \end{figure}
 
@@ -125,7 +125,7 @@ Exact range of possible fine time counter values and non-linearity of the calibr
 The acquired data have been used to determine the time precision of the readout chain. A laser Alphalas Picopower LD405 coupled with the pulser Alphalas PLDD-250 \cite{LASER} was used as a source for fast ($<40$~ps) light flashes. Fine time calibration and channel delay corrections relative to a reference channel were applied to the data. The signals in different channels in one event coming from a laser flash are considered simultaneous.
 
 Figure~\ref{fig:TimePrec} shows the leading edge time difference distributions within one event for four different cases:
-between two typical channels (blue), for all possible pairs combined from 16 channels read out by one PADIWA FEB (red), for all possible pairs combined from 64 channel of one MAPMT (green), and  for all possible pairs combined from the top-right quarter of the camera consisting of 4MAPMTs (black).
+between two typical channels (blue), for all possible pairs combined from 16 channels read out by one PADIWA FEB (red), for all possible pairs combined from 64 channel of one MAPMT (green), and for all possible pairs combined from the top-right quarter of the camera consisting of 4MAPMTs (black).
 The distributions have been scaled to make the visual comparison easier. The FWHM and RMS values are listed in table~\ref{tabl:TimePrecTable}.
 One can notice less than 100~ps displacements of maxima from zero. Such displacements indicate non-ideal additivity of the channel delay corrections.
 
