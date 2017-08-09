@@ -16,6 +16,10 @@
 
 Далее каждый элемент установки описан чуть подробнее.
 
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
+
 \subsection{Мишень, вакуумная камера и пучковая труба}\label{sec:secVacChamberPipe}
 
 CBM является экспериментом с фиксированной мишенью. Пучок подводится к установке с помощью ионопровода, который стыкуется с вакуумной камерой, расположенной между полюсами дипольного магнита. Внутри вакуумной камеры находится мишень, представляющая собой тонкую золотую фольгу (\todo), и вершинный микродетектор MVD. Непровзаимодействовавшие ионы налетающего пучка и крупные осколки продолжают движение по ионопроводу за вакуумной камерой.
@@ -23,7 +27,15 @@ CBM является экспериментом с фиксированной м
 Планируется, что пучковая труба будет выполнена из алюминия толщиной \todo
 Ионопровод имеет форму конуса с углом \todo.
 
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
+
 \subsection{Вершинный микродетектор MVD}\label{sec:secMVD}
+
+% ==========================================================================================
+% ==========================================================================================
+% ==========================================================================================
 
 \subsection{Кремниевая трекинговая система STS}\label{sec:secSTS}
 
@@ -75,6 +87,25 @@ CBM является экспериментом с фиксированной м
 
 \subsection{Детектор переходного излучения TRD}\label{sec:secTRD}
 
+\textbf{См. английский оригинал в комментах теха.}
+
+Основная задача детектора переходного излучения (Transition radiation detector, TRD) --- идентифицировать электроны с импульсом более 1~\GeVoverC для того чтобы расширить возможности детектора RICH по идентификации частиц в диапазоне импульсов около 5~\GeVoverC. Такая идентификация должна быть достигнута при коэффициенте подавления пионов порядка 10--20 для получения возможности измерения диэлектронов в диапазоне масс от \rho и \omega и выше J/\psi. Благодаря способности идентифицировать заряженные частицы за счёт их известного энерговыделения детектор TRD также предоставит ценную информацию при регистрации ядерных осколков. Это особенно важно для отделения, например, дейтронов от $ He^{4} $, которое не может быть достигнуто с помощью одного только детектора TOF.
+
+%The main task of the TRD is to identify electrons above momenta of 1 GeV/c and thus to extend the electron identification capabilities of the Ring Image CHerenkov (RICH) detector above momenta of p ∼ 5 GeV/c. This identification has to be achieved with a pion suppression factor in the range 10 – 20, in order to allow for a measurement of dielectrons in the mass range from below the ρ and ω masses to beyond the J/ψ mass with a good signal-to-background ratio. Due its capability to identify charged particles via their specific energy loss, the TRD in addition will provide valuable information for the measurement of nuclear fragments. This is in particular important for the separation of, e.g, deuterons and 4 He, which cannot be achieved using a time-of-flight measurement alone.
+
+Указанные требования могут быть удовлетворены применением многопроволочных пропорциональных камер (MWPC) на основе $ Xe/CO_{2} $ с связке с подходящим радиатором. Базовая версия CBM TRD оснащена MWPC с симметричной зоной усиления толщиной 3.5~мм + 3.5~мм и далее областью дрейфа толщиной 5~мм, наличие которой увеличивает вероятность поглащения фотона переходного излучения в активном газовом объёме. Такая геометрия обеспечивает эффективное и быстрое формирование выходного сигнала
+Высокая эффективность детектора достигается минимизацией материала между радиатором и газом.
+
+%These requirements can be fulfilled with Xe/CO 2 based Multi-Wire Proportional Chambers (MWPC) detector in combination with an adequate radiator. The default MWPC for the CBM-TRD is composed of a symmetric amplification area of 3.5 + 3.5 mm thickness, followed by a 5 mm drift region to enhance the TR-photon absorption probability in the active gas volume. This geometry provides also efficient and fast signal creation, as well as readout, with timescales below 200 μs per charged particle track. The performance of the detector is optimized by reducing the material budget between radiator and gas volume to a minimum.
+
+Базовая версия CBM TRD предполагает одну станцию, состоящую из четырёх слоёв.
+Она будет расположена между детекторами RICH и TOF, таким образом ***
+TRD будет использоваться как дополнительная трекинговая станция, расположенная за последним абсорбером MUCH, в мюонной конфигурации CBM.
+
+%The baseline design of the TRD foresees one station composed of four detector layers.
+%It will be positioned between the RICH and the Time-Of-Flight (TOF) detector and thus allows to reduce the background in the TOF resulting from track mismatches by providing additional position information for high precision tracking between Silicon Tracking System (STS) and TOF.
+%The TRD will also be used as tracking station behind the last absorber of the MUCH detector in the muon configuration of CBM.
+
 % ==========================================================================================
 % ==========================================================================================
 % ==========================================================================================
@@ -85,7 +116,7 @@ CBM является экспериментом с фиксированной м
 
 %From CBM TOF TDR:
 
-Основная задача время-пролётного детектора --- измерять момент времени прихода заряженных частиц, чтобы провести идентификацию после сопоставления хита TOF с соответствующим треком кремниевой трековой системы STS.
+Основная задача время-пролётного детектора (Time of flight, TOF) --- измерять момент времени прихода заряженных частиц, чтобы провести идентификацию после сопоставления хита TOF с соответствующим треком кремниевой трековой системы STS.
 
 %The detector system’s prime task is to measure the arrival time of charged particles to allow for their identification after having matched the TOF - hit with the corresponding STS track obtained from the CBM silicon tracking system (STS). 
 
@@ -126,6 +157,7 @@ More detailed measurements of the response under fully loaded conditions and tim
 tions of the system response will show whether this strip solution could be replaced by a cheaper
 pad - type MRPC solution that is described in detail in the appendix E and requires only 27.792
 electronic readout channels.
+
 A decision will be taken at latest in Dec. 2015 after careful analysis of test beam data that will
 be taken at GSI in October 2014 and at CERN SPS in April 2015. With currently available HI -
 beam, conditions close to the operating conditions of CBM will be realized.
@@ -147,6 +179,7 @@ glass. Counters of this type that are described in appendix F.2.4 will be evalua
 the proposed ones also in the upcoming HI - test beam campaigns addressing the system features of
 the designs. A decision will be taken at latest in Dec. 2015 after careful analysis of the test beam
 data.
+
 The high performance electronics for the whole CBM - TOF wall is independent of the choice of a specific
 module or counter type and is based on the PADI and the GET4 - ASIC chips developed by the CBM -
 TOF group (see sections 3.3.3 and 3.3.5). The combination of both chips in conjunction with a custom -
@@ -166,6 +199,7 @@ for an improvement of the double hit recognition the decision about the producti
 will be taken only after a) the stability of the GET4 readout chain is proven, b) no competitive FPGA
 based solution is available until start of mass production (Dec.2015). Therefore R'n'D work on FPGA -
 based TDCs is continuing as part of the project.
+
 The proposal of a high performance TOF wall would be incomplete without the discussion of the time
 - zero (T 0 ) - reference that is needed for any velocity measurement. Details can be found in chapter 4
 demonstrating that for all of the anticipated running scenarios solutions are available. For most of the
@@ -173,6 +207,7 @@ heavy-ion reaction running at the initial SIS100 accelerator the software based 
 (see section 4.2). This method can be calibrated by making use of the diamond based start detector
 system developed for the HADES experiment (section 4.4) that is operational up to interaction rates of
 100 kHz.
+
 As has been shown by Monte-Carlo simulations using the SHIELD event generator the quality of the T 0
 - reference determination can be improved by installing the so called Beam Fragmentation T 0 Counter
 (BFTC) as the innermost part of the TOF wall (see section 4.3). It should cover the region from about
