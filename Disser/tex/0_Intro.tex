@@ -1,47 +1,116 @@
 \chapter*{Введение}\label{sec:secIntro}
 \addcontentsline{toc}{chapter}{Введение}
 
-\section*{Intro 0.1}
-\textbf{Фазовая диаграмма (что такое и почему нужно ее изучать), физическая программа СBM, и сравнение с другими экспериментами в этой области (по доступной области фазовой диаграммы и наблюдаемым, жесткость требований для детекторов --- в разделе актуальность), подводка к теме работы. Этот раздел не более 5-6 страниц.}
+%\section*{Intro 0.1}
+%\textbf{Фазовая диаграмма (что такое и почему нужно ее изучать), физическая программа СBM, и сравнение с другими экспериментами в этой области (по доступной области фазовой диаграммы и наблюдаемым, жесткость требований для детекторов --- в разделе актуальность), подводка к теме работы. Этот раздел не более 5-6 страниц.}
 
-Одна из важнейших задач современной физики --- это исследование уравнения состояния ядерного вещества. Для решения этой задачи необходимо определить границы существования различных фаз и описать их свойства. Совокупность теоретических представлений по данному вопросу отображается на фазовой диаграмме, см.~\figref{} (рисунок надо выбрать такой, где видны области, доступные разным экспериментам). Здесь по одной оси отложен барионный химический потенциал, связанный с плотностью барионов, а по другой --- температура. Актуальные экспериментальные исследования направлены на установлению границы между барионной материей и кварк-глюонной плазмой (КГП)~\cite{}, локализации критической точки и исследованию свойств материи в указанных областях фазовой диаграммы.
+Одна из важнейших задач современной физики --- это исследование уравнения состояния ядерного вещества. Для решения этой задачи необходимо определить границы существования различных фаз и описать их свойства. Совокупность теоретических представлений по данному вопросу отображается на фазовой диаграмме, см.~\figref{fig:PhaseDiagram}.
+%(рисунок надо выбрать такой, где видны области, доступные разным экспериментам).
+Здесь по одной оси отложен барионный химический потенциал $\mu_{B}$, связанный с плотностью барионов, а по другой --- температура. Актуальные экспериментальные исследования направлены на установление границы между барионной материей и кварк-глюонной плазмой (КГП)~\cite{}, локализацию критической точки и исследование свойств материи в указанных областях фазовой диаграммы.
 
-Наиболее важны в этой области действующие эксперименты STAR и ALICE.
-Из строящихся экспериментов наиболее важны NICA MPD,(область, наблюдаемые) и CBM.
+Наиболее важны в этой области действующие эксперименты STAR$@$BNL и ALICE$@$LHC. Из строящихся экспериментов наиболее важны MPD$@$NICA и CBM$@$FAIR.
 
-Какая часть фазовой диаграммы и какие наблюдаемые, STAR, ALICE, MPD.
-Теперь еще что надо:
-для Стар и Алиса в наиболее жестком режиме найти
-ионы до (самый тяжелый)
-энергии до
-частота взаимодействия до
-число вторичных частиц на событие до
-если получится (можете написать кому-то и спросить) максимальная угловая плотность частиц.
+%Какая часть фазовой диаграммы и какие наблюдаемые, STAR, ALICE, MPD.
+%Теперь еще что надо:
+%для Стар и Алиса в наиболее жестком режиме найти
+%ионы до (самый тяжелый)
+%энергии до
+%частота взаимодействия до
+%число вторичных частиц на событие до
+%если получится (можете написать кому-то и спросить) максимальная угловая плотность частиц.
 
-ЗДЕСЬ о том, какую область фазовой диаграммы и какими наблюдаемыми зондирует каждый эксперимент.
+%ЗДЕСЬ о том, какую область фазовой диаграммы и какими наблюдаемыми зондирует каждый эксперимент.
 
-\subsection{STAR@RHIC}
+%Sorin_SQM2013_Birmingham_25_07_2013.pdf
+
+\begin{figure}[H]
+\includegraphics[width=1.0\textwidth]{pictures/Phase_diagramm.eps}
+\caption{Фазовая диаграмма барионной материи.}
+\label{fig:PhaseDiagram}
+\end{figure}
+
+\begin{table}[H]
+\caption{Показатели экспериментов в области сверхплотной материи}
+\label{tabl:Experiments1}
+\begin{tabular}{ | p{0.3\linewidth} | p{0.3\linewidth} | p{0.3\linewidth} | }
+\hline
+Эксперимент & Диапазон энергий (Au/Pb) & Частота взаимодействий, Гц \\
+\hline
+STAR$@$RHIC BNL & $\sqrt{s_{NN}}$=7--200 \GeV & 1--800 \\
+\hline
+NA61$@$SPS CERN & $E_{kin}$=20--160 A\GeV \newline $\sqrt{s_{NN}}$=6.4--17.4 \GeV & 80 \\
+\hline
+MPD$@$NICA JINR & $\sqrt{s_{NN}}$=4--11 \GeV & 7000 \\
+\hline
+CBM$@$FAIR GSI & $E_{kin}$=2--35 A\GeV \newline $\sqrt{s_{NN}}$=2.7--8.3 \GeV & $10^5$--$10^7$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Наблюдаемые в области высокой плотности барионов}
+\label{tabl:Experiments2}
+\begin{tabular}{ | p{0.30\linewidth} | p{0.16\linewidth} | p{0.16\linewidth} | p{0.16\linewidth} | p{0.16\linewidth} | }
+\hline
+\textbf{Наблюдаемые} & \textbf{STAR$@$RHIC} \newline \textbf{BNL} & \textbf{NA61$@$SPS} \newline \textbf{CERN} & \textbf{MPD$@$NICA} \newline \textbf{JINR} & \textbf{CBM$@$FAIR} \newline \textbf{GSI} \\
+\hline
+Адроны & $+$ & $+$ & $+$ & $+$ \\
+\hline
+Корреляции, флуктуации \newline при высокой статистике & & & $+$ & $+$ \\
+\hline
+Дилептоны & & & & $+$ \\
+\hline
+Очарованные \newline частицы & & & & $+$ \\
+\hline
+\end{tabular}
+\end{table}
+
+%\begin{table}[H]
+%\caption{Наблюдаемые в области высокой плотности барионов}
+%\label{}
+%\begin{tabular}{ | p{0.22\linewidth} | p{0.10\linewidth} | p{0.32\linewidth} | p{0.14\linewidth} | p{0.16\linewidth} | }
+%\hline
+%\textbf{Эксперимент} & \textbf{Адроны} & \textbf{Корреляции,} \newline \textbf{флуктуации при} \newline \textbf{высокой статистике} & \textbf{Дилептоны} & \textbf{Очарованные} \newline \textbf{частицы} \\
+%\hline
+%STAR$@$RHIC BNL & $+$ & & & \\
+%\hline
+%NA61$@$SPS CERN & $+$ & & & \\
+%\hline
+%MPD$@$NICA JINR & $+$ & $+$ & & \\
+%\hline
+%CBM$@$FAIR GSI & $+$ & $+$ & $+$ & $+$ \\
+%\hline
+%\end{tabular}
+%\end{table}
+
+\section{STAR@RHIC}
 
 % https://www.bnl.gov/npp/docs/tribble090712/Vigdor_RHIC_overview_rev2.pdf - слайд 7
 
-RHIC планирует ``даунгрейд'' для выполнения скана по фазовой диаграмме, но \todo всё-равно не заменит FAIR.
-\todo \textbf{Здесь описать то, как соотносится FAIR с другими ускорителями, на которых выполняются или планируются эксперименты аналогичные CBM. Здесь появляется фазовая диаграмма, LHC, RHIC, NICA. При этом о самих экспериментах, аналогичных CBM, разговор идёт чуть дальше после описания физической программы CBM. Может быть оставить как есть в следующей секции и ничего тут уж не писать?}
+Релятивистский коллайдер тяжёлых ионов (The Relativistic Heavy Ion Collider, RHIC) расположен в Брукхейвенской национальной лаборатории (Brookhaven National Laboratory, BNL), штат Нью-Йорк, США. 
+
+Первоначально RHIC был построен с ориентиром на максимально высокие энергии столкновения и предоставлял $\sqrt{s_{NN}}=200$~\GeV, однако с 2010~г. выполняется скан вниз по энергиям пучка, называемый Beam Energy Scan (BES) и разделённый на несколько фаз.
+
+%\todo \textbf{Здесь описать то, как соотносится FAIR с другими ускорителями, на которых выполняются или планируются эксперименты аналогичные CBM. Здесь появляется фазовая диаграмма, LHC, RHIC, NICA. При этом о самих экспериментах, аналогичных CBM, разговор идёт чуть дальше после описания физической программы CBM. Может быть оставить как есть в следующей секции и ничего тут уж не писать?}
 
 % 1209546.pdf Abstract
 
-В 2014 г. была закончена первая фаза программы скана по энергиям (Beam energy scan, BES) на RHIC с пучками $Au+Au$ энергий от 7 до 39 ГэВ/нуклон \todo
-Набранные ранее данные расширяют диапазон энергий $sqrt(s_{NN})$ вверх до 200 ГэВ.
-Вторая фаза BES запланирована на 2018--2019~гг. и будет сфокусирована на пучках $Au+Au$ при энергиях $sqrt(s_{NN})$ от 20 до 7 ГэВ/нуклон в режиме встречных пучков (коллайдера\todo) и $sqrt(s_{NN})$ от 7 до 3.5 ГэВ/нуклон в режиме с мишенью.
+В 2010 и 2011 была выполнена первая фаза программы скана с пучками $Au+Au$ энергий 7.7, 11.5, 19, 27 и 39~\GeV. Учитывая набранные ранее данные (62, 130 и 200~\GeV), диапазон энергий $\sqrt{s_{NN}}$, измеренных на RHIC составляет 7.7--200~\GeV. Этот диапазон энергий столкновения соответствует интервалу $\mu_{B}$ от~20 до~450~МэВ, в котором ожидается наличие перехода фазового первого рода и критической точки.
+
+Вторая фаза BES запланирована на 2018--2019~гг. и будет сфокусирована на пучках $Au+Au$ при энергиях $\sqrt{s_{NN}}$ от~20 до~7~\GeV в режиме встречных пучков (коллайдера\todo) и $\sqrt{s_{NN}}$ от~7 до~3.5~\GeV в режиме с мишенью.
 
 % http://iopscience.iop.org/article/10.1088/1742-6596/455/1/012037/pdf
 
-In 2010 and 2011 RHIC completed phase I of the Beam Energy Scan (BES) program with data sets at 7.7, 11.5, 19, 27 and 39 GeV. This is complemented by the data collected earlier at higher energies (62, 130 and 200 GeV). Together they cover the $\mu_{B}$ interval from 20 to 450 MeV, which is believed to contain the range associated with the first order phase transition and CP.
+%In 2010 and 2011 RHIC completed phase I of the Beam Energy Scan (BES) program with data sets at 7.7, 11.5, 19, 27 and 39 GeV. This is complemented by the data collected earlier at higher energies (62, 130 and 200 GeV). Together they cover the $\mu_{B}$ interval from 20 to 450 MeV, which is believed to contain the range associated with the first order phase transition and CP.
 
-В исходной статье есть картинка.
+%В исходной статье есть картинка.
 
 % https://arxiv.org/pdf/1211.1350.pdf   section 2
 
-The QCD phase diagram is the variation of temperature T and baryon chemical potential $\mu_{B}$. These quantities can be extracted from the measured hadron yields. Transverse momentum spectra for the BES Phase-I energies are obtained for $\pi, K, p, \Lambda, \Xi, K^{0}_{S}$, and $\phi$. The particle ratios are used to obtain the chemical freeze-out (a state when the yields of particles get fixed) conditions using the statistical thermal model (THERMUS). The two main extracted parameters are chemical freeze-out temperature $T_{ch}$ and $\mu_{B}$. 
+Ключевые характеристики ($T$, $\mu_{B}$) исследуемой области фазовой диаграммы могут быть извлечены из результатов измерений выходов адронов в столкновениях тяжёлых ионов. В первой фазе BES поперечный импульс определяется для $\pi$, $K$, $p$, $\Lambda$, $\Xi$, $K^{0}_{S}$ и $\phi$. Отношения выходов частиц используются для нахождения условий ``химического вымораживания'' (состояния, когда устанавливаются выходы частиц) с помощью статистической термальной модели (THERMUS).
+% Два ключевых параметра --- температура $T_{ch}$ и барионный потенциал $\mu_{B}$ ``химического вымораживания''.
+
+%These quantities can be extracted from the measured hadron yields. Transverse momentum spectra for the BES Phase-I energies are obtained for $\pi, K, p, \Lambda, \Xi, K^{0}_{S}$, and $\phi$. The particle ratios are used to obtain the chemical freeze-out (a state when the yields of particles get fixed) conditions using the statistical thermal model (THERMUS). The two main extracted parameters are chemical freeze-out temperature $T_{ch}$ and $\mu_{B}$. 
 
 % https://www.epj-conferences.org/articles/epjconf/pdf/2015/14/epjconf_icnfp2014_01009.pdf
 % Страница 2 - есть таблица с энергиями и количеством событий
@@ -51,10 +120,10 @@ The QCD phase diagram is the variation of temperature T and baryon chemical pote
 
 \begin{table}[H]
 \caption{}
-\label{}
+\label{tabl:RHICenergies}
 \begin{tabular}{ | p{0.3\linewidth} | p{0.3\linewidth} | p{0.3\linewidth} | }
 \hline
-Энергия (ГэВ/нуклон) & Кол-во событий (млн.) & Время (недели) \\
+Энергия (\GeVperNucl) & Кол-во событий (млн.) & Время (недели) \\
 \hline
 200 & 350 & 11 \\
 \hline
@@ -75,22 +144,46 @@ The QCD phase diagram is the variation of temperature T and baryon chemical pote
 \end{tabular}
 \end{table}
 
-\subsection{ALICE@LHC}
+\section{ALICE@LHC}
 
 % http://www.slac.stanford.edu/econf/C060717/papers/L010.PDF
 
 The rate of Pb--Pb collisions in 2010 and 2011 was well below the ALICE limits and ALICE was able to take data at the highest achievable luminosity, on the order of $10^25$ $s^{-1}$ $cm^{-2}$ in 2010 and $10^{26}$ $s^{-1}$ $cm^{-2}$ in 2011, with the corresponding hadronic $\mu$ being on the order of $10^{-5}$ -- $10^{-4}$ and $10^{-4}$ -- $10^{-3}$, respectively.
 
-
 During the 2011 Pb--Pb running period, the interaction rate provided by the LHC reached 3-4 kHz. ALICE ran with the minimum bias, centrality, and rare triggers activated at the same time. With the multi-event buffering and with the minimum bias and centrality triggers downscaled, the effective trigger dead time was low (dead-time factor of 33\%). The situation will be similar in the LHC Run 2 (2015--2017), for which the expected collision rate is O(10) kHz, still low enough to avoid pileup.
 
-The LHC at CERN will provide colliding Pb ions with an energy of $sqrt(s_{NN})=5.5 TeV$.
+The LHC at CERN will provide colliding Pb ions with an energy of $\sqrt{s_{NN}}=5.5 TeV$.
 
 It is expected that the LHC can deliver luminosities of $10^{27}$ $cm^{2}$ $s^{-1}$ for Pb--Pb collisions, which results in a minimum-bias interaction rate of 8~kHz. Lighter ions can be delivered with higher luminosities of up to $10^{29}$ $cm^{2}$ $s^{-1}$, corresponding to an interaction rate of several 100~kHz. The machine can deliver p--p luminosities up to $10^{31}$ $cm^{2}$ $s^{-1}$ but because of detector limitations this luminosity is restricted to $10^{30}$ $cm^{2}$ $s^{-1}$ for ALICE.
 
-\subsection{MPD@NICA}
+\section{MPD@NICA}
 
-The new NICA facility will be capable to provide ion beams with the design luminosity of $10^{27}$ $cm^{-2}$ $s^{-1}$ (for gold ions) in the energy range from $sqrt(s_{NN})=4$ to $11 AGeV$.
+Коллайдерный комплекс на базе нуклотрона NICA (Nuclotron-based Ion Collider Faciliy) предоставит пучки ионов золота в диапазоне энергий $\sqrt{s_{NN}}$ от 4 до 11~\GeV и luminosity порядка $10^{27}$ см$^{-2}$ с$^{-1}$.
+
+%The new NICA facility will be capable to provide ion beams with the design luminosity of $10^{27}$ $cm^{-2}$ $s^{-1}$ (for gold ions) in the energy range from $\sqrt{s_{NN}}=4$ to $11 AGeV$.
+
+% Sorin_SQM2013_Birmingham_25_07_2013.pdf
+
+Наблюдаемые MPD.
+1 этап:
+Выходы частиц и спектры
+Флуктуации от события к событию
+Фемтоскопия, включая $\pi$, $K$, $p$, $\Lambda$
+Коллективные потоки и идентификация адронов
+Электромагнитные измермения ($e$, $\gamma$)
+
+2 этап:
+Полная множественность частиц
+Изучение асимметрии (лучшее определение плоскости реакции)
+Точное изучение дилептонов (расширение ECAL)
+Экзотические частицы (мягкие фотоны, гипер-ядра)
+
+% слайд 23
+
+$pi^{+}$, $K^{+}$, $p$, $\rho$, $\omega$, $\phi$, $\Omega$, $D^{0}$, $J/\psi$
+
+
+
 
 \subsection{CBM}
 
