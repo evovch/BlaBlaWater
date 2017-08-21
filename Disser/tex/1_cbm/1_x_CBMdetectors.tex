@@ -1,6 +1,6 @@
 \section{Экспериментальная установка CBM}\label{sec:secCbmSetup}
 
-\textbf{См. английские оригиналы в комментах теха.}
+% \textbf{См. английские оригиналы в комментах теха.}
 
 Для выполнения различных измерений CBM будет функционировать в двух конфигурациях --- с мюонным детектором (MUCH) и с детектором черенковских колец (RICH). Схема экспериментальной установки с RICH представлена на \figref{fig:CBM}.
 
@@ -28,15 +28,13 @@
 % ==========================================================================================
 % ==========================================================================================
 
-\subsection{Вакуумная камера и пучковая труба, мишень и стартовый детектор}\label{sec:secVacChamberPipe}
+\subsection{Вакуумная камера, мишень и ионопровод}\label{sec:secVacChamberPipe}
 
-CBM является экспериментом с фиксированной мишенью. Пучок подводится к установке с помощью ионопровода, который стыкуется с вакуумной камерой, расположенной между полюсами дипольного магнита. Внутри вакуумной камеры находится мишень, представляющая собой тонкую золотую фольгу (\todo), и вершинный микродетектор MVD. Непровзаимодействовавшие ионы налетающего пучка и крупные осколки продолжают движение по ионопроводу за вакуумной камерой.
+CBM является экспериментом с фиксированной мишенью. Пучок подводится к установке с помощью ионопровода, который стыкуется с вакуумной камерой, расположенной между полюсами дипольного магнита. Внутри вакуумной камеры находится мишень и вершинный микродетектор MVD. Мишень представляет собой золотую фольгу толщиной порядка ста микрон или набор из нескольких фольг меньшей толщины, разнесённых вдоль оси пучка. Непровзаимодействовавшие ионы налетающего пучка и крупные осколки продолжают движение по ионопроводу за вакуумной камерой.
 
-Планируется, что пучковая труба будет выполнена из алюминия толщиной \todo
-Ионопровод имеет форму конуса с углом \todo.
+Планируется, что пучковая труба будет выполнена из алюминия толщиной от 0.3~мм диаметром от 4~см на выходе из вакуумной камеры до 60~см в зоне время-пролётного детектора.
 
-Для измерения момента времени первичного взаимодействия пучка с мишенью, который необходим для измерения времени пролёта вторичных частиц с помощью TOF, вблизи мишени будет расположен стартовый детектор. \todo
-Более подробно стартовый детектор описан в секции~\ref{sec:secSD}.
+Для измерения момента времени первичного взаимодействия пучка с мишенью, который необходим для измерения времени пролёта вторичных частиц с помощью TOF, вблизи мишени будет расположен стартовый детектор. См. также~\ref{sec:secTOF}.
 
 % ==========================================================================================
 % ==========================================================================================
@@ -44,11 +42,52 @@ CBM является экспериментом с фиксированной м
 
 \subsection{Дипольный магнит}\label{sec:secMagnet}
 
-Основная задача магнита --- разводить в пространстве заряженные частицы для обеспечения возможности их регистрации детекторами, стоящими ниже по пучку.
+Основная задача магнита --- разводить в пространстве заряженные частицы для обеспечения возможности их регистрации детекторами, стоящими ниже по пучку. Для этого магнит должен обеспечить максимально равномерное стационарное вертикальное магнитное поле в заданной области пространства, а также минимизировать поле за пределами этого пространства.
 
-Конфигурация магнита определяется геометрическим аксептансом эксперимента, который составляет полный 2$\pi$ по азимуту $\phi$) и интервал от 2.5$^{\circ}$ до 25$^{\circ}$ по полярному углу ($\theta$). Мишень, вершинный микродетектор MVD и кремниевая трековая система STS должны распологаться внутри магнитного поля, что диктует требование к размерам 
+Сверхпроводящий магнит.
+provides a field integral of 1 Tm
+
+%Конфигурация магнита определяется геометрическим аксептансом эксперимента, который составляет полный 2$\pi$ по азимуту $\phi$) и интервал от 2.5$^{\circ}$ до 25$^{\circ}$ по полярному углу ($\theta$). Мишень, вершинный микродетектор MVD и кремниевая трековая система STS должны располагаться внутри магнитного поля, что диктует требование к размерам 
+
+Design constraints:
+Угол раствора от мишени: $\pm25^{\circ}$ по вертикали и $\pm30^{\circ}$ по горизонтали.
+Магнит должен быть способен переключать полярность.
+Конструкция магнита должна подразумевать сборку на месте.
+Максимальная нагрузка на пол: 100 тонн/м$^{2}$.
+Высота пучка над основанием: 2.7~м.
+Магнит должен быть позиционирован с точностью $\pm0.2$~мм по координате и $\pm0.5$~мрад по углу.
+
+Расстояние между полюсами по вертикали 1440~мм, длина вдоль пучка --- сравнительно небольшая --- 1~м.
+
+Съёмные field clamps
+Цилиндрические обмотки из NbTi, намотанные на цилиндрическую бобину и охлаждаемые жидким гелием
+Термический щит, охлаждаемый газообразным гелием при температуре 50--80 $K$.
+
+Интеграл поля по всей области, где находится STS: 0.972~Tm \todo, следовательно макс. поле $\approx 1 T $, в зависимости от длины магнита.
+Отклонение интеграла поля по всему телесному углу по прямым линиям $\leq$ 20\% ($\pm$10\%).
+
+%Field integral within STS detector (along straight lines): 0,972 Tm -> max. Field ≈ 1 T, depending on the magnet length
+%Field integral variation over the whole opening angle along straight lines: ≤ 20\% ($\pm$10\%)
+
+
 
 %The geometrical acceptance of the CBM detector systems is full 2$\pi$ for azimuth ($\phi$) and from 2.5$^{\circ}$ to 25$^{\circ}$ for polar ($\theta$) angles.
+
+
+
+%the free aperture was increased from 1.4m (TDR) to 1.44 m. However, the integral field was decreased in order to keep the nominal current the same as in the TDR.
+
+\begin{figure}[H]
+\includegraphics[width=0.98\textwidth]{pictures/Magnet_drawing.png}
+\caption{Чертёж магнита.} % из CBM Dipole Detailed Specification из Collaboration Contract between the FAIR GmbH and BINP
+\label{fig:MagnetDrawing}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{pictures/CBM_magnet_model.png}
+\caption{Модель магнита}
+\label{fig:MagnetModel}
+\end{figure}
 
 % ==========================================================================================
 % ==========================================================================================
@@ -57,9 +96,7 @@ CBM является экспериментом с фиксированной м
 \subsection{Вершинный микродетектор MVD}\label{sec:secMVD}
 
 Вершинный микродетектор (Micro Vertex Detector, MVD) является первым трекинговым устройством установки CBM и расположен внутри вакуумной камеры (см.~\figref{fig:MVD12}). MVD состоит из четырёх двухсторонних станций на расстояниях 5, 10, 15 и 20~см от мишени (вниз по пучку \todo).
-MVD улучшает разрешение трековой системы CBM, позволяя таким образом идентифицировать редкие частицы по пространственному отклонению вершины распада.
-Open charm particles \todo несут информацию о свойствах ядерной материи на ранних этапах столкновения тяжёлых ионов. Их измерение позволит более глубоко понять сложные много-частичные (многотельные\todo ) процессы в процессе столкновения. В таблице~\ref{tabl:MVDphys} приведены наблюдаемые, измерение которых возможно за счёт использования MVD.
-%Open charm particles probe the properties of the nuclear matter in the early phase of the heavy ion collision. Measuring them provides important information for understanding the complex multi‐body processes during the collision.
+MVD улучшает разрешение трековой системы CBM, позволяя таким образом идентифицировать редкие частицы по пространственному отклонению вершины распада. В таблице~\ref{tabl:MVDphys} приведены наблюдаемые, измерение которых возможно за счёт использования MVD.
 Помимо этого, широкий геометрический аксептанс MVD вносит значительный вклад в трекинг частиц с низким импульсом, что повышает способность системы к подавлению фона при измерении распадов по диэлектронному каналу.
 
 \begin{table}[H]
@@ -67,7 +104,7 @@ Open charm particles \todo несут информацию о свойствах
 \label{tabl:MVDphys}
 \begin{tabular}{ | p{0.22\linewidth} | p{0.22\linewidth} | p{0.22\linewidth} | p{0.22\linewidth} | }
 \hline
-\textbf{Частица} & \textbf{Канал} \newline \textbf{распада} & \textbf{Коэф.} \newline \textbf{ветвления} & \textbf{Время жизни, ct\todo} \\
+\textbf{Частица} & \textbf{Канал} \newline \textbf{распада} & \textbf{Коэф.} \newline \textbf{ветвления} & \textbf{Время жизни, c$\tau$} \\
 \hline
 $\mathbf{D^{+}}$ & $K^{-} + \pi^{+} + \pi^{+}$ & 9\% & $315 \mu$м \\
 \hline
@@ -92,7 +129,7 @@ MVD будет построен на основе активных пиксел�
 По тонким гибким шлейфам к сенсорам подводится питание и осуществляется считывание.
 %Thin flex print cables serve to bias and readout the sensors.
 Детектор MVD будет испытывать значительные радиационные нагрузки, поэтому особое внимание уделяется охлаждению активных сенсоров. 
-За пределами геометрического аксептанса расположены платы передней электроники и система жидкостного охлаждения, соединённая с сенсорами с помощью CVD алмазной пластины. \todo 
+За пределами геометрического аксептанса расположены платы передней электроники и система жидкостного охлаждения, соединённая с сенсорами с помощью CVD алмазной пластины.
 %A liquid cooled heat sink located outside the detector acceptance hosts front end boards and absorbs the dissipated power of the system.
 Данные (800~Mbps/сенсор) считываются радиационно-стойкими пассивными платами передней электроники и отправляются в DAQ-систему по стандарту HADES-TRB3.
 %The data of the sensors will be received by a radiation tolerant, passive front end board. It sends the data (800 Mbps/sensor) to a DAQ‐system based on the HADES‐TRB3 standard.
@@ -124,12 +161,18 @@ MVD будет построен на основе активных пиксел�
 
 \subsection{Кремниевая трекинговая система STS}\label{sec:secSTS}
 
+% From CBM STS TDR Summary
+
 Задача кремниевой трековой системы (Silicon Tracking System, STS) --- измерение траекторий и импульсов заряженных частиц, вылетающих из точки взаимодействия пучка тяжёлых ионов с мишенью. Для выполнения физической программы CBM необходима частота взаимодействий до 10~МГц, при том что в одном взаимодействии будет рождаться до 1000 заряженных частиц. Реконструкция треков должна выполняться с эффективностью порядка 95\% и разрешением по импульсу порядка $\Delta p / p = 1\%$. Для удовлетворения перечисленных требований STS должна состоять из 8~слоёв кремниевых микростриповых сенсоров, расположенных внутри поля от дипольного магнита на растоянии от 30~см до 100~см от точки взаимодействия вниз по пучку с шагом 10~см.
+
+%The detector system’s task is to measure the trajectories and momenta of charged particles originating from the interactions of heavy-ion beams with nuclear targets. Up to 1000 charged particles are produced per interaction, at rates up to 10 MHz to enable CBM physics with rare observables. The track reconstruction has to be achieved with 95\% efficiency and a momentum resolution ∆p/p = 1\%. These requirements can be fulfilled with a tracking system of 8 low-mass layers of silicon microstrip sensors located at distances between 30 cm and 100 cm downstream of the target inside the magnetic dipole field.
 
 Сенсоры будут монтироваться на легкую механическую опору в виде карбоновых ферм. Считывание будет осуществляться по многоканальным микро-кабелям самотриггирующейся электроникой, расположенной по краям станций вместе с линиями охлаждения и другими инфраструктурными подсистемами.
 Многослойные полиамид-алюминиевые кабели будут иметь толщину порядка 100~мкм.
 Стерео-угол между стрипами равен \SI{7.5}{\degree}.
 Микростриповые сенсоры будут двухсторонними, шаг между стрипами $58 \mu$м, длина стрипов от 20~до~60~мм, а толщина кремния $300 \mu$м. По текущим оценкам максимальная неионизирующая доза в CBM для сенсоров, расположенных ближе всего к пучку, не будет превышать $10^{14}$ $n_{eq}$ см$^{-2}$. STS будет работать в термостатическом корпусе, обеспечивающем постоянную температуру около \SI{-5}{\degreeCelsius}. Тепло, рассеиваемое считывающей электроникой, отводится с помощью $CO_{2}$ системы охлаждения. Механические опоры детектора и соединения спроектированы так, чтобы была возможность заменить отдельный модуль системы не отсоединяя остальные.
+
+%The sensors are mounted onto lightweight mechanical support ladders and read out through multi-line micro-cables with fast self-triggering electronics at the periphery of the stations where cooling lines and other infrastructure can be placed. The micro-cables will be built from sandwiched polyimide-Aluminum layers of several 10 μm thickness. The microstrip sensors will be double-sided with a stereo angle of 7.5 ◦ , a strip pitch of 58 μm, strip lengths between 20 and 60 mm, and a thickness of 300 μm of silicon. According to the CBM running scenario the maximum non-ionizing dose for the sensors closest to the beam line does not exceed 1 × 10 14 n eq cm −2 . The STS is operated in a thermal enclosure that keeps the sensors at a temperature of about -5 ◦ C. The heat dissipated in the read-out electronics is removed by a CO 2 cooling system. The mechanical structure of the detector system including the service and signal connections is designed such that single detector ladders can be exchanged without disconnecting and removing more than one detector station.
 
 \begin{figure}[H]
 \begin{minipage}[b]{0.495\textwidth}
@@ -156,7 +199,17 @@ MVD будет построен на основе активных пиксел�
 
 \subsection{Детектор черенковских колец RICH}\label{sec:secRICH}
 
-Детектор черенковских колец (Ring Imaging CHerenkov detector, RICH).
+Детектор черенковских колец (Ring Imaging CHerenkov detector, RICH) решает задачу идентификации частиц в диапазоне импульсов от \todo до 8--10~\GeVoverC.
+В паре с детектором переходного излучения TRD, покрывающем более высокие импульсы, RICH позволяет идентифицировать сигнальные электроны от лёгких векторных мезонов и $J/\psi$.
+
+Для получения дилептонных спектров на SIS300 требуется фактор \todo подавления пионов порядка 10000, что осуществимо при совместном применении TRD и RICH, причём фактор \todo подавления пионов последнего должен составлять как минимум 100.
+
+В случае SIS100 
+
+CBM RICH имеет $CO_{2}$ радиатор, который характеризуется коэффициентом преломления $n=1.00045$ при $T=0$ и $p=1$ атм.
+Порог черенковского свечения для пионов составляет $p=4.65$~\GeVoverC.
+
+
 
 % ==========================================================================================
 % ==========================================================================================
@@ -167,7 +220,7 @@ MVD будет построен на основе активных пиксел�
 
 %From CBM MUCH TDR:
 
-Мюонная система (MUon CHambers, MUCH) необходима для идентифиации мюонных пар, рождённых в высокоэнергетичных столкновениях тяжёлых ионов в диапазоне энергий пучка от~4~до~40~\GeVperNucl. Измерение лептонных пар является одним из центральных пунктов физической программы CBM, так как они несут информацию о состоянии материи внутри фаербола. В области низких инвариантных масс дилептоны предоставляют информацию о модификации векторных мезонов ``в среде'', что является многообещающей наблюдаемой о восстановлении киральной симметрии. В области средних инвариантных масс в спектре дилептонов преобладает termal \todo радиация от фаербола, которая говорит о его температуре. В области инвариантных масс около 3~ГэВ/с$^{2} $ дилептоны представляют собой подходящий инструмент для изучения аномального подавления чармония в фазе деконфайнмента. В эксперименте CBM для получения полной картины о дилептонной физике будут измеряться как электроны, так и мюоны.
+Мюонная система (MUon CHambers, MUCH) необходима для идентифиации мюонных пар, рождённых в высокоэнергетичных столкновениях тяжёлых ионов в диапазоне энергий пучка от~4~до~40~\GeVperNucl. Измерение лептонных пар является одним из центральных пунктов физической программы CBM, так как они несут информацию о состоянии материи внутри фаербола. В области низких инвариантных масс дилептоны предоставляют информацию о модификации векторных мезонов ``в среде'', что является многообещающей наблюдаемой о восстановлении киральной симметрии. В области средних инвариантных масс в спектре дилептонов преобладает termal \todo радиация от фаербола, которая говорит о его температуре. В области инвариантных масс около 3~\GeVoverC$^{2} $ дилептоны представляют собой подходящий инструмент для изучения аномального подавления чармония в фазе деконфайнмента. В эксперименте CBM для получения полной картины о дилептонной физике будут измеряться как электроны, так и мюоны.
 
 %The MuCh system is designed to identify muon pairs which are produced in high-energy heavy-ion collisions in the beam energy range from~4~to~40~AGeV. The measurement of lepton pairs is a central part of the CBM research program, as they are very sensitive diagnostic probes of the conditions inside the fireball. At low invariant masses, dileptons provide information on the in-medium modification of vector mesons which is a promising observable for the restoration of chiral symmetry. At intermediate invariant masses, the dilepton spectrum is dominated by thermal radiation from the fireball reflecting its temperature. At invariant masses around $ 3 GeV/c^{2} $, dileptons are the appropriate tool to study the anomalous charmonium suppression in the deconfined phase. In the CBM experiment both electrons and muons will be measured in order to obtain a consistent and comprehensive picture of the dilepton physics.
 
@@ -175,7 +228,7 @@ MVD будет построен на основе активных пиксел�
 
 %The experimental challenge for muon measurements in heavy-ion collisions at FAIR energies is to identify low-momentum muons in an environment of high particle densities. The CBM strategy is to track the particles through a hadron absorber system, and to perform a momentum-dependent muon identification. This concept is realized by an instrumented hadron absorber, consisting of staggered absorber plates and tracking stations. The hadron absorbers vary in material and thickness, and the tracking stations consist of detector triplets based on different technologies. The MuCh system is placed downstream of the dipole magnet hosting the Silicon Tracking System (STS) which determines the particle momentum. In order to reduce the number of muons from pion and kaon weak decays, the absorber/detector system has to be as compact as possible.
 
-Мюонная система будет строиться поэтапно соответственно энергиям пучка, предоставляемым ускорителем. В рамках FAIR MSV (\todo ссылка) синхротрон SIS100 будет выдавать пучок тяжёлых ионов с энергией до 14~\GeVperNucl и протонный пучок с энергией до 29~\GeVperNucl. Две первые версии MUCH (SIS100-A и SIS100-B) будут состоять из~3~и~4~станций соответственно, что подходит для измерения векторных мезонов с низкой массой (low-mass vector mesons \todo) в столкновениях при 4--6~\GeVperNucl и 8--14~\GeVperNucl соответственно. Третья версия MUCH (SIS100-C) будет оборудована дополнительным железным абсорбером толщиной 1~м для того, чтобы идентифицировать чармоний при самых высоких энергиях SIS100. 
+Мюонная система будет строиться поэтапно соответственно энергиям пучка, предоставляемым ускорителем. В рамках FAIR MSV (\todo ссылка) синхротрон SIS100 будет выдавать пучок тяжёлых ионов с энергией до 14~\GeVperNucl и протонный пучок с энергией до 29~\GeVperNucl. Две первые версии MUCH (SIS100-A и SIS100-B) будут состоять из~3~и~4~станций соответственно, что подходит для измерения лёгких векторных мезонов в столкновениях при 4--6~\GeVperNucl и 8--14~\GeVperNucl соответственно. Третья версия MUCH (SIS100-C) будет оборудована дополнительным железным абсорбером толщиной 1~м для того, чтобы идентифицировать чармоний при самых высоких энергиях SIS100. 
 По введении в эксплуатацию SIS300 мюонная система будет обновлена введением дополнительной станции абсорера и детектора для измерения векторных мезонов с низкой массой (low-mass vector mesons \todo) и чармония при энергиях пучка более 14~\GeVperNucl (версии SIS300-A и SIS300-B).
 
 %The MuCh system will be built in stages which are adapted to the beam energies available. Within the FAIR modularized start version the SIS100 ring will provide heavy ion beams with energies up to 14~AGeV, and proton beams up to 29~GeV. The first two versions of MuCh (SIS100-A and SIS100-B) will comprise of~3~and~4 stations suitable for the measurement of low-mass vector mesons in $ A + A $ collisions at 4-6~AGeV and 8-14~AGeV, respectively. The third version of the MuCh system (SIS100-C) will be equipped with an additional iron absorber of 1~m thickness in order to be able to identify charmonium at the highest SIS100 energies.
@@ -203,7 +256,7 @@ MVD будет построен на основе активных пиксел�
 Основная задача детектора переходного излучения (Transition Radiation Detector, TRD) --- идентифицировать электроны с импульсом более 1~\GeVoverC для того чтобы расширить возможности детектора RICH по идентификации частиц в диапазоне импульсов около 5~\GeVoverC.
 Такая идентификация должна быть достигнута при коэффициенте подавления пионов порядка 10--20 для получения возможности измерения диэлектронов в диапазоне масс от $\rho$ и $\omega$ и выше J/$\psi$.
 Благодаря способности идентифицировать заряженные частицы за счёт их известного энерговыделения детектор TRD также предоставит ценную информацию при регистрации ядерных осколков.
-Это особенно важно для отделения, например, дейтронов от $ He^{4} $, которое не может быть достигнуто с помощью одного только детектора TOF.
+Это особенно важно для отделения, например, дейтронов от $ ^{4}He $, которое не может быть достигнуто с помощью одного только детектора TOF.
 
 %The main task of the TRD is to identify electrons above momenta of 1 GeV/c and thus to extend the electron identification capabilities of the Ring Image CHerenkov (RICH) detector above momenta of p ∼ 5 GeV/c. This identification has to be achieved with a pion suppression factor in the range 10 – 20, in order to allow for a measurement of dielectrons in the mass range from below the ρ and ω masses to beyond the J/ψ mass with a good signal-to-background ratio. Due its capability to identify charged particles via their specific energy loss, the TRD in addition will provide valuable information for the measurement of nuclear fragments. This is in particular important for the separation of, e.g, deuterons and 4 He, which cannot be achieved using a time-of-flight measurement alone.
 
@@ -270,9 +323,6 @@ CBM TOF будет собран из MRPC счётчиков 4 типов, ор�
 %These counters are equipped with low - resistivity glass or thin float glass electrodes according to the rate requirements and use a single HV stack with 8 gas gaps.
 %In order to optimize the signal integrity the preamplifier is connected as directly as possible to the readout electrode and put into the gas volume of the modules. As largest benefit this arrangement offers the possibility to operate the detectors at lower discriminator thresholds and the lower pulse height results in turn also in a higher rate capability. The design of independent module units including the analog electronics also offers the necessary robustness to operate a system of 218 modules and 70.000 readout channels. The disadvantage of the proposed single stack architecture is the need of two high voltages ($\pm$11 kV) causing substantial costs. An alternate design with a double stack configuration of the high voltage is available and can be operated at about 5.6 kV. However, this counter configuration needs more glass electrodes (12 instead of 9) and the cost benefit from the HV has to be compared to the additional cost caused by additional electrodes especially when these are made from low resistivity glass. Counters of this type that are described in appendix F.2.4 will be evaluated in comparison to the proposed ones also in the upcoming HI - test beam campaigns addressing the system features of the designs. A decision will be taken at latest in Dec. 2015 after careful analysis of the test beam data.
 
-
-
-
 %The high performance electronics for the whole CBM - TOF wall is independent of the choice of a specific module or counter type and is based on the PADI and the GET4 - ASIC chips developed by the CBM--TOF group (see sections 3.3.3 and 3.3.5). The combination of both chips in conjunction with a custom-designed clock distribution system (section 3.3.8) offers the possibility to build a large scale system with an electronics contribution to the timing resolution of about 30 ps. This system was tested using a readout controller that implements the full CBMnet - protocol and allows for online inspection and control of the GET4 - data. The details of the readout-chain are described in section 3.3. However, since up to now no long - term stably working GET4 - system could be demonstrated, an alternative backup solution is also included in this report. It is built on FPGA based TDCs that became available recently (see appendix G.2) and provides timing resolution on the level of 10 ps. A free-streaming readout chain is not yet available, but is planned to be realized in the near future. As a consequence the number of necessary readout controllers would be substantially reduced leading eventually to a more simple and cost effective system. More R'n'D is required in the direction of an FPGA - based digitizer / readout system, specifically considering the radiation environment (see chapter 2.5). Since FPGA - based digitizers are offering a better resolution and more flexibility and would allow e.g. for an improvement of the double hit recognition the decision about the production of the GET4 - system will be taken only after a) the stability of the GET4 readout chain is proven, b) no competitive FPGA based solution is available until start of mass production (Dec.2015). Therefore R'n'D work on FPGA-based TDCs is continuing as part of the project.
 
 %As has been shown by Monte-Carlo simulations using the SHIELD event generator the quality of the T 0 - reference determination can be improved by installing the so called Beam Fragmentation T 0 Counter (BFTC) as the innermost part of the TOF wall (see section 4.3). It should cover the region from about 20 to 60 cm from the beam pipe (overlapping with the PSD acceptance). Using a very simple algorithm without tracking information a T 0 - signal with a precision of better than 50 ps can be achieved. A detector concept, anticipated to be able to operate in this harsh environment with fluxes being as high as 100 kHz/cm 2 , built from very radiation-hard materials and possessing minimum gas aging characteristics, is suggested to be based on the ceramic electrodes (see section F.1). Single cell pads with the size of 2$\times$2 cm 2 seem to fulfill the double hit, maximum rate and cross-talks requirements. Further R'n'D is necessary in order to prove the validity of the concept.
@@ -329,6 +379,10 @@ SD будет расположен внутри вакуумной камеры.
 
 \todo \textbf{не провзаимодействовавших или непровзаимодействовавших} \todo
 
+\todo
+%Найти более новую картинку
+\todo
+
 \begin{minipage}[t]{0.495\textwidth}
 \begin{figure}[H]
 \includegraphics[width=0.95\textwidth]{pictures/CBM_PSD_model.png}
@@ -343,10 +397,11 @@ SD будет расположен внутри вакуумной камеры.
 %The main design requirements of the PSD are
 %(i) forward rapidity coverage and sufficient energy resolution to allow for precise collision centrality determination and consequently of the number of participating nucleons and
 %(ii) granularity in the plane transverse to the beam direction which is needed for the collision symmetry plane reconstruction.
+\end{minipage}
+
 Предлагаемый проект детектора, составленного из 44 модулей, покрывает широкий диапазон transverse area \todo вокруг области первичного взаимодействия так, чтобы большая часть непровзаимодействовавших фрагментов оставили всю свою энергию в PSD. За счёт вытянутой в горизонтальном направлении геометрии детектор PSD позволяет регистрировать фрагменты, отклонённые магнитным полем диполного магнита.
 %The proposed 44 module design of the PSD covers large transverse area around the beam spot position such that most of the projectile spectator fragments deposit their energy in the PSD. The elongated transverse geometry of the PSD in horizontal direction takes into account the deflection of the fragments by the magnetic field of the CBM Dipole magnet.
 %A lead-scintillator prototype of the PSD module with scintillator light readout by micropixel avalanche photodiodes and the PSD front-end electronics were tested with the proton and pion beams and cosmic muon rays. Radiation hardness and possible degradation of the PSD were studied with the FLUKA simulation of the CBM detector geometry.
-\end{minipage}
 
 В зависимости от энергии столкновения, PSD имеет разрешение по прицельному параметру, сравнимое с разрешением, предоставляемым кремниевой трековой системой STS. Таким образом, PSD предоставляет независимый метод в эксперименте CBM для определения центральности и множественности наблюдателей. В случае применения в связке с STS, детектор PSD помогает улучшить определение центральности 
 
