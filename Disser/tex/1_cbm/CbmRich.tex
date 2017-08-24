@@ -1,0 +1,65 @@
+\subsection{RICH-детектор эксперимента CBM}
+
+\todo \textbf{Может как-то сделать так, чтобы это описание CBM рича было после описания других ричей --- COMPASS, LHCb, HERA-b? Или как раз наоборот, лучше сразу после этой секции?}
+
+\todo \textbf{Перенести какую-то часть из секции RICHgeo}
+
+CBM RICH предсталяет собой классический RICH-детектор с газовым радиатором, с одним сферическим зеркалом и МА~ФЭУ в качестве фотодетекторов.
+
+Особенность CBM RICH заключается в том, что в плоскости реконструкции одновременно необходимо восстанавливать порядка \todo колец. 
+\todo хитов в плоскости реконструкции, из них \todo сигнальных, а остальные шумовые (откуда\todo конверсия в материале до рича\todo , \todo хитов на кольцо, \todo колец от пионов, \todo колец от электронов, \todo колец от \todo
+
+\todo \textbf{далее параметры реконструкции и какие-то слова о том, как это соотносится с другими ричами.}
+
+\subsubsection{Радиатор}
+
+Разделение электронов и пионов в диапазоне импульсов до 10~\GeVoverC требует низкого коэффициента преломления радиатора, что определяет выбор углекислого газа в качестве радиатора. $CO_{2}$ имеет пороговый \todo Лоренц-фактор $\gamma _{th} = 1 / \sqrt{1 - 1/n^{2}} = 33.3$, где $n = 1.00045$ --- коэффициент преломления при температуре $\SI{0}{\degreeCelsius}$, давлении 1000~мбар и длине волны 600~нм. Порог черенковского излучения для заряженных пионов составляет $p = 4.65$~\GeVoverC, а для электронов и позитронов --- $p = 0.03$~\GeVoverC. При этом порог для каонов $\approx 16$~\GeVoverC. \todo saturated черенковский угол для ультрарелятивистских частиц равен $\SI{1.72}{\degree}$. Полагая, что пионы и электроны могут быть разделены с эффективностью до 90\% \todo при максимальном черенковском угле $\theta = arccos(1/n)$, верхняя граница по импульсу при радиаторе из $CO_{2}$ получается $\approx$ 10~\GeVoverC.
+
+% The separation of electrons and pions at momenta below 10~\GeVoverC requires a low refractive index of the radiator and therefore determines the radiator to be a gas. A $CO_{2}$ radiator is foreseen which has a threshold Lorentz factor of $\gamma _{th} = 1 / \sqrt{1 - 1/n^{2}} = 33.3$, given a refractive index of $n = 1.00045$ at a temperature of \SI{0}{\degreeCelsius}, a pressure of 1000~mbar, and a wavelength of 600~nm. The Cherenkov threshold is $p = 4.65$~\GeVoverC for charged pions and $p = 0.03$~\GeVoverC for electrons and positrons. The threshold for kaons is $\approx 16$~\GeVoverC. The saturated Cherenkov angle for ultrarelativistic particles is $\SI{1.72}{\degree}$. Assuming that pions can be separated from electrons up to 90\% of the maximum Cherenkov opening angle $\theta = arccos(1/n)$, electrons and pions can be separated up to $\approx$ 10~\GeVoverC with $CO_{2}$ as radiator gas.
+
+Размер RICH-детектора определяется доступным пространством между кремниевой трековой станцией STS, расположенной внутри магнита, и детектором переходного излучения TRD. С одной стороны, высокая длина радиатора предпочтителька, т.к. она определяет высокий выход черенковских фотонов. С другой стороны чем меньше расстояние между последней станцией STS и первой станцией TRD, тем выше эффективность трекинга. Из этих соображений для RICH отведено пространство от 1800~мм до 3700~мм по оси пучка, не ограниченное по другим осям ничем, кроме пола. Перед RICH и за ним отведено ещё по 100~мм общего пространства для стыковки с STS и TRD. Зеркало расположено на расстоянии 3500~мм от точки взаимодействия, таким образом, рабочая длина радиатора составляет 1700~мм.
+
+
+% The radiator length is 1.7~m and the volume $\approx 35 m^{3}$. Since the RICH detector will be placed between the STS in the dipole magnet and the TRD detector, its overall length is constrained by the distance between the magnet and its shielding yokes at about 1.6~m from target and the first TRD station. On the one hand, a long radiator is favourable due to the proportionality between photon yield and radiator length according to equation (2.8). On the other hand, a short gap between the tracking detectors STS and TRD is advantageous for tracking which requires a short RICH detector in between. In consequence, the overall length of the RICH detector including radiator, mirror, and support structure is foreseen to be $\approx 2$~m.
+
+Нижняя граница длин волн при выборе радиатора определяется нижней границей длин волн чувствительности фотодетекторов
+
+When designing a RICH detector ``one has to be extremely careful in matching the choice of (gas-)radiator with the sensitive wavelength range of the photon detection system'' [66]. In the case of the CBM-RICH, the low wavelength limit of the photomultiplier sensitivity (see section 3.4) coincides well with the absorption edge of $CO_{2}$ at $\approx 185$ nm (see section 6.2.1).
+
+Явление chromatic absorption в $CO_{2}$ становится заметным только в области длин волн менее 200~нм и, следовательно, не ухудшает разрешения черенковского кольца.
+
+%For $CO_{2}$, chromatic absorption becomes sizeable only in the region below 200 nm (see section 6.2.1) and does not deteriorate the Cherenkov ring resolution significantly as shown below.
+
+Т.к. $CO_{2}$ не показывает высокого уровня сцинтилляции его часто добавляют в радиаторы, где другой газ является основным, в качестве гасящего \todo газа. Ожидается около 5~фотонов/МэВ, в основном в синей области спектра. Энерговыделение в радиаторе порядка 1~\GeV ожидается при центральном $Au+Au$ столкновении, где рождается $\approx 1000$ минимально ионизирующих частиц, приводящих к $\approx 5000$ сцинтилляционных фотонов, летящих изотропно вдоль трека частицы. Если консервативно предположить, что 20\% фотонов достигает плоскости фотодетекторов и 25\% из них регистрируется, то в результате данного эффекта регистрируется дополнительно около $250$ фотонов, распределённых равномерно. При общем числе каналов порядка 55~000, указанный шум от сцинтилляции добавляет до 0.45\% \todo по всем каналам. Данный показатель находится в допустимом пределе и CBM RICH не теряет в эффективности.
+
+%Due to the fact that $CO_{2}$ does not exhibit a high level of scintillation, it is often added to other radiator gases as quenching gas. Approximately 5 photons/MeV, mostly in the blue wavelength range, are expected [69]. An energy deposit in the radiator of $\approx 1$ GeV is expected for a central Au+Au collision with $\approx 1000$ minimum ionizing particles [6] leading to 5000 scintillation photons emitted isotropically along the particle tracks. This leads to $\approx 250$ measured additional photons distributed homogeneously over the photon detector plane when conservatively assuming that 20\% of the photons reach the photon camera with 25\% of them being detected. Given the total of 55 000 channels, noise from scintillation will add up to 0.45\% of all channels. This is well within the noise level that the CBM-RICH detector can tolerate without performance loss [6].
+
+
+
+\subsubsection{Система фокусировки}
+
+%The mirror of the CBM-RICH detector is split into two parts above and below the beam pipe. Each mirror half is oriented towards a photon detection plane and part of a sphere with R = 3.00 m. The total area of the two mirror halves is $12.96 m^2$ . The mirror halves consist of 36 mirror tiles each arranged in four rows of nine tiles. The tiles themselves have a slightly trapezoidal shape in order to minimise gaps in between to 3~mm to~4 mm. Two different tile sizes are foreseen, 430/425.6 mm $\times$ 425~mm for the inner two rows and 425.5/412.5~mm $\times$ 425~mm for the outer rows.
+
+%The mirror tiles are made of a 6~mm thick SIMAX glass substrate front-coated with $Al+MgF_{2}$. Aluminium provides a good reflectivity in both the visible and the UV wavelength region down to below 200~nm. The $MgF_{2}$ layer is used as protective layer in order to prevent the formation of UV absorbing aluminium oxide. Mirror tiles from JLO Olomuc were successfully tested in a prototype (see section 5.1), characterised in terms of homogeneity [70] and reflectivity [71], and chosen to be used for the CBM-RICH detector.
+
+%A tripod concept is foreseen for mounting the mirror tiles on an aluminum frame. Each mirror tile is glued to three actuators allowing for the precise alignment of the tiles in a sphere.
+
+%In order to reduce the production of secondary particles, the material budget of the RICH detector has to be kept low. The mirror support structure is therefore designed as a compromise between stability and light weight.
+
+\subsubsection{Фотодетекторы}
+
+Задача фоточувствительной камеры CBM RICH --- детектировать черенковские фотоны, рождённые заряженными частицами в радиаторе и отражённые от зеркала. Камера разрабатывается для регистрации одиночных фотонов с высокой эффективностью. Для эффективного выполнения реконструкции необходима точная регистрация координат и времени прилёта каждого фотона.
+
+%Task of the CBM-RICH photon camera is the detection of Cherenkov photons produced by charged particles in the gas radiator and reflected by the focusing mirror. The camera is developed for the detection of single photons with high efficiency. A precise measurement of position and time of arrival of each photon is required as input for the ring reconstruction algorithm discussed in section 2.5.3.
+
+Фоточувствительная камера CBM RICH состоит из двух половин, расположенных над и под пучком в фокальной плоскости сферических зеркал. Обе половины находятся рядом с дипольным магнитом
+
+%The photon camera of the CBM-RICH detector consists of two parts, one above and one below the beam pipe in the focal plane of the spherical mirrors. The two photon detector planes are located in front of the CBM dipole magnet shielded by the magnet yokes. The Cherenkov rings from the upper mirror half will be projected onto the upper photon detector, rings from the lower mirror half onto the lower photon detector. Each of the two photon detector planes is divided into two parts in order to optimise the angle towards the mirror. Thus, the camera consists of four separated areas, so-called camera modules. Each module covers an area of 0.6~m $\times$ 1.0~m (height $\times$ width). The total active camera area is $2.4 m^{2}$ .
+
+%The CBM-RICH design foresees the usage of commercially available multianode photomultiplier tubes (MAPMTs) as photon sensors. The use of Micro Channel Plate (MCP) sensors is considered as alternative [6]. Due to the good geometrical coverage of these sensor types, no focusing elements like lenses or Winston cones are envisaged.
+
+\subsubsection{Магнитное поле в области фоточувствительной камеры}
+
+According to TOSCA 3 calculations, the photon camera is exposed to significant magnetic stray fields in the order of 10~mT to 50~mT. Measurements show that the single photon detection efficiency of the foreseen MAPMTs drops significantly for values exceeding 1~mT to 2~mT especially in the edge and corner pixels [6]. Therefore, the magnetic field strength in the region of the photon sensors has to be kept below this value.
+
+In order to cope with the magnetic stray field in the region of the photon camera, two design options are considered and currently studied. The first option is to rotate the two mirror planes and to move the camera modules further away from the beam axis where the magnetic stray field is lower. In addition, a shielding box enfolding the camera modules can reduce the magnetic field strength in the region of the photocathodes significantly. The second option is the use of a second mirror reflecting the Cherenkov photons to the camera positioned farther away from the magnet. This option, however, requires a larger camera surface due to an increased focal length. Details on all design options can be found in [6].
