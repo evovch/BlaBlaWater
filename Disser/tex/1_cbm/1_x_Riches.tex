@@ -30,6 +30,8 @@
 
 \section{Обзор существующих детекторов черенковских колец}\label{sec:secRiches}
 
+Использование детекторов черенковских колец со сферическими фокусирующими зеркалами для идентификации частиц имеет долгую историю~\cite. Следуя за постоянно возрастающими требованиями со стороны экспериментов, а также используя новейшие технологические достижения в различных областях, все основные подсистемы детекторов RICH прошли впечатляющую эволюцию. К основным подсистемам можно отнести фокусирующие зеркала, системы фиксации и корректировки положения зеркал, системы газообеспечения, оболочку корпуса, фотодетекторы и системы считывания. Детектор CBM RICH, которому посвящена данная работа, опирается в той или иной степени на опыт нескольких экспериментов предыдущего поколения. В нижеследующей секции будут описаны несколько приборов, сравнение с которыми позволит понять уникальное место CBM RICH в ряду аналогичных установок.
+
 \subsection{COMPASS RICH-1}\label{sec:CompassRich1}
 
 % Википедия
@@ -222,9 +224,18 @@ The photodetector planes are separated from the radiator gas volumes by quartz w
 
 \subsubsection{Эксперимент HERA-b}
 
-\todo \textbf{пару слов}. Схема экспериментальной установки представлена на \figref{fig:HERAbSetup}.
+% Википедия
+% https://en.wikipedia.org/wiki/HERA-B
+% http://images.slideplayer.com/28/9404350/slides/slide_5.jpg
 
-HERA-B, a fixed target experiment (see Fig. 1) at the HERA storage ring at DESY, was designed [1] to measure rare processes in the decays of B mesons. The B mesons are produced in collisions of 920 GeV/c protons with a fixed target, which consists of 8 wires which can be individually inserted into the halo of the proton beam in order not to disturb experiments measuring ep collisions. One of the essential components of the spectrometer is the Ring Imaging Cherenkov counter (RICH) [1,2,3,4]. The main purpose of the RICH counter is the identification of charged hadrons, in particular kaons from decays of B mesons. Identifying charged kaons essentially means separating them from pions in the momentum range between 3 GeV/c and about 50 GeV/c at an interaction rate of up to 40 MHz.
+HERA (нем. Hadron-Elektron-RingAnlage или англ. Hadron-Electron Ring Accelerator) --- первый и единственный на данный момент лептон-протонный коллайдер, функционировавший с 1992~г. по 2007~г. в DESY, Гамбург, Германия. HERA-b --- один из четырёх экспериментов на HERA --- представляет собой эксперимент с фиксированной мишенью для измерения редких распадов B-мезонов, рождающихся в столкновениях протонов с импульсом 920~\GeVoverC{} с фиксированной мишенью.
+Схема экспериментальной установки представлена на \figref{fig:HERAbSetup}.
+
+Отличительной особенностью этого эксперимента является то, что в роли мишени выступали 8 проволочек из различных материалов, помещаемых в гало протонного пучка. Предполагалось, что такой инновационный метод позволит избежать влияния на пучок, что позволит выполнять измерения при невероятно высоких частотах взаимодействия (5--10~МГц).
+\todo
+
+%HERA-B, a fixed target experiment (see Fig. 1) at the HERA storage ring at DESY, was designed [1] to measure rare processes in the decays of B mesons. The B mesons are produced in collisions of 920 GeV/c protons with a fixed target, which consists of 8 wires which can be individually inserted into the halo of the proton beam in order not to disturb experiments measuring ep collisions. 
+
 
 \begin{figure}[H]
 \centering
@@ -235,7 +246,9 @@ HERA-B, a fixed target experiment (see Fig. 1) at the HERA storage ring at DESY,
 
 \subsubsection{Общие слова о HERA-b RICH и его физической задаче}
 
+HERA-b RICH --- один из основных компонентов спектрометра HERA-b. Его основная задача --- идентификация заряженных адронов, в частности каонов, рождающихся в распадах B-мезонов. Идентификация заряженных каонов означает их отделение от пионов в диапазоне импульсов 3--5~\GeVoverC{} при частоте первичных взаимодействий до 40~МГц.
 
+One of the essential components of the spectrometer is the Ring Imaging Cherenkov counter (RICH). The main purpose of the RICH counter is the identification of charged hadrons, in particular kaons from decays of B mesons. Identifying charged kaons essentially means separating them from pions in the momentum range between 3~\GeVoverC{} and about 50~\GeVoverC{} at an interaction rate of up to 40 MHz.
 
 \subsubsection{Корпус и радиатор}
 
@@ -247,7 +260,7 @@ HERA-B, a fixed target experiment (see Fig. 1) at the HERA storage ring at DESY,
 
 Система фокусировки состоит из двух пар зеркал, расположенных симметрично относительно горизонтальной плоскости, проходящей через ось пучка. Первое зеркало сферическое, второе --- плоское. Сферические зеркала (см. \figref{fig:HERAbRICHmirrors}) составлены из 80 полных или обрезанных шестиугольных сегментов, имеют радиус 11.4~м и толщину 7~мм. Они покрывают прямоугольную область 6$\times$4~м, общая площадь 24~м$^2$. Каждый сегмент крепится к раме трёмя моторизированными актуаторами с удалённым управлением. Для фокусировки за пределы геометрического аксептанса сферические зеркала наклонены на $\SI{9}{\degree}$ от пучка. Каждое из двух плоских зеркал состоит из 18 сегментов.
 
-%http://localhost/Lib/0303012.pdf  3.2
+%http://localhost/Lib/0303012.pdf 3.2
 
 The mirror, a 6 m by 4 m rectangular cutout from the sphere, consists of 80 full or partial hexagons made from 7 mm thick Pyrex glass, coated with 200 nm of aluminum and 30 nm of $MgF_{2}$.
 
