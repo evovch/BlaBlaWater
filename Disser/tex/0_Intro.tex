@@ -143,8 +143,6 @@ The relevant measurements are:
 % ------------------------------------------------------------------
 % ------------------------------------------------------------------
 
-
-
 Наиболее важные действующие эксперименты в этой области исследований --- это STAR на ускорителе релятивистских тяжелых ионов (RHIC) в Брукхейвене, США, и ALICE на большом адронном коллайдере (LHC) в ЦЕРН, Женева, Швейцария. Отметим также эксперимент предыдущего поколения NA61 (North Area 61 a.k.a. SHINE --- SPS Heavy Ion and Neutrino Experiment) на синхротроне SPS в ЦЕРН. Из строящихся экспериментов наиболее важны MPD на ионном коллайдере NICA в Дубне и CBM на ускорительном комплексе FAIR в Дармштадте, Германия.
 
 HADES (High Acceptance DiElectron Spectrometer) --- эксперимент на SIS18 в GSI, который будет расположен выше по пучку перед CBM, когда последний будет построен.
@@ -152,7 +150,10 @@ BM$@$N (Baryonic Matter at Nuclotron) --- эксперимент на нукло
 BES --- Beam Energy Scan
 FXT --- FiXed Target
 
-\todo Дать причину, почему нужно говорить о частоте взаимодействий
+Достижимые результаты на всех перечисленных экпериментах во многом определятся статистикой, которую они могут собрать за адекватное время, которая, в свою очередь, определяется частотой первичных взаимодействий. 
+Эта частота ограничена сверху двумя факторами --- способностью ускорителя и пропускной способностью детекторной установки.
+С учётом широких возможностей ускорителя (SIS100/SIS300) установка CBM изначально проектируется так, чтобы справляться с 10~МГц первичных взаимодействий для исследования очень редких наблюдаемых.
+На~\figref{fig:Experiments} приведена диаграмма энергий и частот взаимодействий основных экспериментов физики тяжёлых ионов.
 
 \begin{figure}[H]
 \includegraphics[width=0.8\textwidth]{pictures/Experiments.png}
@@ -289,8 +290,6 @@ $pi^{+}$, $K^{+}$, $p$, $\rho$, $\omega$, $\phi$, $\Omega$, $D^{0}$, $J/\psi$
 
 Диапазон энергий FAIR 2--35~\GeVperNucl{} для ионов золота хорошо подходит для проведения экспериментов в области фазовой диаграммы с высокими плотностями ядерной материи, превосходящими нормальную плотность в 8--10 раз.
 
-\todo \textbf{В разных источниках числа расходятся. Где-то 35, где-то 45...}
-
 Высокая интенсивность пучка и продолжительная его доступность позволят CBM впервые измерять редкие пробы, такие как очарованные адроны и лёгкие векторные мезоны (с помощью дилептонных распадов), в области энергий, предоставляемых FAIR.
 
 Экспериментальная задача CBM --- измерять перечисленные наблюдаемые в A+A, p+A, p+p столкновениях как функцию энергии столкновения и размера системы с высокой точностью и статистикой, а также искать нарушения непрерывностей, которые могут служить сигналом о фазовом переходе первого уровня. Данная физическая программа будет выполняться измерением ядерных столкновений при экстремально высоких частотах взаимодействия.
@@ -302,24 +301,57 @@ $pi^{+}$, $K^{+}$, $p$, $\rho$, $\omega$, $\phi$, $\Omega$, $D^{0}$, $J/\psi$
 В таблицу~\ref{tabl:Experiments1} сведены такие базовые параметры рассмотренных выше экспериментов, как энергия в центре масс и частота взаимодействий.
 
 \begin{table}[H]
-\caption{Показатели экспериментов в области сверхплотной материи}
+\caption{Показатели экспериментов в области сверхплотной материи.}
 \label{tabl:Experiments1}
-\begin{tabular}{ | p{0.23\linewidth} | p{0.35\linewidth} | p{0.32\linewidth} | }
+\begin{tabular}{ | p{0.21\linewidth} | p{0.16\linewidth} | p{0.33\linewidth} | p{0.17\linewidth} | }
 \hline
-Эксперимент & Диапазон энергий (Au/Pb) & Частота взаимодействий, Гц \\
+Эксперимент & Тип установки & Диапазон энергий (Au/Pb) & Частота взаимодействий, Гц \\
 \hline
-STAR$@$RHIC BNL & $\sqrt{s_{NN}}$=7--200 \GeVperNucl & 1--800 \\
+\scriptsize{STAR \newline RHIC, BNL, \newline Нью-Йорк, США} & \scriptsize{Встречные пучки} \newline \scriptsize{Фикс. мишень}\footnotemark[1] & $\sqrt{s_{NN}}$=7--200 \GeVperNucl & 1--800 \\
 \hline
-NA61$@$SPS CERN & $E_{kin}$=20--160 \GeVperNucl \newline $\sqrt{s_{NN}}$=6.4--17.4 \GeVperNucl & 80 \\
+\scriptsize{NA61/SHINE \newline SPS, CERN, \newline Женева, Швейцария} & \scriptsize{Фикс. мишень} & $E_{kin}$=20--160 \GeVperNucl \newline $\sqrt{s_{NN}}$=6.4--17.4 \GeVperNucl & 80 \\
 \hline
-ALICE$@$LHC CERN & \todo & \todo \\
+\scriptsize{ALICE \newline LHC, CERN, \newline Женева, Швейцария} & \scriptsize{Встречные пучки} & $\sqrt{s_{NN}}=5.5$~\mbox{ТэВ/нуклон} & $10^{4}$ \\
 \hline
-MPD$@$NICA JINR & $\sqrt{s_{NN}}$=4--11 \GeVperNucl & 7000 \\
+\scriptsize{MPD \newline NICA, ОИЯИ, \newline Дубна, Россия} & \scriptsize{Встречные пучки} & $\sqrt{s_{NN}}$=4--11 \GeVperNucl & $7 \cdot 10^{3}$ \\
 \hline
-CBM$@$FAIR GSI & $E_{kin}$=10--35 \GeVperNucl \newline $\sqrt{s_{NN}}$=2.7--8.3 \GeVperNucl & $10^5$--$10^7$ \\
+\scriptsize{CBM \newline FAIR, GSI, \newline Дармштадт, Германия} & \scriptsize{Фикс. мишень} & $E_{kin}$=10--35 \GeVperNucl \newline $\sqrt{s_{NN}}$=2.7--8.3 \GeVperNucl & $10^5$--$10^7$ \\
 \hline
 \end{tabular}
 \end{table}
+
+\footnotetext[1]{STAR$@$RHIC выполняет ряд измерений с фиксированной мишенью при низких энергиях.}
+
+\todo
+
+\begin{table}[H]
+\caption{Стырено у Максима}
+\label{tabl:Accelerators}
+\begin{tabular}{ | p{0.15\linewidth} | p{0.18\linewidth} | p{0.15\linewidth} | p{0.16\linewidth} | p{0.16\linewidth} | }
+\hline
+Accelerator & Laboratory & Type of experiments & Ions (heaviest) & Top energy \\
+\hline
+SIS 18 & GSI, Germany & fixed target & U & 2 AGeV \\
+\hline
+AGS & BNL, USA & fixed target & Au & 14.5 AGeV \\
+\hline
+SIS 100* & FAIR, Germany & fixed target & U & 11 AGeV \\
+\hline
+SIS 300* & FAIR, Germany & fixed target & U & 35 AGeV \\
+\hline
+NICA* & JINR, Russia & collider & Au & 11 AGeV \\
+\hline
+SPS 7 & CERN, Switzerland & fixed target & Pb & 158 AGeV \\
+\hline
+RHIC & BNL, USA & collider & U & 200 AGeV \\
+\hline
+LHC & CERN, Switzerland & collider & Pb & 5.52 ATeV \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\todo
 
 %Sorin_SQM2013_Birmingham_25_07_2013.pdf
 
