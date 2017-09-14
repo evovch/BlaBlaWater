@@ -27,7 +27,6 @@
 %   считывающая электроника
 %   наличие/отсутствие внешнего триггера
 
-
 \section{Обзор существующих детекторов черенковских колец}\label{sec:secRiches}
 
 Использование детекторов черенковских колец со сферическими фокусирующими зеркалами для идентификации частиц имеет долгую историю~\cite. Следуя за постоянно возрастающими требованиями со стороны экспериментов, а также используя новейшие технологические достижения в различных областях, все основные подсистемы детекторов RICH прошли впечатляющую эволюцию. К основным подсистемам можно отнести фокусирующие зеркала, системы фиксации и корректировки положения зеркал, системы газообеспечения, оболочку корпуса, фотодетекторы и системы считывания. Детектор CBM RICH, которому посвящена данная работа, опирается в той или иной степени на опыт нескольких экспериментов предыдущего поколения. В нижеследующей секции будут описаны несколько приборов, сравнение с которыми позволит понять уникальное место CBM RICH в ряду аналогичных установок.
@@ -38,27 +37,29 @@
 
 \subsection{COMPASS RICH-1}\label{sec:CompassRich1}
 
-% Википедия
-% https://en.wikipedia.org/wiki/COMPASS_experiment
+\blueurl{https://en.wikipedia.org/wiki/COMPASS_experiment}
 
 \subsubsection{Эксперимент COMPASS}
 
 Экспериментальная установка NA58, также известная как COMPASS (``Common Muon and Proton Apparatus for Structure and Spectroscopy'') представляет собой систему из двух спектрометров длиной 60~метров за неподвижной мишенью на отводе пучка M2 ускорителя SPS в CERN. Эксперимент был предложен в 1996 году, в период с 1999 по 2001 года выполнялись работы по установке и в 2001 был выполнен первый (commissioning) запуск. Набор данных разбит на два этапа: COMPASS I (2002--2011) и COMPASS II (2012--2018). 
 
-% http://link.springer.com/article/10.1140/epjst/e2008-00800-2
+\blueurl{http://link.springer.com/article/10.1140/epjst/e2008-00800-2}
 
-% Самое свежее (2014) - http://compassweb.ts.infn.it/rich1/paper/tessarotto_instr14.pdf
+\small{Самое свежее (2014) - }
+\blueurl{http://compassweb.ts.infn.it/rich1/paper/tessarotto_instr14.pdf}
 
-% Ссылки
-% NIM A 02 (2003) 112–116
-% doi:10.1016/S0168-9002(02)02165-4
-% E. Albrecht et al.
-% https://wwwcompass.cern.ch/compass/detector/rich/publications/NIMA502-112.pdf
+\small{Ссылки \\
+NIM A 02 (2003) 112–116 \\
+doi:10.1016/S0168-9002(02)02165-4 \\
+E. Albrecht et al.}
 
-% http://wwwcompass.cern.ch/compass/proposal/pdf/proposal.pdf
+\blueurl{https://wwwcompass.cern.ch/compass/detector/rich/publications/NIMA502-112.pdf}
 
-% https://pub.uni-bielefeld.de/download/2301233/2301236
-% 8.2.2 The Mirror Wall
+\blueurl{http://wwwcompass.cern.ch/compass/proposal/pdf/proposal.pdf}
+
+\blueurl{https://pub.uni-bielefeld.de/download/2301233/2301236}
+
+\small{8.2.2 The Mirror Wall}
 
 \subsubsection{Общие слова о COMPASS RICH и его физической задаче}
 
@@ -67,18 +68,21 @@
 Основная задача детектора Черенковских колец --- разделение $\pi$, $p$ и $K$ в диапазоне импульсов от 3~до~55~ГэВ/с в условиях высокой интенсивности (что бы это значило\todo в статье 2014 г. написано, что beam rate 40 МГц, и частота триггеров 20 кГц) в полном аксептансе спектрометра, составляющем $\pm$250~мрад по горизонтали и $\pm$180~мрад по вертикали. Для минимизации отрицательного влияния на эффективность стоящих ниже по пучку электромагнитного и адронного калориметров детектор \mbox{RICH-1} должен иметь минимум количества материала в аксептансе. Также в процессе проектирования COMPASS \mbox{RICH-1} необходимо было развивать технологии для реализации возможности регистрировать и справляться с высоким для того времени потоком данных.
 \todo \textbf{По большому счёту, задачи те же, что и у CBM}
 
-http://localhost/Lib/1-s2.0-S0168900203027499-main.pdf
+% http://localhost/Lib/1-s2.0-S0168900203027499-main.pdf
 
-In the 2002 run data were taken with a muon beam of 160~\GeVoverC and an intensity of $2 \cdot 10^{8}$ muons per spill of 4.8~s and a machine cycle of 16.8~s
+\small{In the 2002 run data were taken with a muon beam of 160~\GeVoverC and an intensity of $2 \cdot 10^{8}$ muons per spill of 4.8~s and a machine cycle of 16.8~s.}
 
 \subsubsection{Корпус и радиатор}
 
 Габариты корпуса детектора COMPASS \mbox{RICH-1}, выполненного из алюминия, составляют 6.6$\times$5.3$\times$3.3~м$^3$. Внутри расположен газовый радиатор $C_{4}F_{10}$ длиной 3~м и объёмом около 83~м$^3$. Пороги по импульсу для Черенковского света: для $\pi$ --- 2.5~ГэВ/с, для $K$ --- 8.9~ГэВ/с и 17~ГэВ/с для $p$. В центре детектора проходит цилиндрический ионопровод диаметром 100~мм, наполненный гелием.
-% The original beam pipe, made of 150 mm thick stainless steel, has been replaced in 2012 by a lighter pipe, made of 4 layers of metalized BoPET (25mm BoPET + 0.2mm Al): the contribution to the total material budget by the new pipe for beam particles is 0.08\% X0 (plus 0.06\% due to helium).
+
+\small{The original beam pipe, made of 150 mm thick stainless steel, has been replaced in 2012 by a lighter pipe, made of 4 layers of metalized BoPET (25mm BoPET + 0.2mm Al): the contribution to the total material budget by the new pipe for beam particles is 0.08\% $X_0$ (plus 0.06\% due to helium).}
+
 Газовая система закрытого типа поддерживает радиатор под избыточным давление $100\pm10$~Па.
 Передняя и задняя стенки корпуса выполнены из тонких алюминиевых плёнок спрессованных с жёсткой пеной. \todo
+
 %http://localhost/Lib/NIMA502-112.pdf
-%The front and rear vessel windows are sandwiches of two thin Al foils and a layer of rigid foam.
+\small{The front and rear vessel windows are sandwiches of two thin Al foils and a layer of rigid foam.}
 
 \subsubsection{Зеркала и опоры}
 
@@ -86,7 +90,8 @@ In the 2002 run data were taken with a muon beam of 160~\GeVoverC and an intensi
 Коллаборацией COMPASS был разработан метод контроля индивидуальных отклонений сегментов зеркал ``на лету'' (онлайн), называемый CLAM (``a continuous line alignment and monitoring method'').
 
 Отражающая поверхность состоит алюминиевого слоя толщиной 80~нм, нанесённого на боросиликатное стекло толщиной 7~мм, и покрытого защитным слоем из $MgF_{2}$ толщиной 30~нм.
-%The reflecting surface consists of an 80~nm thick $Al$ layer deposited on a 7~mm thick borosilicate glass substrate and covered by a 30~nm tick $MgF_{2}$ protective layer.
+
+\small{The reflecting surface consists of an 80~nm thick $Al$ layer deposited on a 7~mm thick borosilicate glass substrate and covered by a 30~nm tick $MgF_{2}$ protective layer.}
 
 The mechanical structure supporting the mirror wall has a net-like configuration with spherical design made from aluminum. Each mirror is coupled to a fine thread screw which allows it to rotate around two orthogonal axes.
 
@@ -100,30 +105,30 @@ The mechanical structure supporting the mirror wall has a net-like configuration
 
 В 2006~г. с целью повышения эффективности детектора было выполнено комплексное обновление центральной области фоточувствительной камеры, составляющей 25\% от всей площади. MWPC были заменены на МА~ФЭУ с индивидуальными линзами и соответствующей считывающей электроникой. В общей сложности было установлено 4 панели по 144~МА~ФЭУ Hamamatsu R7600-03-M16, имеющими 16~каналов и входное стекло, прозрачное в ультрафиолетовой области, и специальный делитель напряжения.
 
-% For the physics runs starting in 2016 COMPASS RICH-1 will be equipped with new MPGD-based photon detectors, which have been developed by a dedicated R&D program.
+\small{For the physics runs starting in 2016 COMPASS RICH-1 will be equipped with new MPGD-based photon detectors, which have been developed by a dedicated R\&D program.}
 
 \subsubsection{Электроника}
 
 Сигнал с МА~ФЭУ считывается платами передней электроники, основанными на ASIC ``CMAD'', реализующем 8-канальный предусилитель-дискриминатор, разработанный на основе ``MAD4'' специально для COMPASS \mbox{RICH-1}. CMAD позволяет работать на частоте до 5~МГц на канал.
 
-%The signals from the MAPMTs are read by a fast digital electronics system [36, 37] based on the 8 channels CMAD [38] preamplifier-discriminator, developed for COMPASS RICH-1 as an upgraded version in CMOS technology of the MAD4 [39] front-end chip. The CMAD has a small noise level (1 fC), the possibility to set individual channel thresholds, a good time resolution and high rate capability: it provides full efficiency up to an input rate of 5 MHz per channel. The design of the front-end boards and the optimization of the thresholds setting allows to completely suppress the MAPMTs cross talk signals while keeping the single photoelectron detection efficiency at a 95\% level.
+\small{The signals from the MAPMTs are read by a fast digital electronics system [36, 37] based on the 8 channels CMAD [38] preamplifier-discriminator, developed for COMPASS RICH-1 as an upgraded version in CMOS technology of the MAD4 [39] front-end chip. The CMAD has a small noise level (1 fC), the possibility to set individual channel thresholds, a good time resolution and high rate capability: it provides full efficiency up to an input rate of 5 MHz per channel. The design of the front-end boards and the optimization of the thresholds setting allows to completely suppress the MAPMTs cross talk signals while keeping the single photoelectron detection efficiency at a 95\% level.}
 
 \todo \textbf{перефразировать}
 Хорошее временное разрешение МА~ФЭУ не портится за счёт использования цифровых карт DREISAM, в которых реализован ВЦП F1, имеющий временное разрешение 110~пс и может работать с чатотой до 10~МГц на канал и частоте триггера до 100~кГц.
 
-%The good MAPMT time resolution is fully exploited with the help of digital cards, called DREISAM, housing the dead-time free F1 TDC [40] , which has a time resolution of 110 ps and can stably operate up to 10 MHz per channel input rate and 100 kHz trigger rate.
+\small{The good MAPMT time resolution is fully exploited with the help of digital cards, called DREISAM, housing the dead-time free F1 TDC [40] , which has a time resolution of 110 ps and can stably operate up to 10 MHz per channel input rate and 100 kHz trigger rate.}
 
 Считывающая электроника COMPASS \mbox{RICH-1} монтируется на детектор, образуя очень компактную установку, которая экранирована от внешнего электромагнитного поля медными пластинами, выполняющими также и роль радиаторов, охлаждаемых водой циркуирующей по медным трубкам.
 
-%All the electronics components of the RICH-1 readout system are directly mounted on the detector and form a very compact setup. Each PCB is coupled to a copper plate providing both efficient electromagnetic shielding and good cooling power: thermalized water circulates in underpressure condition in thin copper pipes brazed onto the copper plates [36]. The stability and uniformity of the water cooling system has been achieved after several improvements of the distribution system and of the operation and maintenance protocols.
+\small{All the electronics components of the RICH-1 readout system are directly mounted on the detector and form a very compact setup. Each PCB is coupled to a copper plate providing both efficient electromagnetic shielding and good cooling power: thermalized water circulates in underpressure condition in thin copper pipes brazed onto the copper plates [36]. The stability and uniformity of the water cooling system has been achieved after several improvements of the distribution system and of the operation and maintenance protocols.}
 
 Оцифрованные данные с плат передней электроники передаются по оптике платам считывания CATCH, которые группируют данные и передают дальше также по оптике через S-LINK в систему сбора данных эксперимента.
 
-%Data from the front-end cards are transferred via optical links to a set of CATCH readout-driver modules which concentrate the data and send them via S-LINK transmitter and optical fibre to the COMPASS DAQ system.
+\small{Data from the front-end cards are transferred via optical links to a set of CATCH readout-driver modules which concentrate the data and send them via S-LINK transmitter and optical fibre to the COMPASS DAQ system.}
 
-%Expected occupancy level is $\approx$5\% at a maximum trigger rate of $10^5 s^{-1}$, resulting in a maximum data flow of 2.5 GB/s. COMPASS-Gassiplex chips are used as front-end-chips. These are modified versions of the chips developed for RD26, now equipped with preamplifier, shaper and an analog-multiplexer. The intrinsic dead time is 400 nsec per event, with a peaking time of 1 usec. The value for noise is as low as 1100 electrons equivalent at a gas amplification of $\approx$6.5 mV / (fC).
+\small{Expected occupancy level is $\approx$5\% at a maximum trigger rate of $10^5 s^{-1}$, resulting in a maximum data flow of 2.5 GB/s. COMPASS-Gassiplex chips are used as front-end-chips. These are modified versions of the chips developed for RD26, now equipped with preamplifier, shaper and an analog-multiplexer. The intrinsic dead time is 400 nsec per event, with a peaking time of 1 usec. The value for noise is as low as 1100 electrons equivalent at a gas amplification of $\approx$6.5 mV / (fC).}
 
-%The core piece of the readout system is the total amount of 192 front-end-cards, the 60 cm long BORA boards [67], hosting the front-end chips and a first trigger level. There are 24 BORA-boards per photon chamber handling 432 analog channels. Each single BORA-board is equipped with front-end-chips, ADCs (analog digital converter), FIFOs (first in first out buffer), FPGAs (field programmable gate array) of the type VIRTEX XCV100 [68] for logic sequencers, threshold-subtraction and zero-suppression, 32-bit DSPs [69] for event packaging, on-board controls and optical links. The event processing time is 10usec. The control system for those BORA-boards is a parallel network of DSPs (digital signal processing), operated via a dedicated PC-PCI-interface: the DOLINA-boards with 8 on-board DSPs each. To avoid grounding interference between the PC and the detector all BORA-boards are optoisolated from DOLINA with the help of specific optoisolating boards. Figure 8.11 sketches the architecture of the readout system. The photon detectors reach an absolute gain of 10 4 at nominal voltage of 2000 V with photon detection efficiencies of about 75\% as presented in Figure 8.12.
+\small{The core piece of the readout system is the total amount of 192 front-end-cards, the 60 cm long BORA boards [67], hosting the front-end chips and a first trigger level. There are 24 BORA-boards per photon chamber handling 432 analog channels. Each single BORA-board is equipped with front-end-chips, ADCs (analog digital converter), FIFOs (first in first out buffer), FPGAs (field programmable gate array) of the type VIRTEX XCV100 [68] for logic sequencers, threshold-subtraction and zero-suppression, 32-bit DSPs [69] for event packaging, on-board controls and optical links. The event processing time is 10usec. The control system for those BORA-boards is a parallel network of DSPs (digital signal processing), operated via a dedicated PC-PCI-interface: the DOLINA-boards with 8 on-board DSPs each. To avoid grounding interference between the PC and the detector all BORA-boards are optoisolated from DOLINA with the help of specific optoisolating boards. Figure 8.11 sketches the architecture of the readout system. The photon detectors reach an absolute gain of 10 4 at nominal voltage of 2000 V with photon detection efficiencies of about 75\% as presented in Figure 8.12.}
 
 \textbf{Заключение такое, что в целом конструкция этого RICH очень схожа с конструкцией CBM RICH.}
 
@@ -143,7 +148,7 @@ The mechanical structure supporting the mirror wall has a net-like configuration
 
 LHCb --- один из четырёх крупных экспериментов на Большом Адронном Коллайдере (LHC). LHCb посвящён изучению нарушения CP-инвариантности и редких распадов тяжёлых ароматов. Он представляет собой прямой спектрометр, спроектированный принимать летящие прямо b- и c-адроны, рождённые в $p-p$ столкновениях. Схема установки LHCb показана на \figref{fig:LHCb}.
 
-%LHCb is one of the four major experiments at the LHC, and is dedicated to the study of CP violation and the rare decay of heavy flavours. It is a forward spectrometer designed to accept forward-going b- and c-hadrons produced in proton-proton collisions. The layout of the spectrometer is shown in \figref{fig:LHCb}.
+\small{LHCb is one of the four major experiments at the LHC, and is dedicated to the study of CP violation and the rare decay of heavy flavours. It is a forward spectrometer designed to accept forward-going b- and c-hadrons produced in proton-proton collisions. The layout of the spectrometer is shown in \figref{fig:LHCb}.}
 
 \textbf{Википедия:}
 Основными задачами эксперимента LHCb являются: изучение редких эффектов CP-нарушения в распадах прелестных адронов, измерение углов треугольника унитарности, прецизионная проверка предсказаний Стандартной Модели (СМ) в редких радиационных, полулептонных и лептонных распадах B-мезонов, изучение редких распадов очарованных частиц и экзотических распадов $\tau$-лептонов.
@@ -167,20 +172,20 @@ RICH1 covers the low and intermediate momentum region 2–40~\GeVoverC over the 
 
 \mbox{RICH-1} расположен максимально близко к точке взаимодействия, насколько это возможно. С целью минимизации количества материала у \mbox{RICH-1} нет отдельного входного окна --- в качестве передней стенки контейнера для газового радиатора используется выходная стенка вакуумной камеры детектора VELO. Выходное окно \mbox{RICH-1} изготовлено из лёгкого материала, представляюшего собой ``сэндвич'' из углепластика и пены.
 
-%\mbox{RICH-1} is placed as close as possible to the interaction region. To minimize the material budget there is no separate entrance window, and the \mbox{RICH-1} gas enclosure is sealed directly to the exit window of the VELO vacuum tank. The downstream exit window is constructed from a low-mass carbon-fibre/foam sandwich.
+\small{\mbox{RICH-1} is placed as close as possible to the interaction region. To minimize the material budget there is no separate entrance window, and the \mbox{RICH-1} gas enclosure is sealed directly to the exit window of the VELO vacuum tank. The downstream exit window is constructed from a low-mass carbon-fibre/foam sandwich.}
 
 \mbox{RICH-2} располагается за магнитом, т.к. треки с высоким импульсом, которые он измеряет, меньше подвержены воздействию магнитного поля. Благодаря этому \mbox{RICH-2} может быть помещён за трекинговыми детекторами для уменьшения количества материала, что оказывает положительное влияние на регистрацию треков заряженных частиц. Так же, как и в случае \mbox{RICH-1}, входное и выходное окна \mbox{RICH-2} выполнены из легких сэндвич-панелей из пористого материала, покрытых углепластиком и алюминием соответственно.
 
-%\mbox{RICH-2} is placed downstream of the magnet, since the high momentum tracks it measures are less affected by the magnetic field. In this way it can be placed after the downstream tracking system in order to reduce material for the measurement of the charged tracks. The entrance and exit windows are again a foam sandwich construction and skinned with carbon-fibre and aluminium, respectively.
+\small{\mbox{RICH-2} is placed downstream of the magnet, since the high momentum tracks it measures are less affected by the magnetic field. In this way it can be placed after the downstream tracking system in order to reduce material for the measurement of the charged tracks. The entrance and exit windows are again a foam sandwich construction and skinned with carbon-fibre and aluminium, respectively.}
 
 По причине низкой дисперсии в качестве Черенковских радиаторов используются фтор-углеродные газы --- $C_{4}F_{10}$ в RICH1 и $CF_{4}$ в RICH2 --- при комнатной температуре и нормальном давлении. Коэффициенты преломления соответственно равны 1.0014 и 1.0005 при $\SI{0}{\degreeCelsius}$, 101.325~кПа и 400~нм. Около 5\% $CO_{2}$ было добавлено в $CF_{4}$ для погашения сцинтилляции в газе.
 
-%Fluorocarbon gases at room temperature and pressure are used as Cherenkov radiators; C4F10 in RICH 1 and CF4 in RICH 2 were chosen for their low dispersion. The refractive index is respectively 1.0014 and 1.0005 at 0 C, 101.325 kPa and 400 nm. About 5\% CO2 has been added to the CF4 in order to quench scintillation in this gas.
+\small{Fluorocarbon gases at room temperature and pressure are used as Cherenkov radiators; C4F10 in RICH 1 and CF4 in RICH 2 were chosen for their low dispersion. The refractive index is respectively 1.0014 and 1.0005 at 0 C, 101.325 kPa and 400 nm. About 5\% CO2 has been added to the CF4 in order to quench scintillation in this gas.}
 
 Порог по импульсу для черенковского света в $C_{4}F_{10}$ составляет 9.3~\GeVoverC. Частицы с меньшим импульсом идентифицируются как каоны, а не пионы в режиме запрета \todo, то есть \todo.
 Чтобы поддерживать положительную идентификацию при низких импульсах и для того чтобы разделять каоны и протоны, в RICH1 был включён второй радиатор: стенка толщиной 50~мм, составленная из 16~плиток silica аэрогеля, была помещена при входе в RICH1. Коэффициент преломления равен 1.03, а light scattering length \todo составляет прилизительно 50~мм при длине волны 400~нм в чистом $N_2$. Аэрогель помещён в $C_{4}F_{10}$ \todo и тонкий стеклянный фильтр ограничивает дисперсию \todo
 
-%The momentum threshold for kaons to produce Cherenkov light in C4F10 is 9.3 GeV/c. Particles below this momentum would only be identified as kaons rather than pions in veto mode, i.e. by the lack of Cherenkov light associated to the particle. To maintain positive identification at low momentum and in order to separate kaons from protons, a second radiator is included in RICH 1: a 50 mm thick wall made of 16 tiles of silica aerogel [10] at the entrance to RICH 1. The refractive index is n=1.03 and the light scattering length is around 50 mm at 400 nm in pure N2. The aerogel is placed in the C4F10 gas volume and a thin glass filter is used on the downstream face to limit the chromatic dispersion.
+\small{The momentum threshold for kaons to produce Cherenkov light in $C_{4}F_{10}$ is 9.3 GeV/c. Particles below this momentum would only be identified as kaons rather than pions in veto mode, i.e. by the lack of Cherenkov light associated to the particle. To maintain positive identification at low momentum and in order to separate kaons from protons, a second radiator is included in RICH 1: a 50 mm thick wall made of 16 tiles of silica aerogel [10] at the entrance to RICH 1. The refractive index is n=1.03 and the light scattering length is around 50 mm at 400 nm in pure $N_2$. The aerogel is placed in the $C_{4}F_{10}$ gas volume and a thin glass filter is used on the downstream face to limit the chromatic dispersion.}
 
 \subsubsection{Зеркала и опоры}
 
@@ -189,28 +194,27 @@ RICH1 covers the low and intermediate momentum region 2–40~\GeVoverC over the 
 
 The \mbox{RICH-1} detector utilizes innovative carbon-fibre mirror. \todo
 
-%https://lhcb-public.web.cern.ch/lhcb-public/en/Detector/RICH2-en.html
-%Particles produced in the collisions in LHCb will travel through the mirrors of \mbox{RICH-1} prior to reaching measurement components further downstream. To reduce the amount of scattering, \mbox{RICH-1} uses special lightweight spherical mirrors constructed from a carbon-fibre reinforced polymer (CFRP), rather than glass. There are four of these mirrors, each made from two CFRP sheets moulded into a spherical surface with a radius of 2700 mm and separated by a reinforcing matrix of CFRP cylinders.
+\blueurl{https://lhcb-public.web.cern.ch/lhcb-public/en/Detector/RICH2-en.html}
+
+\small{Particles produced in the collisions in LHCb will travel through the mirrors of \mbox{RICH-1} prior to reaching measurement components further downstream. To reduce the amount of scattering, \mbox{RICH-1} uses special lightweight spherical mirrors constructed from a carbon-fibre reinforced polymer (CFRP), rather than glass. There are four of these mirrors, each made from two CFRP sheets moulded into a spherical surface with a radius of 2700 mm and separated by a reinforcing matrix of CFRP cylinders.}
 
 %http://localhost/Lib/1-s2.0-S0168900214004975-main.pdf
-%The result of the optics redesign was that the radius of curvature of the spherical mirror was increased from 2710~mm to 3800~mm and it was moved downstream by 86~mm.
+\small{The result of the optics redesign was that the radius of curvature of the spherical mirror was increased from 2710~mm to 3800~mm and it was moved downstream by 86~mm.}
 
 %http://localhost/Lib/0303012.pdf
-%To be able to place the focal surface outside the particle flux ($\pm$160 mrad vertically), the mirror is split horizontally and both halves are tilted by $\SI{9}{\degree}$ away from the beam-line.
+\small{To be able to place the focal surface outside the particle flux ($\pm$160 mrad vertically), the mirror is split horizontally and both halves are tilted by $\SI{9}{\degree}$ away from the beam-line.}
 
 \todo
 
-%Both RICH detectors have a similar optical system, with a tilted spherical focusing primary mirror, and a secondary flat mirror to limit the length of the detectors along the beam direction. Each optical system is divided into two halves on either side of the beam pipe, with RICH 1 being divided vertically and RICH 2 horizontally. The vertical division of RICH 1 was necessitated by the requirements of magnetic shielding for the photon detectors, due to their close proximity to the magnet.
-%The spherical mirrors of RICH 1 (4 segments) are constructed in four quadrants, with carbon-fibre structure, while those of RICH 2 (56 segments), and all flat mirrors (16 and 40 segments in RICH 1 and RICH 2 respectively), are tiled from smaller mirror elements, employing a thin glass substrate.
-
+\small{Both RICH detectors have a similar optical system, with a tilted spherical focusing primary mirror, and a secondary flat mirror to limit the length of the detectors along the beam direction. Each optical system is divided into two halves on either side of the beam pipe, with RICH 1 being divided vertically and RICH 2 horizontally. The vertical division of RICH 1 was necessitated by the requirements of magnetic shielding for the photon detectors, due to their close proximity to the magnet. The spherical mirrors of RICH 1 (4 segments) are constructed in four quadrants, with carbon-fibre structure, while those of RICH 2 (56 segments), and all flat mirrors (16 and 40 segments in RICH 1 and RICH 2 respectively), are tiled from smaller mirror elements, employing a thin glass substrate.}
 
 \subsubsection{Фотодетекторы}
 
 Черенковские фотоны, рождённые заряженной частицей, проходящей вквозь радиаторы, фокусируются в (изображения \todo) кольца на плоскости фотодетекторов, расположенные за пределами аксептанса спектрометра. Инновационные гибридные фотодетекторы (HPD) были разработаны в сотрудничестве с индустрией специально для применения в LHCb RICH. HPD представляют собой вакуумную трубку, имеющую активный диаметр 75~мм, с кварцевым окном и многощелочной фотокатод. Фотоэлектроны фокусируются на массив кремниевых пикселей посредством ускоряющего напряжения -16~кВ. Пиксели организованы в массив $32 \times 32$, давая 1024 пикселя на трубку. Размер пикселя составляет $2.5 \times 2.5~mm^{2}$ на уровне фотокатода \todo В общей сложности 484~HPD плотно упакованы, формируя 4~плоскости фотодетекторов. Каждый из двух RICH детекторов использует две плоскости, 196~HPD в RICH1, 288 --- в RICH2.
 Плоскости фотодетекторов отделены от радиатора кварцевым окном, что позволяет содержать HPD в $CO_{2}$. Чипы передней электроники смонтированы непосредственно в вакуумном пространстве внутри HPD \todo.
 
-%The Cherenkov photons emitted by charged particles passing through the RICH radiators are focused into ring images on the photon detector planes, situated outside of the spectrometer acceptance. A novel hybrid photon detector (HPD) was developed in collaboration with industry specifically for application in the LHCb RICH system [11]. The HPDs employ vacuum tubes with a 75~mm active diameter, with a quartz window and multialkali photocathode. The photoelectrons are focused onto a silicon pixel array, using an accelerating voltage of -16~kV. The pixel array is arranged in 32~columns and 32~rows, giving a total of 1024 pixels per tube. The pixel size is $2.5 \times 2.5~mm^{2}$ at the level of the photocathode. A total of 484 HPDs are close-packed to cover the four photodetector planes. Two planes are employed in each RICH, with 196~tubes used in RICH1 and 288 in RICH2.
-The photodetector planes are separated from the radiator gas volumes by quartz windows, and the photodetector volumes are maintained in an atmosphere of CO2 . The front-end electronics chip is encapsulated within the HPD vacuum tube, and bump-bonded to the silicon pixel sensor, which results in extremely low noise (typically 150 e- RMS per pixel for a signal of 5000 e- [12,13]). The tubes also feature high detection efficiency, with an active area fraction of about 82\%. The quantum efficiency is about 30\% at 270 nm.
+\small{The Cherenkov photons emitted by charged particles passing through the RICH radiators are focused into ring images on the photon detector planes, situated outside of the spectrometer acceptance. A novel hybrid photon detector (HPD) was developed in collaboration with industry specifically for application in the LHCb RICH system [11]. The HPDs employ vacuum tubes with a 75~mm active diameter, with a quartz window and multialkali photocathode. The photoelectrons are focused onto a silicon pixel array, using an accelerating voltage of -16~kV. The pixel array is arranged in 32~columns and 32~rows, giving a total of 1024 pixels per tube. The pixel size is $2.5 \times 2.5~mm^{2}$ at the level of the photocathode. A total of 484 HPDs are close-packed to cover the four photodetector planes. Two planes are employed in each RICH, with 196~tubes used in RICH1 and 288 in RICH2.
+The photodetector planes are separated from the radiator gas volumes by quartz windows, and the photodetector volumes are maintained in an atmosphere of CO2 . The front-end electronics chip is encapsulated within the HPD vacuum tube, and bump-bonded to the silicon pixel sensor, which results in extremely low noise (typically 150 e- RMS per pixel for a signal of 5000 e- [12,13]). The tubes also feature high detection efficiency, with an active area fraction of about 82\%. The quantum efficiency is about 30\% at 270 nm.}
 
 \subsubsection{Электроника}
 
@@ -226,8 +230,8 @@ The photodetector planes are separated from the radiator gas volumes by quartz w
 \subsubsection{Эксперимент HERA-b}
 
 % Википедия
-% https://en.wikipedia.org/wiki/HERA-B
-% http://images.slideplayer.com/28/9404350/slides/slide_5.jpg
+\blueurl{https://en.wikipedia.org/wiki/HERA-B}
+\blueurl{http://images.slideplayer.com/28/9404350/slides/slide_5.jpg}
 
 HERA (нем. Hadron-Elektron-RingAnlage или англ. Hadron-Electron Ring Accelerator) --- первый и единственный на данный момент лептон-протонный коллайдер, функционировавший с 1992~г. по 2007~г. в DESY, Гамбург, Германия. HERA-b --- один из четырёх экспериментов на HERA --- представляет собой эксперимент с фиксированной мишенью для измерения редких распадов B-мезонов, рождающихся в столкновениях протонов с импульсом 920~\GeVoverC{} с фиксированной мишенью.
 Схема экспериментальной установки представлена на \figref{fig:HERAbSetup}.
@@ -235,8 +239,7 @@ HERA (нем. Hadron-Elektron-RingAnlage или англ. Hadron-Electron Ring A
 Отличительной особенностью этого эксперимента является то, что в роли мишени выступали 8 проволочек из различных материалов, помещаемых в гало протонного пучка. Предполагалось, что такой инновационный метод позволит избежать влияния на пучок, что позволит выполнять измерения при невероятно высоких частотах взаимодействия (5--10~МГц).
 \todo
 
-%HERA-B, a fixed target experiment (see Fig. 1) at the HERA storage ring at DESY, was designed [1] to measure rare processes in the decays of B mesons. The B mesons are produced in collisions of 920 GeV/c protons with a fixed target, which consists of 8 wires which can be individually inserted into the halo of the proton beam in order not to disturb experiments measuring ep collisions. 
-
+\small{HERA-B, a fixed target experiment (see Fig. 1) at the HERA storage ring at DESY, was designed [1] to measure rare processes in the decays of B mesons. The B mesons are produced in collisions of 920 GeV/c protons with a fixed target, which consists of 8 wires which can be individually inserted into the halo of the proton beam in order not to disturb experiments measuring ep collisions.}
 
 \begin{figure}[H]
 \centering
