@@ -1,0 +1,185 @@
+\textit{H. H. Gutbrod} // 
+FAIR Baseline Technical Report,
+ISBN: 3-9811298-0-6, 2006.
+
+\textit{B.~Friman, C.~H\"{o}hne, J.~Knoll, S.~Leupold, J.~Randrup, R.~Rapp and P.~Senger} //
+The CBM physics book: Compressed baryonic matter in laboratory experiments,
+Lect.\ Notes Phys.\ {\bf 814} (2011) pp. 980.
+
+\textit{P.~Senger and V.~Friese} //
+The CBM Collaboration: Nuclear Matter Physics at SIS-100,
+GSI, Darmstadt (2012) 18~p.
+
+Compressed Baryonic Matter Experiment. Technical Status Report.
+GSI, Darmstadt (2005) 406~p.
+
+\textit{V.~Friese and C.~Sturm} // 
+CBM Progress Report 2014,
+ISBN: 978-3-9815227-2-3, 2015.
+
+\textit{A.~Malakhov and A.~Shabunov} // 
+Technical Design Report for the CBM Superconducting Dipole Magnet,
+GSI, Darmstadt (2013) 80~p.
+
+\textit{M.~Koziel} //
+MVD Status: Integration,
+25$^\mathrm{th}$ CBM Collaboration Meeting, Darmstadt, 20-24 April 2015.
+\blueurl{https://indico.gsi.de/getFile.py/access?contribId=17&sessionId=9&resId=0&materialId=slides&confId=2960}
+
+\textit{J.~Heuser et~al.} //
+Technical Design Report for the CBM Silicon Tracking System (STS),
+ GSI, Darmstadt (2013) 167~p.
+
+\textit{C.~H\"{o}hne et~al.} //
+Technical Design Report for the CBM Ring Imagine Cherenkov (RICH),
+GSI, Darmstadt (2013) 201~p.
+
+\textit{S.~Chattopadhyay et~al.} //
+Technical Design Report for the CBM Muon Chambers (MuCh),
+GSI, Darmstadt (2014) 192~p.
+
+\textit{S.~Biswas et~al.} //
+Development of a GEM based detector for the CBM Muon Chamber (MUCH),
+2013 JINST 8 C12002.
+
+\textit{M.~Petris et~al.} //
+TRD detector development for the CBM experiment,
+NIM A, Volume 732, 21 December 2013, Pages 375–379.
+
+\textit{N.~Herrmann et~al.} //
+Technical Design Report for the CBM Time-of-Flight System (TOF),
+GSI, Darmstadt (2014) 182~p.
+
+\textit{I.~Korolko} //
+CBM Calorimeter for SIS100 (TDR status),
+25$^\mathrm{th}$ CBM Collaboration Meeting, Darmstadt, 20-24 April 2015.\\
+\blueurl{https://indico.gsi.de/getFile.py/access?contribId=138&sessionId=29&resId=1&materialId=slides&confId=2960}
+
+\textit{F.~Guber et~al.} //
+Technical Design Report for the CBM Projectile spectator detector (PSD),
+GSI, Darmstadt (2014) 78~p.
+
+Hamamatsu H12700 manual,
+\blueurl{https://www.hamamatsu.com/resources/pdf/etd/H12700_TPMH1348E.pdf}
+
+\textit{M. Calvi et~al.} //
+Characterization of the Hamamatsu H12700A-03 and R12699-03 multi-anode photomultiplier tubes,
+2015 JINST 10 P09021.
+
+\textit{M. Calvi et~al.} //
+Characterization of the Hamamatsu H12700A-03 multi-anode photomultiplier tube for the LHCb RICH upgrade,
+LHCb-INT-2015-006.
+
+\blueurl{https://www.hamamatsu.com/resources/pdf/etd/H8500_H10966_TPMH1327E.pdf}
+
+T. Mahmoud RICH2016 proceedings.
+
+\textit{C.~Pauly et~al.} //
+The CBM RICH project,
+NIM A 2016,
+doi: 10.1016/j.nima.2016.05.102.
+
+\textit{S.~Reinecke et~al.} //
+The CBM-RICH detector,
+JINST 11 (2016) no.05, C05016.
+
+Photomultiplier tubes, Basics and Applications, Hamamatsu Photonics K.K.
+
+J.~Kopfer PhD thesis, Bergische Universit\"{a}t Wuppertal.
+
+Official TRB project web site,
+\blueurl{http://trb.gsi.de/}
+
+\textit{C.~Ugur, S.~Linev, J.~Michel, T.~Schweitzer, and M.~Traxler} //
+A novel approach for pulse width measurements with a high precision (8 ps RMS) TDC in an FPGA,
+2016 JINST 11 C01046.
+
+TRB~v3 documentation,
+\blueurl{http://jspc29.x-matter.uni-frankfurt.de/docu/trb3docu.pdf}
+
+\textit{W.~M.~Zabołotny and G.~Kasprowicz} //
+Data processing boards design for CBM experiment,
+Proc. SPIE 9290, Photonics Applications in Astronomy, Communications, Industry, and High-Energy Physics Experiments 2014, 929023 (November 25, 2014); doi:10.1117/12.2073377;
+
+\textit{J~de~Cuveland et~al.} //
+A First-level Event Selector for the CBM Experiment at FAIR,
+2011 J. Phys.: Conf. Ser. 331 022006.
+
+\textit{J.~Michel, M.~Faul, J.~Friese, C.~H\"{o}hne, K.-H.~Kampert, V.~Patel, C.~Pauly, D.~Pfeifer, P.~Skott, M.~Traxler, and C.~Ugur} //
+Electronics for the RICH detectors of the HADES and CBM experiments,
+2017 JINST 12 C01072.
+
+\textit{J.~Adamczewski-Musch et~al.} //
+Data acquisition and online monitoring software for CBM test beams,
+
+2012 J. Phys.: Conf. Ser. 396 012001.
+
+\textit{C.~Bergmann et~al.} //
+Common CBM beam test of the RICH, TRD and TOF subsystems at the CERN PS T9 beam line in 2014,
+CBM Progress Report 2014, p.9.
+
+\textit{C.~Bergmann et~al.} //
+Test of M\"unster CBM-TRD real-size detector and radiator prototypes at the CERN PS/T9 beam line,
+CBM Progress Report 2014, p.78.
+
+\textit{M.~Petris, D.~Batros, G.~Caragheorghropol et~al.} //
+Prototype with the basic architecture for the CBM-TOF inner wall tested in close to real conditions,
+2016 J. Phys.: Conf. Ser. 724 012037.
+
+Information about the T9 beam line and experimental facilities,
+\blueurl{http://home.web.cern.ch/sites/home.web.cern.ch/files/file/spotlight_students/information_about_the_t9_beam_line_and_experimental_facilities.pdf}
+
+\textit{L.M. Kotchenda, P.A. Kravtsov} //
+CBM RICH PROTOTYPE GAS SYSTEM.
+
+\textit{J.~Adamczewski-Musch et~al.} //
+Determination of tolerances of mirror displacement and radiator gas impurity for the CBM RICH detector,
+doi:~10.1016/j.nima.2014.04.074
+
+\textit{J.~Bendarouach, C.~H\"{o}hne, and T.~Mahmoud} //
+Mirror misalignment control system and prototype setup,
+CBM Progress Report 2014, p.56.
+
+Roithner UVTOP240 datasheet,
+\blueurl{http://www.roithner-laser.com/datasheets/led_deepuv/uvtop240.pdf}
+
+\textit{M. D\"{u}rr, J. Kopfer et~al.} //
+Influence of wavelength-shifting films on multianode PMTs with UV-extended windows,
+NIM A, Volume 783, 21 May 2015, Pages 43–50.
+
+Alphalas Picopower-LD series datasheet,
+\blueurl{http://www.alphalas.com/images/stories/products/lasers/Picosecond_Pulse_Diode_Lasers_with_Driver_PICOPOWER-LD_ALPHALAS.pdf}
+
+\blueurl{http://www.rz.uni-frankfurt.de/39888789/syscore}
+
+\blueurl{http://cbmroot.gsi.de/}
+
+FLESnet development repository,
+\blueurl{https://github.com/cbm-fles/flesnet}
+
+\textit{J.~Adamczewski-Musch, S.~Linev, E.~Ovcharenko, and C.~Ugur} //
+HADES trbnet data formats for DABC and Go4,
+PHN-SIS18-ACC-41, GSI SCIENTIFIC REPORT 2012, p.297.
+
+\textit{R.~Szplet, J.~Kalisz, and R.~Pelka} //
+Nonlinearity correction of the integrated time-to-digital converter with direct coding,
+IEEE Transactions on Instrumentation and Measurement, 46:449–453, April 1997.
+
+\textit{С.А.~Лебедев, Г.А.~Ососков} //
+Быстрые алгоритмы распознавания колец и идентификации электронов в детекторе RICH эксперимента CBM,
+Письма в ЭЧАЯ. 2009. Т.6, №2(151). С.260-284.
+
+\textit{S.~Lebedev, C.~H\"{o}hne, I.~Kisel, G.~Ososkov} //
+Fast Parallel Ring Recognition Algorithm in the RICH Detector of the CBM Experiment at FAIR,
+ACAT2010 proceedings.
+
+\textit{E.~Ovcharenko, S.~Belogurov et~al.} //
+Tests of the CBM RICH readout and DAQ prototype,
+PEPAN letters.
+
+\textit{D.V. O’Connor, D. Phillips} //
+Time Correlated Single Photon Counting, Academic Press, London 1984.
+
+\textit{F.~Gonnella, V.~Kozhuharov, M.~Raggi} //
+Time over threshold in the presence of noise,
+NIM A, Volume 791, p. 16-21.
