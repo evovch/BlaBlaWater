@@ -2,6 +2,24 @@
 
 \subsection{FASTRAD}\label{sec:secFastrad}
 
+
+
 \subsection{SimpleGeo}\label{sec:secSimpleGeo}
 
+
+
 \subsection{CADtoROOT interface}\label{sec:secCinzia}
+
+% http://iopscience.iop.org/article/10.1088/1742-6596/523/1/012017/pdf
+
+% C Luzzi and F Carminati 2014 J. Phys.: Conf. Ser. 523 012017
+
+Данный интерфейс является частью ROOT и основан на Open CASCADE Technology (\cite{}) --- открытой платформе для разработки 3d-приложений. Он позволяет выполнить анализ CSG-описания установки в менеджере геометрии ROOT и экспортировать его BREP-описание в STEP файл.
+
+\subsection{CAD converter}\label{sec:secTobias}
+
+Первый этап --- импорт STEP или IGES средствами OpenCASCADE.
+Затем выполняется анализ BREP форм и выделение примитивов.
+После этого определяются параметры примитивов и матрица позиционирования.
+Последним этапом выполняется экспорт в ROOT-файл.
+Нераспознанные формы экспортируются в другой файл.
