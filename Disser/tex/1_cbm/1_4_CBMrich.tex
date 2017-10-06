@@ -264,29 +264,30 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 Количество зарегистрированных фотонов пропорционально длине радиатора вдоль пучка, а значит уменьшение детектора приводит к понижению его эффективности.
 
 То, насколько хорошо хиты выстраиваются на кольце зависит от углового разрешения детектора для черенковских фотонов. В работе~\cite{TDR_RICH, KOPFERDISS} подробно рассмотрены факторы влияющие на это разрешение. Показано, что основные вклады вносят: гранулярность камеры, неидеальности зеркала, многократное рассеяние излучающей частицы и хроматическая дисперсия черенковского света в радиаторе, отклонение траектории частицы от прямолинейной в паразитном магнитном поле.
-Вклады многократного рассеяния и паразитного магнитного поля возрастают при уменьшении импульса.
-
-В качестве характерной величины приведём $\sigma = 0.38$~мрад для электронов с импульсом $p=8$~\GeVoverC{}.
+Вклады многократного рассеяния и паразитного магнитного поля возрастают при уменьшении импульса. В качестве характерной величины приведём $\sigma = 0.38$~мрад для электронов с импульсом $p=8$~\GeVoverC{}.
 
 %For 20 detected photons per Cherenkov ring and neglecting errors from the mirror quality, the overall error is calculated according to equation (2.11) to be σ = 0.38 mrad for p = 8 GeV/c corresponding to 1.3\% of the saturated Cherenkov opening angle for ultrarelativistic particles of 1.72° = 30.02 mrad.
 
-%Challenges for the ring reconstruction
+\bigskip
 
-В эксперименте CBM из точки взаимодействия $Au+Au$ при 25~\GeVperNucl{} в аксептанс RICH попадает около 1000 заряженных частиц. При этом частота первичных взаимодействий достигает 10~МГц. Эти условия диктуют следующие требования.
-Реконструкция колец в CBM RICH должна выполняться в среде высокой плотности частиц, многие из которых являются заряженными пионами с высоким импульсом. В дополнение к этому, фотоны, рождённые в точке взаимодействия конвертируются в материале детектора в пары $e^{+} e^{-}$. В результате одном событии в RICH регистрируется около 65 колец. На \figref{fig:CbmRichOneEvent} приведено изображение на одной плоскости реконструкции от одного смоделированного события $Au+Au$ 25~\GeVperNucl{}. Плотность хитов в одиночном событии достигает значения 0.5 хитов/см$^{2}$. Также алгоритмы должны быть достаточно быстрыми, рассчитанными на достаточно широкий диапазон количества хитов на кольцо (от~5 до~40) и способными работать с эллиптической формой колец.
+Процедура восстановления события в CBM RICH детекторе схематично показана на~\figref{fig:StsRichReco}, подробнее см.~\cite{}.
 
-% The main challenge for the ring reconstruction is the high hit multiplicity in heavy ion collisions.
-% For central Au+Au collisions at 25 AGeV, around 1000 charged particles are produced in the RICH acceptance, many of them being charged pions with high momenta. In addition, photon generated in the interaction are converted to e± pairs by conversion processes in the detector material or even in the target. This results in ≈ 65 rings per event on the RICH camera. Figure 2.9 shows the response of the upper two camera modules to Au+Au collisions at 8 AGeV and 25 AGeV. The maximum hit density is ≈ 0.5 hits/cm2/event.
-% Other challenges are the high interaction rate of up to 10 MHz requiring fast reconstruction algorithms, the varying number of hits per ring from 5 to 40, and the elliptic shape of the rings in the outer regions of the camera (see below).
-
-Процедура восстановления события в CBM RICH детекторе схематично показана на~\figref{fig:StsRichReco}, подробнее см.~\cite{}. 
-
+\begin{minipage}[t]{0.495\textwidth}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{pictures/STS_RICH_reco.png}
+\includegraphics[width=0.95\textwidth]{pictures/STS_RICH_reco.png}
 \caption{Сначала независимо выполняется реконструкция треков в STS и восстановление колец в RICH. Затем трек STS пропагируется до зеркала и рассчитывается пересечение отражённого продолжения с плоскостью реконструкции RICH. Последний этап --- сопоставление продолженных треков с центрами колец.}
 \label{fig:StsRichReco}
 \end{figure}
+\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+%Challenges for the ring reconstruction
+В эксперименте CBM из точки взаимодействия $Au+Au$ при 25~\GeVperNucl{} в аксептанс RICH попадает около 1000 заряженных частиц. При этом частота первичных взаимодействий достигает 10~МГц. Эти условия диктуют следующие требования.
+Реконструкция колец в CBM RICH должна выполняться в среде высокой плотности частиц, многие из которых являются заряженными пионами с высоким импульсом. В дополнение к этому, фотоны, рождённые в точке взаимодействия конвертируются в материале детектора в пары $e^{+} e^{-}$. В результате одном событии в RICH регистрируется около 65 колец. На \figref{fig:CbmRichOneEvent} приведено изображение на одной плоскости реконструкции от одного смоделированного события $Au+Au$ 25~\GeVperNucl{}. Плотность хитов в одиночном событии достигает значения 0.5 хитов/см$^{2}$. Также алгоритмы должны быть достаточно быстрыми, рассчитанными на достаточно широкий диапазон количества хитов на кольцо (от~5 до~40) и способными работать с эллиптической формой колец.
+% The main challenge for the ring reconstruction is the high hit multiplicity in heavy ion collisions.
+% For central Au+Au collisions at 25 AGeV, around 1000 charged particles are produced in the RICH acceptance, many of them being charged pions with high momenta. In addition, photon generated in the interaction are converted to e± pairs by conversion processes in the detector material or even in the target. This results in ≈ 65 rings per event on the RICH camera. Figure 2.9 shows the response of the upper two camera modules to Au+Au collisions at 8 AGeV and 25 AGeV. The maximum hit density is ≈ 0.5 hits/cm2/event.
+% Other challenges are the high interaction rate of up to 10 MHz requiring fast reconstruction algorithms, the varying number of hits per ring from 5 to 40, and the elliptic shape of the rings in the outer regions of the camera (see below).
+\end{minipage}
 
 \begin{figure}[H]
 \includegraphics[width=0.9\textwidth]{pictures/CbmRichOneEvent.png}
@@ -314,8 +315,12 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 \end{figure}
 
 \begin{table}[H]
-\caption{Отношение сигнал-шум (S/B), contribution of physical background in percent of the total number of pairs in the background and the contribution of misidentified $\pi^{\pm}$ in percent of the electron sample after application of all background rejection cuts. A pion suppression of $>5000$ is needed to have the background dominated by physical sources and to reasonably access low mass vector mesons. Таблица взята из~\cite{TDR_RICH}.}
+\caption{Отношение сигнал-шум (S/B), вклад физических источников в процентах от общего числа пар в фоне и вклад ложно идентифицированных $\pi^{\pm}$ в процентах от электронов \todo после применения всех катов \todo подавления фона. Для доступа к лёгким векторным мезонам необходимо чтобы физические источники сигнала доминировали над фоном, что требует фактор одавления пионов более 5000. Таблица взята из~\cite{TDR_RICH}.}
 \label{tabl:RICHchar}
+
+% \todo проверить перевод
+%  S/B, contribution of physical background in percent of the total number of pairs in the background and the contribution of misidentified $\pi^{\pm}$ in percent of the electron sample after application of all background rejection cuts.
+% A pion suppression of $>5000$ is needed to have the background dominated by physical sources and to reasonably access low mass vector mesons. 
 
 \begin{tabular}{ | p{0.28\linewidth} p{0.07\linewidth} p{0.07\linewidth} p{0.07\linewidth} p{0.07\linewidth} p{0.07\linewidth} p{0.07\linewidth} p{0.1\linewidth} | }
 
