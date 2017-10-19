@@ -42,6 +42,9 @@
 %               |___/                                                        
 % ==============================================================================================
 
+% Три различные системы для разных задач
+Для выполнения геометрического моделирования применялась САПР CATIA~v5, расчёт распределения паразитного магнитного поля внутри экрана выполнялся с помощью МКЭ в OPERA3d/TOSCA, а моделирование прохождения частиц в условиях пучка выполнялось в CbmRoot.
+
 % ==============================================================================================
 %   ____                               
 %  / ___|__ _ _ __ ___   ___ _ __ __ _ 
@@ -52,6 +55,15 @@
 % ==============================================================================================
 
 \section{Фоточувствительная камера}\label{sec:secRICHgeoCamera}
+
+Планируется, что фоточувствительная камера CBM RICH будет составлена из модулей, содержащих 2$\times$3 МА~ФЭУ, см. \figref{fig:H12700drawing}. Один такой МА~ФЭУ имеет габариты 52$\times$52~мм$^2$, между МА~ФЭУ оставляется зазор 1~мм для запаса по точности, таким образом размер модуля составляет 158мм$\times$105мм.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{pictures/H12700_drawing.png}
+\caption{Чертёж МА~ФЭУ H12700 из документации.}
+\label{fig:H12700drawing}
+\end{figure}
 
 \begin{figure}[H]
 \begin{minipage}[b]{0.495\textwidth}
@@ -119,11 +131,13 @@
 
 \begin{figure}[H]
 \begin{minipage}[b]{0.495\textwidth}
-\includegraphics[width=0.8\textwidth]{pictures/Complex_profile.png}
+\centering
+\includegraphics[width=0.6\textwidth]{pictures/Complex_profile.png}
 \end{minipage}
 \hspace{0.01\textwidth}
 \begin{minipage}[b]{0.495\textwidth}
-\includegraphics[width=1.0\textwidth]{pictures/Material_budget.eps}
+\centering
+\includegraphics[width=0.8\textwidth]{pictures/Material_budget.eps}
 \end{minipage}
 \caption{Исходный профиль в CAD-модели (слева) и итоговый профиль в MC-модели.}
 \label{fig:geoProfiles}
@@ -221,6 +235,20 @@
 \end{minipage}
 \caption{Ранняя модель опор зеркал в САПР CATIA~V5 (слева) и в CbmRoot (справа).}
 \label{fig:SmallFrameCADandMC}
+\end{figure}
+
+\subsection{Модель с репликой долей зеркал}
+
+\begin{figure}[H]
+\begin{minipage}[t]{0.495\textwidth}
+\includegraphics[width=0.95\textwidth]{pictures/CbmRichMirror1.png}
+\end{minipage}
+\hspace{0.01\textwidth}
+\begin{minipage}[t]{0.495\textwidth}
+\includegraphics[width=0.95\textwidth]{pictures/CbmRichMirror2.png}
+\end{minipage}
+\caption{}
+\label{fig:ReplicaMirror}
 \end{figure}
 
 \input{tex/23_geometry/3_x_CbmRichChar.tex}
