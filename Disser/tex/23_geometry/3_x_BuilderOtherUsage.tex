@@ -1,30 +1,44 @@
 \section{Применение ``CATIA-GDML geometry builder'' за пределами CBM RICH}\label{sec:secBuilderOtherUsage}
 
-\subsection{CBM ECAL frame}
+% ================================================================================================================
+
+\subsection{CBM ECAL frame}\label{sec:secCbmEcalFrame}
 
 %\centering
 
 \begin{figure}[H]
-\begin{minipage}[b]{0.31\textwidth}
-\includegraphics[width=0.95\textwidth]{pictures/ECAL_SIS300_ROOT.png}
+\centering
+\includegraphics[width=0.7\textwidth]{pictures/CBM_ECAL_frame.png}
 \caption{}
-\label{fig:CbmEcal1}
-\end{minipage}
-\hspace{0.01\textwidth}
-\begin{minipage}[b]{0.31\textwidth}
-\includegraphics[width=0.95\textwidth]{pictures/ECAL_SIS300_CATIA_g4.png}
-\caption{}
-\label{fig:CbmEcal2}
-\end{minipage}
-\hspace{0.01\textwidth}
-\begin{minipage}[b]{0.31\textwidth}
-\includegraphics[width=0.95\textwidth]{pictures/ECAL_SIS300_CATIA_cad.png}
-\caption{}
-\label{fig:CbmEcal3}
-\end{minipage}
+\label{fig:CbmEcalFrame}
 \end{figure}
 
-\subsection{Магнит CBM}
+% \begin{figure}[H]
+% \begin{minipage}[b]{0.31\textwidth}
+% \includegraphics[width=0.95\textwidth]{pictures/ECAL_SIS300_ROOT.png}
+% \caption{}
+% \label{fig:CbmEcal1}
+% \end{minipage}
+% \hspace{0.01\textwidth}
+% \begin{minipage}[b]{0.31\textwidth}
+% \includegraphics[width=0.95\textwidth]{pictures/ECAL_SIS300_CATIA_g4.png}
+% \caption{}
+% \label{fig:CbmEcal2}
+% \end{minipage}
+% \hspace{0.01\textwidth}
+% \begin{minipage}[b]{0.31\textwidth}
+% \includegraphics[width=0.95\textwidth]{pictures/ECAL_SIS300_CATIA_cad.png}
+% \caption{}
+% \label{fig:CbmEcal3}
+% \end{minipage}
+% \end{figure}
+
+% ================================================================================================================
+
+\subsection{Магнит CBM}\label{sec:secCbmMagnet}
+
+Дипольный магнит эксперимента CBM.
+Два принципиально разных проекта.
 
 \begin{figure}[H]
 \begin{minipage}[b]{0.495\textwidth}
@@ -47,7 +61,15 @@
 \label{fig:NewCbmMagnet1}
 \end{figure}
 
-\subsection{GLAD}
+% ================================================================================================================
+
+\subsection{R3B GLAD}\label{sec:secGlad}
+
+R3B (Reactions with Relativistic Radioactive Beams) --- эксперимент группы NUSTAR (Nuclear STructure, Astrophysics and Reactions)
+
+GLAD (GSI Large Acceptance Dipole)
+
+Только корпус магнита.
 
 \begin{figure}[H]
 \begin{minipage}[b]{0.495\textwidth}
@@ -75,7 +97,11 @@
 \end{minipage}
 \end{figure}
 
-\subsection{CMS MUON}
+% ================================================================================================================
+
+\subsection{Мюонная система эксперимента CMS}\label{sec:secCmsMuon}
+
+Импортировался в CATIA из GDML, который был экспортирован из ROOT.
 
 \begin{figure}[H]
 \centering
@@ -84,14 +110,30 @@
 \label{fig:CmsMuon}
 \end{figure}
 
-\subsection{PANDA MUON}
+% ================================================================================================================
 
-Цилиндрическая часть мюонной системы эксперимента PANDA.
+\subsection{Мюонная система эксперимента PANDA}\label{sec:secPandaMuon}
+
+Один слой цилиндрической части мюонной системы эксперимента PANDA.
+Создавался с применением \macroname{Duplicator}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{pictures/PANDA_MUON_barrel.png}
+\includegraphics[width=0.7\textwidth]{pictures/PANDA_layer.png}
 \caption{}
-\label{fig:PandaMuonBarrel}
+\label{fig:PandaMuonLayer}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{pictures/PANDA_MUCH_part.png}
+\caption{}
+\label{fig:PandaMuonPart}
+\end{figure}
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=0.7\textwidth]{pictures/PANDA_MUON_barrel.png}
+% \caption{}
+% \label{fig:PandaMuonBarrel}
+% \end{figure}
