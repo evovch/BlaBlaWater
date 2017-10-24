@@ -219,7 +219,7 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 Стремление к уменьшению общей стоимости детектора привело к уменьшению его размеров. Количество зарегистрированных фотонов пропорционально длине радиатора вдоль пучка, а значит уменьшение детектора приводит к понижению его эффективности.
 Так, например, HERA-b RICH (см. секцию~\ref{sec:HerabRich}) регистрирует 33~фотона на кольцо, в то время как в соответствии с моделированием в CBM будет регистрироваться 28~фотонов на кольцо.
 
-То, насколько хорошо хиты выстраиваются на кольце зависит от углового разрешения детектора для черенковских фотонов. В работе~\cite{TDR_RICH, KOPFERDISS} подробно рассмотрены факторы влияющие на это разрешение. Показано, что основные вклады вносят: гранулярность камеры, неидеальности зеркала, многократное рассеяние излучающей частицы и хроматическая дисперсия черенковского света в радиаторе, отклонение траектории частицы от прямолинейной в паразитном магнитном поле.
+То, насколько хорошо хиты выстраиваются на кольце, зависит от углового разрешения детектора для черенковских фотонов. В работе~\cite{TDR_RICH, KOPFERDISS} подробно рассмотрены факторы, влияющие на это разрешение. Показано, что основные вклады вносят: гранулярность камеры, неидеальности зеркала, многократное рассеяние излучающей частицы и хроматическая дисперсия черенковского света в радиаторе, отклонение траектории частицы от прямолинейной в паразитном магнитном поле.
 Вклады многократного рассеяния и паразитного магнитного поля возрастают при уменьшении импульса. В качестве характерной величины приведём $\sigma = 0.38$~мрад для электронов с импульсом $p=8$~\GeVoverC{}.
 
 %For 20 detected photons per Cherenkov ring and neglecting errors from the mirror quality, the overall error is calculated according to equation (2.11) to be σ = 0.38 mrad for p = 8 GeV/c corresponding to 1.3\% of the saturated Cherenkov opening angle for ultrarelativistic particles of 1.72° = 30.02 mrad.
@@ -231,22 +231,25 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 % Дублирует кусок в секции sec:secReconstruction.
 Реконструкция в CBM~RICH означает поиск колец по хитам в плоскости реконструкции. В контексте реконструкции можно рассматривать хит как загоревшийся пиксель МА~ФЭУ. Конус черенковских фотонов, после фокусировки зеркалами, пересекает поверхность фоточувствительной камеры, которая в общем случае может состоять из нескольких плоскостей. Первый этап реконструкции --- перевод хитов из плоскостей камеры в плоскость реконструкции. Затем выполняется поиск колец по хитам. В CbmRoot есть реализации нескольких алгоритмов поиска колец. Наибольший практический интерес представляет алгоритм распознавания колец черенковского излучения, основанный на проеобразовании Хафа и описанный в работах~\cite{RECOPEPAN, RECO2}. Реализация данного алгоритма была специально адаптирована для данных пучковых тестов, в которых ожидается одно кольцо на событие. Данный алгоритм реализован в классе \classname{CbmRichProtRingFinderHoughImpl}, унаследованном от \classname{CbmRichProtRingFinderHough} и далее от \classname{CbmRichRingFinder}. После этого определяются параметры кольца и далее осуществляется реконструкция треков частиц с применением информации с других детекторов.
 
-\begin{minipage}[t]{0.495\textwidth}
+%\begin{minipage}[t]{0.495\textwidth}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{pictures/STS_RICH_reco.png}
 \caption{Сначала независимо выполняется реконструкция треков в STS и восстановление колец в RICH. Затем трек STS пропагируется до зеркала и рассчитывается пересечение отражённого продолжения с плоскостью реконструкции RICH. Последний этап --- сопоставление продолженных треков с центрами колец.}
 \label{fig:StsRichReco}
 \end{figure}
-\end{minipage}
-\begin{minipage}[t]{0.495\textwidth}
-Вследствие большой множественности в центральных столкновениях в одном событий в RICH регистрируется 65~колец.
+%\end{minipage}
+%\begin{minipage}[t]{0.495\textwidth}
+%\end{minipage}
+
+На~\figref{fig:RICHeff}, \figref{fig:InvMassSpectra} и табл.~\ref{tabl:RICHchar} показаны характеристики детектора CBM RICH, которые были получены в результате моделирования в среде CbmRoot с применением генератора UrQMD~\cite{URQMD}. С применением результатов анализа данных пучковых тестов прототипа. \todo
+
+Вследствие большой множественности в центральных столкновениях в одном событий в RICH регистрируется до 65~колец.
 % В эксперименте CBM из точки взаимодействия $Au+Au$ при 25~\GeVperNucl{} в аксептанс RICH попадает около 1000 заряженных частиц. При этом частота первичных взаимодействий достигает 10~МГц. Эти условия диктуют следующие требования. Реконструкция колец в CBM RICH должна выполняться в среде высокой плотности частиц, многие из которых являются заряженными $\pi$-мезонами с высоким импульсом. В дополнение к этому, фотоны, рождённые в точке взаимодействия конвертируются в материале детектора в пары $e^{+} e^{-}$. В результате одном событии в RICH регистрируется около 65 колец.
-На \figref{fig:CbmRichOneEvent} приведено изображение на одной плоскости реконструкции от одного смоделированного события $Au+Au$ 25~\GeVperNucl{}. Плотность хитов в одиночном событии достигает значения 0.5 хитов/см$^{2}$. Алгоритмы реконструкции должны быть достаточно быстрыми, рассчитанными на достаточно широкий диапазон количества хитов на кольцо (от~5 до~40) и способными работать с эллиптической формой колец.
+На~\figref{fig:CbmRichOneEvent} приведено изображение на одной плоскости реконструкции от одного смоделированного события $Au+Au$ 25~\GeVperNucl{}. Плотность хитов в одиночном событии достигает значения 0.5~ хитов/см$^{2}$. Алгоритмы реконструкции должны быть достаточно быстрыми, рассчитанными на достаточно широкий диапазон количества хитов на кольцо (от~5 до~40) и способными работать с эллиптической формой колец.
 % The main challenge for the ring reconstruction is the high hit multiplicity in heavy ion collisions.
 % For central Au+Au collisions at 25 AGeV, around 1000 charged particles are produced in the RICH acceptance, many of them being charged pions with high momenta. In addition, photon generated in the interaction are converted to e± pairs by conversion processes in the detector material or even in the target. This results in ≈ 65 rings per event on the RICH camera. Figure 2.9 shows the response of the upper two camera modules to Au+Au collisions at 8 AGeV and 25 AGeV. The maximum hit density is ≈ 0.5 hits/cm2/event.
 % Other challenges are the high interaction rate of up to 10 MHz requiring fast reconstruction algorithms, the varying number of hits per ring from 5 to 40, and the elliptic shape of the rings in the outer regions of the camera (see below).
-\end{minipage}
 
 \begin{figure}[H]
 \includegraphics[width=0.9\textwidth]{pictures/CbmRichOneEvent.png}
@@ -254,8 +257,22 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 \label{fig:CbmRichOneEvent}
 \end{figure}
 
-В результате обильных симуляций получены характеристики, показанные на~\figref{fig:RICHeff}, \ref{fig:InvMassSpectra} и табл.~\ref{tabl:RICHchar}.
-% \todo развернуть
+Для определения характеристик CBM RICH с помощью моделирования в каждое событие к частицам UrQMD были подмешаны по~$5e^{+}$ и~$5e^{-}$ из точки взаимодействия, имеющих поперечный импульс, разыгранный в соответствии с равномерным распределением в диапазоне от~0 до~3~\GeVoverC{}, и направлением в пределах геометрического аксептанса. В моделировании при энергии пучка~8~\GeVperNucl{} был исключён детектор TRD.
+
+% In order to enhance statistics and investigate the RICH response to primary electrons, 5 e+ and 5 e- were embedded into each UrQMD event at the primary vertex with uniform distributions of transverse momentum in 0 < p T < 3 GeV/c, azimuth angle 0 < φ <360 and polar angle 2.5 < θ < 25.
+% The detector setup which is described in Section 3.1 was used for simulations.
+% However for simulations at 8 AGeV beam energy the TRD detector was excluded.
+
+% The performance of the algorithms was obtained using information on Monte Carlo input. During the efficiency calculation the level of the correspondence between found and simulated rings is estimated. A ring is defined as correctly found if it has more than 60\% of hits from one Monte-Carlo ring, otherwise a ring is defined as ghost ring.
+
+Эффективность реконструкции колец определяется как отношение $Efficiency = N_{reconstructed} / N_{accepted}$, где $N_reconstructed$ --- количестве верно найденных колец после реконструкции, а $N_{accepted}$ --- количество колец, находящихся в аксептансе RICH, которые возможно реконструировать, т.е. колец, имеющих минимум 7~зарегистрированных хитов в RICH.
+
+% The ring reconstruction efficiency is defined as $Efficiency = N_{reconstructed} / N_{accepted}$. $N_reconstructed$ is the number of correctly found rings after reconstruction, $N_{accepted}$ is the number of reconstructable rings lying in the RICH acceptance, i.e. rings which have at least 7 detected hits in the RICH.
+% Results in this section are shown for two sets of rings: rings from primary e± with at least 7 hits and rings from for primary ``reference'' e± which have more than 15 hits in the ring and a momentum larger than 1 GeV/c.
+
+% The electron identification efficiency is defined as the number of electrons which were correctly reconstructed, matched and identified in STS+RICH(+TRD+TOF) detectors divided by the number of electrons in the STS, RICH, TRD and TOF detector acceptance. The acceptance is defined by requiring at least 4 consecutive STS points, at least 7 RICH hits, at least 8 TRD points and one TOF hit. Since for 8 AGeV the TRD is not used the detector acceptance calculation also does not include the TRD for this energy. The pion suppression factor is defined as the number of pions which were reconstructed in the STS and have a track projection lying in the RICH acceptance divided by the number of pions identified as electrons.
+
+% \todo развернуть!
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.495\textwidth}
@@ -270,9 +287,11 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 \begin{minipage}[t]{0.495\textwidth}
 \includegraphics[width=0.95\textwidth]{pictures/RICHeff4.png}
 \end{minipage}
-\caption{Сверху --- 8~\GeVperNucl{}, снизу --- 25~\GeVperNucl{}.}
+\caption{Слева --- эффективность идентификации электронов, справа --- фактор подавления пионов; сверху --- 8~\GeVperNucl{}, снизу --- 25~\GeVperNucl{}.}
 \label{fig:RICHeff}
 \end{figure}
+
+% Left: electron identification efficiency in dependence on momentum. Right: pion suppression factor in dependence on momentum; both calculated for 25 AGeV beam energy. Different colours represent different reconstruction steps and detectors which are included in the electron identification procedure: RICH (red), RICH+TRD (blue) and RICH+TRD+TOF (green). Horizontal lines represent numbers integrated over momentum.
 
 \begin{table}[H]
 \caption{Отношение сигнал-шум (S/B), вклад $e^{+}e^{-}$-пар из распада Далица и конверсии гамма-квантов в полный комбинаторный фон в процентах и вклад ложно идентифицированных $\pi^{\pm}$ в процентах от полного числа электронов после применения всех критериев отбора. Для достижения чувствительности к лёгким векторным мезонам необходимо чтобы физические источники сигнала доминировали над фоном, что требует фактор подавления $\pi$-мезонов более 5000. Таблица взята из~\cite{TDR_RICH}.}
@@ -320,7 +339,7 @@ $\phi$: $S/B$ & 0.002 & 0.02 & 0.04 & 0.07 & 0.10 & 0.12 & 0.14 \\
 
 \end{table}
 
-% Чё-то написать
+% \todo Чё-то написать!
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.495\textwidth}
