@@ -205,14 +205,14 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 
 %Вводное предложение о том, что рич восстанавливает кольца по хитам.
 
-\textbf{Какая часть секции \ref{sec:secCbmRichOptimiz} идёт сюда?}
+% \textbf{Какая часть секции \ref{sec:secCbmRichOptimiz} идёт сюда?}
 
-Восстановление колец в RICH выполняется по хитам, спроецированным на плоскость реконструкции.\\
-В среднем 28~хитов на кольцо. \\
+%Восстановление колец в RICH выполняется по хитам, спроецированным на плоскость реконструкции.\\
+%В среднем 28~хитов на кольцо. \\
 % откуда взялось это число? Сколько в прототипе? По моим результатам. (см. слайды с онлайн рич-митинга)
 % см. прогресс репорт 2013, стр. 52
-Средний радиус кольца составляет~4.5~см. \\
-Средняя эллиптичность кольца равна~0.937. \\
+%Средний радиус кольца составляет~4.5~см. \\
+%Средняя эллиптичность кольца равна~0.937. \\
 
 % \todo Причесать.
 % Уменьшение детектора
@@ -227,9 +227,10 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 \bigskip
 
 Процедура восстановления события в CBM RICH детекторе схематично показана на~\figref{fig:StsRichReco}, подробнее см.~\cite{RICHreco}.
-
 % Дублирует кусок в секции sec:secReconstruction.
-Реконструкция в CBM~RICH означает поиск колец по хитам в плоскости реконструкции. В контексте реконструкции можно рассматривать хит как загоревшийся пиксель МА~ФЭУ. Конус черенковских фотонов, после фокусировки зеркалами, пересекает поверхность фоточувствительной камеры, которая в общем случае может состоять из нескольких плоскостей. Первый этап реконструкции --- перевод хитов из плоскостей камеры в плоскость реконструкции. Затем выполняется поиск колец по хитам. В CbmRoot есть реализации нескольких алгоритмов поиска колец. Наибольший практический интерес представляет алгоритм распознавания колец черенковского излучения, основанный на проеобразовании Хафа и описанный в работах~\cite{RECOPEPAN, RECO2}. Реализация данного алгоритма была специально адаптирована для данных пучковых тестов, в которых ожидается одно кольцо на событие. Данный алгоритм реализован в классе \classname{CbmRichProtRingFinderHoughImpl}, унаследованном от \classname{CbmRichProtRingFinderHough} и далее от \classname{CbmRichRingFinder}. После этого определяются параметры кольца и далее осуществляется реконструкция треков частиц с применением информации с других детекторов.
+Реконструкция в CBM~RICH означает поиск колец по хитам в плоскости реконструкции. В контексте реконструкции можно рассматривать хит как загоревшийся пиксель МА~ФЭУ. Конус черенковских фотонов, после фокусировки зеркалами, пересекает поверхность фоточувствительной камеры, которая в общем случае может состоять из нескольких плоскостей. Первый этап реконструкции --- перевод хитов из плоскостей камеры в плоскость реконструкции. Затем выполняется поиск колец по хитам. В CbmRoot есть реализации нескольких алгоритмов поиска колец. Наибольший практический интерес представляет алгоритм распознавания колец черенковского излучения, основанный на проеобразовании Хафа и описанный в работах~\cite{RECOPEPAN, RECO2}.
+%Реализация данного алгоритма была специально адаптирована для данных пучковых тестов, в которых ожидается одно кольцо на событие. Данный алгоритм реализован в классе \classname{CbmRichProtRingFinderHoughImpl}, унаследованном от \classname{CbmRichProtRingFinderHough} и далее от \classname{CbmRichRingFinder}.
+После этого определяются параметры кольца и далее осуществляется реконструкция треков частиц с применением информации с других детекторов.
 
 %\begin{minipage}[t]{0.495\textwidth}
 \begin{figure}[H]
@@ -242,7 +243,9 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 %\begin{minipage}[t]{0.495\textwidth}
 %\end{minipage}
 
-На~\figref{fig:RICHeff}, \figref{fig:InvMassSpectra} и табл.~\ref{tabl:RICHchar} показаны характеристики детектора CBM RICH, которые были получены в результате моделирования в среде CbmRoot с применением генератора UrQMD~\cite{URQMD}. С применением результатов анализа данных пучковых тестов прототипа. \todo
+% На~\figref{fig:RICHeff}, \figref{fig:InvMassSpectra} и табл.~\ref{tabl:RICHchar} показаны
+
+Ниже обсуждаются характеристики детектора CBM RICH, которые были получены в результате моделирования в среде CbmRoot с применением генератора UrQMD~\cite{URQMD} и реалистичной диджитизации, основанной на анализе данных пучковых тестов прототипа.
 
 Вследствие большой множественности в центральных столкновениях в одном событий в RICH регистрируется до 65~колец.
 % В эксперименте CBM из точки взаимодействия $Au+Au$ при 25~\GeVperNucl{} в аксептанс RICH попадает около 1000 заряженных частиц. При этом частота первичных взаимодействий достигает 10~МГц. Эти условия диктуют следующие требования. Реконструкция колец в CBM RICH должна выполняться в среде высокой плотности частиц, многие из которых являются заряженными $\pi$-мезонами с высоким импульсом. В дополнение к этому, фотоны, рождённые в точке взаимодействия конвертируются в материале детектора в пары $e^{+} e^{-}$. В результате одном событии в RICH регистрируется около 65 колец.
@@ -265,7 +268,8 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 
 % The performance of the algorithms was obtained using information on Monte Carlo input. During the efficiency calculation the level of the correspondence between found and simulated rings is estimated. A ring is defined as correctly found if it has more than 60\% of hits from one Monte-Carlo ring, otherwise a ring is defined as ghost ring.
 
-Эффективность реконструкции колец определяется как отношение $Efficiency = N_{reconstructed} / N_{accepted}$, где $N_reconstructed$ --- количестве верно найденных колец после реконструкции, а $N_{accepted}$ --- количество колец, находящихся в аксептансе RICH, которые возможно реконструировать, т.е. колец, имеющих минимум 7~зарегистрированных хитов в RICH.
+На~\figref{fig:RICHeff} показана эффективность реконструкции колец, которая определяется как отношение $N_{rec} / N_{acc}$, где $N_{rec}$ --- количестве верно найденных колец после реконструкции, а $N_{acc}$ --- количество колец, находящихся в аксептансе RICH, которые возможно реконструировать, т.е. колец, имеющих минимум 7~зарегистрированных хитов в RICH.
+
 
 % The ring reconstruction efficiency is defined as $Efficiency = N_{reconstructed} / N_{accepted}$. $N_reconstructed$ is the number of correctly found rings after reconstruction, $N_{accepted}$ is the number of reconstructable rings lying in the RICH acceptance, i.e. rings which have at least 7 detected hits in the RICH.
 % Results in this section are shown for two sets of rings: rings from primary e± with at least 7 hits and rings from for primary ``reference'' e± which have more than 15 hits in the ring and a momentum larger than 1 GeV/c.
@@ -293,10 +297,26 @@ $CO_{2}$ имеет пороговый гамма-фактор $\gamma _{th} = 1
 
 % Left: electron identification efficiency in dependence on momentum. Right: pion suppression factor in dependence on momentum; both calculated for 25 AGeV beam energy. Different colours represent different reconstruction steps and detectors which are included in the electron identification procedure: RICH (red), RICH+TRD (blue) and RICH+TRD+TOF (green). Horizontal lines represent numbers integrated over momentum.
 
-\begin{table}[H]
-\caption{Отношение сигнал-шум (S/B), вклад $e^{+}e^{-}$-пар из распада Далица и конверсии гамма-квантов в полный комбинаторный фон в процентах и вклад ложно идентифицированных $\pi^{\pm}$ в процентах от полного числа электронов после применения всех критериев отбора. Для достижения чувствительности к лёгким векторным мезонам необходимо чтобы физические источники сигнала доминировали над фоном, что требует фактор подавления $\pi$-мезонов более 5000. Таблица взята из~\cite{TDR_RICH}.}
-\label{tabl:RICHchar}
+% \todo проверить ссылки на таблицы
 
+На~\figref{fig:InvMassSpectra} показаны смоделированные спектры инвариантных масс диэлектронов при распаде лёгких векторных мезонов с учётом разнообразных фонов, а в таблице~\ref{tabl:RICHchar} собрана информация о фонах и отношении сингал-фон при реконструкции этих частиц с помощью CBM RICH.
+
+\begin{figure}[H]
+\begin{minipage}[t]{0.495\textwidth}
+\includegraphics[width=0.95\textwidth]{pictures/InvMassSpectr1.png}
+\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+\includegraphics[width=0.95\textwidth]{pictures/InvMassSpectr2.png}
+\end{minipage}
+\caption{Смоделированные спектры инвариантных масс диэлектронов после применения всех критериев отбора для энергии 8~\GeVperNucl{} (SIS100, 100000 событий, слева) и 25~\GeVperNucl{} (SIS300, 200000 событий, справа). Серым цветом показан фон. Рисунок взят из~\cite{TDR_RICH}.}
+\label{fig:InvMassSpectra}
+\end{figure}
+
+% Invariant mass spectra of simulated di-electrons after application of all background rejection cuts. Central Au+Au collisions were simulated at 8 AGeV (left) and 25 AGeV beam energy (right) corresponding to SIS100 and SIS300 scenarios, respectively. Colored histograms represent the hadronic cocktail, the grey histogram the background. The left plot is based on 100 000 events, the right plot based on 200 000 events. Figures taken from CBM RICH TDR.
+
+\begin{table}[H]
+\caption{Отношение сигнал-фон (S/B), вклад $e^{+}e^{-}$-пар из распада Далица и конверсии гамма-квантов в полный комбинаторный фон в процентах и вклад ложно идентифицированных $\pi^{\pm}$ в процентах от полного числа электронов после применения всех критериев отбора. Для достижения чувствительности к лёгким векторным мезонам необходимо чтобы физические источники сигнала доминировали над фоном, что требует фактор подавления $\pi$-мезонов более 5000. Таблица взята из~\cite{TDR_RICH}.}
+\label{tabl:RICHchar}
 
 % Signal-to-background ratios, the contribution of physical background in percent to the total number of pairs in combinatorial background
 % and the contribution of misidentified $\pi^{\pm}$ in percent to the electron sample after applying all cuts.
@@ -338,18 +358,3 @@ $\phi$: $S/B$ & 0.002 & 0.02 & 0.04 & 0.07 & 0.10 & 0.12 & 0.14 \\
 \end{tabular}
 
 \end{table}
-
-% \todo Чё-то написать!
-
-\begin{figure}[H]
-\begin{minipage}[t]{0.495\textwidth}
-\includegraphics[width=0.95\textwidth]{pictures/InvMassSpectr1.png}
-\end{minipage}
-\begin{minipage}[t]{0.495\textwidth}
-\includegraphics[width=0.95\textwidth]{pictures/InvMassSpectr2.png}
-\end{minipage}
-\caption{Смоделированные спектры инвариантных масс диэлектронов после применения всех критериев отбора для энергии 8~\GeVperNucl{} (SIS100, 100000 событий, слева) и 25~\GeVperNucl{} (SIS300, 200000 событий, справа). Серым цветом показан фон. Рисунок взят из~\cite{TDR_RICH}.}
-\label{fig:InvMassSpectra}
-\end{figure}
-
-% Invariant mass spectra of simulated di-electrons after application of all background rejection cuts. Central Au+Au collisions were simulated at 8 AGeV (left) and 25 AGeV beam energy (right) corresponding to SIS100 and SIS300 scenarios, respectively. Colored histograms represent the hadronic cocktail, the grey histogram the background. The left plot is based on 100 000 events, the right plot based on 200 000 events. Figures taken from CBM RICH TDR.
