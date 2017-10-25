@@ -119,11 +119,11 @@
 \end{figure}
 
 \begin{figure}[H]
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=1.0\textwidth]{pictures/ShieldingBox_MC.png}
 \end{minipage}
 \hspace{0.01\textwidth}
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=0.7\textwidth]{pictures/ShieldingBox_MC2.png}
 \end{minipage}
 \caption{Первая версия магнитного экрана в CbmRoot. Серым цветом показаны МА~ФЭУ, жёлтым --- электроника.}
@@ -157,11 +157,11 @@
 \end{figure}
 
 \begin{figure}[H]
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=1.0\textwidth]{pictures/PMTmoduleCAD.png}
 \end{minipage}
 \hspace{0.01\textwidth}
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=1.0\textwidth]{pictures/Module_1_cut.png}
 \end{minipage}
 \caption{CAD-модель (слева) и MC-модель (справа) модуля фоточувствительной камеры CBM RICH.}
@@ -200,11 +200,11 @@
 В настоящее время прорабатывается вариант, в котором верхняя и нижняя половины фоточувствительной камеры составлены из сегментов шириной в один модуль и аппроксимирующих поверхность цилиндра. Радиус 1650~мм, поворот $\SI{18}{\degree}$ вокруг оси X и положение цилиндра также получены в результате оптимизации.
 
 \begin{figure}[H]
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=1.0\textwidth]{pictures/Camera_pmts.png}
 \end{minipage}
 \hspace{0.01\textwidth}
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=1.0\textwidth]{pictures/Camera_back.png}
 \end{minipage}
 \caption{MC-модель фоточувствительной камеры CBM RICH. На рисунке показаны платы электроники, но не показаны отдельные пиксели МА~ФЭУ.}
@@ -229,12 +229,12 @@
 Приведём решение типовой задачи. Требуется заменить сложный профиль прямоугольным кольцом с совпадающими внешними размерами. Наиболее оптимально моделировать балку с таким профилем с помощью двух вложенных объёмов, имеющих форму box. Более крупный объём выполнен из металла, а дочерний --- из материала окружающей среды (в случае CBM RICH --- газ-радиатор).
 
 \begin{figure}[H]
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \centering
 \includegraphics[width=0.6\textwidth]{pictures/Complex_profile.png}
 \end{minipage}
 \hspace{0.01\textwidth}
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \centering
 \includegraphics[width=0.8\textwidth]{pictures/Material_budget.eps}
 \end{minipage}
@@ -247,11 +247,11 @@
 Механические конструкции RICH были построены с применением описанной методики. На \figref{fig:geoMainframe} приведена модель каркаса детектора в MC-формате в CATIA. Каждая балка моделируется отдельным объёмом, полость внутри балки моделируется с помощью дочернего объёма из материала окружающей среды, в данном случае --- газа радиатора. Одинаковые балки моделируются одним объёмом, который многократно вставляется в контейнер. Для того чтобы упростить позиционирование каркаса в материнском объёме, вся конструкция была собрана в двух объёмах типа Assembly (см. \figref{fig:geoMainframe1and2}).
 
 \begin{figure}[H]
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=0.8\textwidth]{pictures/Mainframe_1.png}
 \end{minipage}
 \hspace{0.01\textwidth}
-\begin{minipage}[b]{0.495\textwidth}
+\begin{minipage}[b]{0.49\textwidth}
 \includegraphics[width=1.0\textwidth]{pictures/Mainframe_2.png}
 \end{minipage}
 \caption{MC-модель двух частей каркаса детектора в CATIA.}
